@@ -1,0 +1,242 @@
+[
+  {
+    "id": 18,
+    "nome": "Abacaxi Picado"
+  },
+  {
+    "id": 53,
+    "nome": "Açúcar"
+  },
+  {
+    "id": 59,
+    "nome": "Álcool"
+  },
+  {
+    "id": 31,
+    "nome": "Alho Frito"
+  },
+  {
+    "id": 12,
+    "nome": "Alho Poró Fatiado"
+  },
+  {
+    "id": 6,
+    "nome": "Bacon Frito"
+  },
+  {
+    "id": 37,
+    "nome": "Bobina Grande"
+  },
+  {
+    "id": 38,
+    "nome": "Bobina Impressora"
+  },
+  {
+    "id": 36,
+    "nome": "Bobina Pequena"
+  },
+  {
+    "id": 56,
+    "nome": "Bombril"
+  },
+  {
+    "id": 55,
+    "nome": "Bucha"
+  },
+  {
+    "id": 49,
+    "nome": "Cachaça"
+  },
+  {
+    "id": 33,
+    "nome": "Caixa 30"
+  },
+  {
+    "id": 32,
+    "nome": "Caixa 35"
+  },
+  {
+    "id": 3,
+    "nome": "Calabresa Fatiada"
+  },
+  {
+    "id": 7,
+    "nome": "Carne Seca"
+  },
+  {
+    "id": 24,
+    "nome": "Catupiry"
+  },
+  {
+    "id": 13,
+    "nome": "Cebola Fatiada"
+  },
+  {
+    "id": 19,
+    "nome": "Champignon"
+  },
+  {
+    "id": 25,
+    "nome": "Cheddar"
+  },
+  {
+    "id": 57,
+    "nome": "Cloro"
+  },
+  {
+    "id": 41,
+    "nome": "Coca Normal 1,5"
+  },
+  {
+    "id": 44,
+    "nome": "Coca Normal 600"
+  },
+  {
+    "id": 40,
+    "nome": "Coca Zero 1,5"
+  },
+  {
+    "id": 43,
+    "nome": "Coca Zero 600"
+  },
+  {
+    "id": 47,
+    "nome": "Coloral"
+  },
+  {
+    "id": 8,
+    "nome": "Costela"
+  },
+  {
+    "id": 46,
+    "nome": "Creme de Alho"
+  },
+  {
+    "id": 26,
+    "nome": "Creme De Leite"
+  },
+  {
+    "id": 54,
+    "nome": "Detergente"
+  },
+  {
+    "id": 50,
+    "nome": "Fermento"
+  },
+  {
+    "id": 5,
+    "nome": "Frango Temperado"
+  },
+  {
+    "id": 21,
+    "nome": "Gorgonzola"
+  },
+  {
+    "id": 42,
+    "nome": "Guaraná 1,5"
+  },
+  {
+    "id": 45,
+    "nome": "Guaraná 600"
+  },
+  {
+    "id": 35,
+    "nome": "Ketchup"
+  },
+  {
+    "id": 9,
+    "nome": "Lombo Fatiado"
+  },
+  {
+    "id": 34,
+    "nome": "Maionese"
+  },
+  {
+    "id": 29,
+    "nome": "Manjericão"
+  },
+  {
+    "id": 1,
+    "nome": "Massa"
+  },
+  {
+    "id": 2,
+    "nome": "Molho"
+  },
+  {
+    "id": 27,
+    "nome": "Molho Barbecue"
+  },
+  {
+    "id": 20,
+    "nome": "Muçarela Ralada"
+  },
+  {
+    "id": 48,
+    "nome": "Óleo"
+  },
+  {
+    "id": 30,
+    "nome": "Orégano"
+  },
+  {
+    "id": 28,
+    "nome": "Ovo Cozido"
+  },
+  {
+    "id": 17,
+    "nome": "Palmito"
+  },
+  {
+    "id": 60,
+    "nome": "Papel Toalha"
+  },
+  {
+    "id": 23,
+    "nome": "Parmesão"
+  },
+  {
+    "id": 11,
+    "nome": "Pepperoni"
+  },
+  {
+    "id": 15,
+    "nome": "Pimentão Picado"
+  },
+  {
+    "id": 4,
+    "nome": "Presunto Fatiado"
+  },
+  {
+    "id": 22,
+    "nome": "Provolone"
+  },
+  {
+    "id": 52,
+    "nome": "Sal"
+  },
+  {
+    "id": 10,
+    "nome": "Salaminho"
+  },
+  {
+    "id": 14,
+    "nome": "Tomate Picado"
+  },
+  {
+    "id": 16,
+    "nome": "Tomate Seco"
+  },
+  {
+    "id": 39,
+    "nome": "Touca"
+  },
+  {
+    "id": 51,
+    "nome": "Trigo"
+  },
+  {
+    "id": 58,
+    "nome": "Veja"
+  }
+]

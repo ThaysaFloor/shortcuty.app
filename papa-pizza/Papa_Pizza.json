@@ -1,0 +1,317 @@
+{
+  "versao": 1,
+  "projeto": "Papa Pizza",
+  "origem": {
+    "arquivo": "Tarefas e Estoque(1).xlsx",
+    "aba": "Dia a Dia"
+  },
+  "configuracao": {
+    "quantidade": "informada_pelo_usuario",
+    "somente_inteiros": true,
+    "verbo_tarefa": "Processar",
+    "verbo_compra": "Comprar",
+    "permitir_ignorar": true
+  },
+  "itens": [
+    {
+      "id": 1,
+      "nome": "Massa",
+      "categoria": "Base"
+    },
+    {
+      "id": 2,
+      "nome": "Molho",
+      "categoria": "Base"
+    },
+    {
+      "id": 3,
+      "nome": "Calabresa Fatiada",
+      "categoria": "Carnes/Embutidos"
+    },
+    {
+      "id": 4,
+      "nome": "Presunto Fatiado",
+      "categoria": "Carnes/Embutidos"
+    },
+    {
+      "id": 5,
+      "nome": "Frango Temperado",
+      "categoria": "Carnes/Embutidos"
+    },
+    {
+      "id": 6,
+      "nome": "Bacon Frito",
+      "categoria": "Carnes/Embutidos"
+    },
+    {
+      "id": 7,
+      "nome": "Carne Seca",
+      "categoria": "Carnes/Embutidos"
+    },
+    {
+      "id": 8,
+      "nome": "Costela",
+      "categoria": "Carnes/Embutidos"
+    },
+    {
+      "id": 9,
+      "nome": "Lombo Fatiado",
+      "categoria": "Carnes/Embutidos"
+    },
+    {
+      "id": 10,
+      "nome": "Salaminho",
+      "categoria": "Carnes/Embutidos"
+    },
+    {
+      "id": 11,
+      "nome": "Pepperoni",
+      "categoria": "Carnes/Embutidos"
+    },
+    {
+      "id": 12,
+      "nome": "Alho Poró Fatiado",
+      "categoria": "Frios/Vegetais"
+    },
+    {
+      "id": 13,
+      "nome": "Cebola Fatiada",
+      "categoria": "Frios/Vegetais"
+    },
+    {
+      "id": 14,
+      "nome": "Tomate Picado",
+      "categoria": "Frios/Vegetais"
+    },
+    {
+      "id": 15,
+      "nome": "Pimentão Picado",
+      "categoria": "Frios/Vegetais"
+    },
+    {
+      "id": 16,
+      "nome": "Tomate Seco",
+      "categoria": "Frios/Vegetais"
+    },
+    {
+      "id": 17,
+      "nome": "Palmito",
+      "categoria": "Frios/Vegetais"
+    },
+    {
+      "id": 18,
+      "nome": "Abacaxi Picado",
+      "categoria": "Frios/Vegetais"
+    },
+    {
+      "id": 19,
+      "nome": "Champignon",
+      "categoria": "Frios/Vegetais"
+    },
+    {
+      "id": 20,
+      "nome": "Muçarela Ralada",
+      "categoria": "Laticínio"
+    },
+    {
+      "id": 21,
+      "nome": "Gorgonzola",
+      "categoria": "Laticínio"
+    },
+    {
+      "id": 22,
+      "nome": "Provolone",
+      "categoria": "Laticínio"
+    },
+    {
+      "id": 23,
+      "nome": "Parmesão",
+      "categoria": "Laticínio"
+    },
+    {
+      "id": 24,
+      "nome": "Catupiry",
+      "categoria": "Laticínio"
+    },
+    {
+      "id": 25,
+      "nome": "Cheddar",
+      "categoria": "Laticínio"
+    },
+    {
+      "id": 26,
+      "nome": "Creme De Leite",
+      "categoria": "Laticínio"
+    },
+    {
+      "id": 27,
+      "nome": "Molho Barbecue",
+      "categoria": "Finalização/Complemento"
+    },
+    {
+      "id": 28,
+      "nome": "Ovo Cozido",
+      "categoria": "Finalização/Complemento"
+    },
+    {
+      "id": 29,
+      "nome": "Manjericão",
+      "categoria": "Finalização/Complemento"
+    },
+    {
+      "id": 30,
+      "nome": "Orégano",
+      "categoria": "Finalização/Complemento"
+    },
+    {
+      "id": 31,
+      "nome": "Alho Frito",
+      "categoria": "Finalização/Complemento"
+    },
+    {
+      "id": 32,
+      "nome": "Caixa 35",
+      "categoria": "Embalagen/Papelaria"
+    },
+    {
+      "id": 33,
+      "nome": "Caixa 30",
+      "categoria": "Embalagen/Papelaria"
+    },
+    {
+      "id": 34,
+      "nome": "Maionese",
+      "categoria": "Embalagen/Papelaria"
+    },
+    {
+      "id": 35,
+      "nome": "Ketchup",
+      "categoria": "Embalagen/Papelaria"
+    },
+    {
+      "id": 36,
+      "nome": "Bobina Pequena",
+      "categoria": "Embalagen/Papelaria"
+    },
+    {
+      "id": 37,
+      "nome": "Bobina Grande",
+      "categoria": "Embalagen/Papelaria"
+    },
+    {
+      "id": 38,
+      "nome": "Bobina Impressora",
+      "categoria": "Embalagen/Papelaria"
+    },
+    {
+      "id": 39,
+      "nome": "Touca",
+      "categoria": "Embalagen/Papelaria"
+    },
+    {
+      "id": 40,
+      "nome": "Coca Zero 1,5",
+      "categoria": "Refrigerante"
+    },
+    {
+      "id": 41,
+      "nome": "Coca Normal 1,5",
+      "categoria": "Refrigerante"
+    },
+    {
+      "id": 42,
+      "nome": "Guaraná 1,5",
+      "categoria": "Refrigerante"
+    },
+    {
+      "id": 43,
+      "nome": "Coca Zero 600",
+      "categoria": "Refrigerante"
+    },
+    {
+      "id": 44,
+      "nome": "Coca Normal 600",
+      "categoria": "Refrigerante"
+    },
+    {
+      "id": 45,
+      "nome": "Guaraná 600",
+      "categoria": "Refrigerante"
+    },
+    {
+      "id": 46,
+      "nome": "Creme de Alho",
+      "categoria": "Cozinha"
+    },
+    {
+      "id": 47,
+      "nome": "Coloral",
+      "categoria": "Cozinha"
+    },
+    {
+      "id": 48,
+      "nome": "Óleo",
+      "categoria": "Cozinha"
+    },
+    {
+      "id": 49,
+      "nome": "Cachaça",
+      "categoria": "Cozinha"
+    },
+    {
+      "id": 50,
+      "nome": "Fermento",
+      "categoria": "Cozinha"
+    },
+    {
+      "id": 51,
+      "nome": "Trigo",
+      "categoria": "Cozinha"
+    },
+    {
+      "id": 52,
+      "nome": "Sal",
+      "categoria": "Cozinha"
+    },
+    {
+      "id": 53,
+      "nome": "Açúcar",
+      "categoria": "Cozinha"
+    },
+    {
+      "id": 54,
+      "nome": "Detergente",
+      "categoria": "Mat. Limpeza"
+    },
+    {
+      "id": 55,
+      "nome": "Bucha",
+      "categoria": "Mat. Limpeza"
+    },
+    {
+      "id": 56,
+      "nome": "Bombril",
+      "categoria": "Mat. Limpeza"
+    },
+    {
+      "id": 57,
+      "nome": "Cloro",
+      "categoria": "Mat. Limpeza"
+    },
+    {
+      "id": 58,
+      "nome": "Veja",
+      "categoria": "Mat. Limpeza"
+    },
+    {
+      "id": 59,
+      "nome": "Álcool",
+      "categoria": "Mat. Limpeza"
+    },
+    {
+      "id": 60,
+      "nome": "Papel Toalha",
+      "categoria": "Mat. Limpeza"
+    }
+  ]
+}

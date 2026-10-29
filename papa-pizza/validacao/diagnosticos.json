@@ -1,0 +1,602 @@
+[
+  {
+    "code": "SS2101",
+    "message": "data.decode_json.input expects Dictionary, got Text. Shortcuts supports this content conversion; success still depends on the input at runtime.",
+    "range": {
+      "end": {
+        "column": 59,
+        "line": 85
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 21,
+        "line": 85
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "chooseFromList.WFInput expects Any | Dictionary | Image, got List<Text | Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 41,
+        "line": 123
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 19,
+        "line": 123
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "setVariable: cannot verify conversion from File | Native<WFFolderContentItem> to File; the cast will be attempted at runtime. Verify the producer type and test this input.",
+    "range": {
+      "end": {
+        "column": 52,
+        "line": 128
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 19,
+        "line": 128
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "data.decode_json.input expects Dictionary, got Text. Shortcuts supports this content conversion; success still depends on the input at runtime.",
+    "range": {
+      "end": {
+        "column": 48,
+        "line": 133
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 13,
+        "line": 133
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 34,
+        "line": 144
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 17,
+        "line": 144
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 40,
+        "line": 152
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 5,
+        "line": 152
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "setVariable: cannot verify conversion from Value to Dictionary; the cast will be attempted at runtime. Verify the producer type and test this input.",
+    "range": {
+      "end": {
+        "column": 52,
+        "line": 160
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 16,
+        "line": 160
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "setVariable: cannot verify conversion from Value to Dictionary; the cast will be attempted at runtime. Verify the producer type and test this input.",
+    "range": {
+      "end": {
+        "column": 57,
+        "line": 174
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 19,
+        "line": 174
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "count.Input expects Any | Text, got Value. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 44,
+        "line": 201
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 24,
+        "line": 201
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "setVariable: cannot verify conversion from Value to Dictionary; the cast will be attempted at runtime. Verify the producer type and test this input.",
+    "range": {
+      "end": {
+        "column": 42,
+        "line": 207
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 15,
+        "line": 207
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 53,
+        "line": 211
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 5,
+        "line": 211
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 29,
+        "line": 217
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 7,
+        "line": 217
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "data.decode_json.input expects Dictionary, got Text. Shortcuts supports this content conversion; success still depends on the input at runtime.",
+    "range": {
+      "end": {
+        "column": 55,
+        "line": 228
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 20,
+        "line": 228
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 42,
+        "line": 235
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 22,
+        "line": 235
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Number. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 38,
+        "line": 244
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 3,
+        "line": 244
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFNumberValue expects Value, got Number. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 33,
+        "line": 268
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 13,
+        "line": 268
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 41,
+        "line": 309
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 11,
+        "line": 309
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "data.decode_json.input expects Dictionary, got Text. Shortcuts supports this content conversion; success still depends on the input at runtime.",
+    "range": {
+      "end": {
+        "column": 63,
+        "line": 330
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 25,
+        "line": 330
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 26,
+        "line": 19
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 12,
+        "line": 19
+      }
+    },
+    "related": [
+      {
+        "message": "Called from here.",
+        "range": {
+          "end": {
+            "column": 76,
+            "line": 335
+          },
+          "file": "Main.shortcuty",
+          "start": {
+            "column": 17,
+            "line": 335
+          }
+        }
+      }
+    ],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 26,
+        "line": 19
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 12,
+        "line": 19
+      }
+    },
+    "related": [
+      {
+        "message": "Called from here.",
+        "range": {
+          "end": {
+            "column": 98,
+            "line": 336
+          },
+          "file": "Main.shortcuty",
+          "start": {
+            "column": 16,
+            "line": 336
+          }
+        }
+      }
+    ],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 26,
+        "line": 19
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 12,
+        "line": 19
+      }
+    },
+    "related": [
+      {
+        "message": "Called from here.",
+        "range": {
+          "end": {
+            "column": 104,
+            "line": 337
+          },
+          "file": "Main.shortcuty",
+          "start": {
+            "column": 18,
+            "line": 337
+          }
+        }
+      }
+    ],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "data.decode_json.input expects Dictionary, got Text. Shortcuts supports this content conversion; success still depends on the input at runtime.",
+    "range": {
+      "end": {
+        "column": 53,
+        "line": 349
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 20,
+        "line": 349
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 35,
+        "line": 352
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 7,
+        "line": 352
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 40,
+        "line": 360
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 9,
+        "line": 360
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "setVariable: cannot verify conversion from File | Value to File; the cast will be attempted at runtime. Verify the producer type and test this input.",
+    "range": {
+      "end": {
+        "column": 58,
+        "line": 364
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 29,
+        "line": 364
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 36,
+        "line": 367
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 9,
+        "line": 367
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 25,
+        "line": 32
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 3,
+        "line": 32
+      }
+    },
+    "related": [
+      {
+        "message": "Called from here.",
+        "range": {
+          "end": {
+            "column": 70,
+            "line": 370
+          },
+          "file": "Main.shortcuty",
+          "start": {
+            "column": 25,
+            "line": 370
+          }
+        }
+      }
+    ],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 25,
+        "line": 32
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 3,
+        "line": 32
+      }
+    },
+    "related": [
+      {
+        "message": "Called from here.",
+        "range": {
+          "end": {
+            "column": 73,
+            "line": 376
+          },
+          "file": "Main.shortcuty",
+          "start": {
+            "column": 26,
+            "line": 376
+          }
+        }
+      }
+    ],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "data.decode_json.input expects Dictionary, got Text. Shortcuts supports this content conversion; success still depends on the input at runtime.",
+    "range": {
+      "end": {
+        "column": 65,
+        "line": 402
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 27,
+        "line": 402
+      }
+    },
+    "related": [],
+    "severity": "warning"
+  },
+  {
+    "code": "SS2101",
+    "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+    "range": {
+      "end": {
+        "column": 25,
+        "line": 32
+      },
+      "file": "Main.shortcuty",
+      "start": {
+        "column": 3,
+        "line": 32
+      }
+    },
+    "related": [
+      {
+        "message": "Called from here.",
+        "range": {
+          "end": {
+            "column": 66,
+            "line": 429
+          },
+          "file": "Main.shortcuty",
+          "start": {
+            "column": 21,
+            "line": 429
+          }
+        }
+      }
+    ],
+    "severity": "warning"
+  }
+]

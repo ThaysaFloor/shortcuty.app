@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/docs/project.schema.json",
+  "title": "Shortcuty Studio project",
+  "description": "Portable .shortcutystudio editor project. Server validation also checks entry membership, unique paths, and combined UTF-8 source size.",
+  "type": "object",
+  "required": [
+    "version",
+    "entry",
+    "files"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "shortcutName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "entry": {
+      "$ref": "#/$defs/sourcePath"
+    },
+    "active": {
+      "$ref": "#/$defs/sourcePath"
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 64,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "contents"
+        ],
+        "properties": {
+          "name": {
+            "$ref": "#/$defs/sourcePath"
+          },
+          "contents": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "appReferences": {
+      "type": "object",
+      "maxProperties": 256,
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "bundleIdentifier"
+        ],
+        "properties": {
+          "bundleIdentifier": {
+            "$ref": "#/$defs/bundleIdentifier"
+          },
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "WFAppIdentifier": {
+                "$ref": "#/$defs/bundleIdentifier"
+              },
+              "WFSelectedApp": {
+                "type": "object"
+              },
+              "WFAppName": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "shortcutMetadata": {
+      "type": "object",
+      "required": [
+        "encoding",
+        "data"
+      ],
+      "properties": {
+        "encoding": {
+          "const": "binary-plist"
+        },
+        "data": {
+          "type": "string",
+          "maxLength": 400000
+        }
+      },
+      "additionalProperties": false
+    },
+    "exactMetadata": {
+      "type": "boolean"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "importInfo": {
+      "type": "object"
+    },
+    "originalShortcut": {
+      "type": "object",
+      "description": "Unsigned original used for workflow review; decoded size is limited to 8 MB and 10,000 actions.",
+      "required": [
+        "encoding",
+        "data"
+      ],
+      "properties": {
+        "encoding": {
+          "const": "binary-plist"
+        },
+        "data": {
+          "type": "string",
+          "contentEncoding": "base64",
+          "maxLength": 10666668
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "sourcePath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.?(/|$))[^\\\\:\\x00-\\x1f]+\\.(shortcuty|shortcutscript)$"
+    },
+    "bundleIdentifier": {
+      "type": "string",
+      "maxLength": 255,
+      "pattern": "^[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+){1,15}$"
+    }
+  }
+}

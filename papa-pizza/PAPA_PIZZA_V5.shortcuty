@@ -1,0 +1,433 @@
+# PAPA PIZZA V5 — fluxo alfabetico; Check/Build nao executam no iPhone.
+# IDs/ordem gerados do cadastro original; o JSON original e somente leitura.
+def campo(dicionario: Dictionary, chave: Text) -> Text:
+  bruto = data.lookup(input: dicionario, dictionary_key: chave)
+  resultado = ""
+  if bruto has value:
+    partes = text.detect(input: bruto)
+    resultado = combine(partes, separator: "")
+  return resultado
+
+def instante() -> Text:
+  atual = now()
+  partes = dates.format(date: atual, date_style: "Custom", date_format: "yyyy-MM-dd_HH-mm-ss-SSS")
+  return combine(partes, separator: "")
+
+def quantidade(pergunta: Text, anterior: Text) -> Text:
+  resposta = input.ask(type: "Text", prompt: pergunta, default: anterior, multiline: false)
+  validos = match(resposta, pattern: "^[0-9]{1,9}$")
+  numero = count(validos)
+  if numero != 1:
+    alert("Use um inteiro de 0 a 999999999. As respostas deste item nao foram gravadas. Os itens anteriores permanecem salvos.", title: "Quantidade invalida")
+    flow.stop()
+  return resposta
+
+def gravar(conteudo: Text, pasta: File, nome: Text, substituir: Boolean) -> File:
+  convertidos = files.convert(input: conteudo, type: "public.plain-text")
+  convertido = item(convertidos, at: 1)
+  salvos = files.save(item: convertido, folder: pasta, destination: nome, ask_where: false, overwrite: substituir)
+  salvo = item(salvos, at: 1)
+  partes = text.detect(input: salvo)
+  relido = combine(partes, separator: "")
+  if relido != conteudo:
+    alert("O texto relido divergiu do gravado. Pare e use a recuperacao por backup; nao continue gravando.", title: "Falha de gravacao")
+    flow.stop()
+  return salvo
+
+def escapar(valor: Text) -> Text:
+  a = replace(valor, "&", with: "&amp;")
+  b = combine(a, separator: "")
+  c = replace(b, "<", with: "&lt;")
+  d = combine(c, separator: "")
+  e = replace(d, ">", with: "&gt;")
+  return combine(e, separator: "")
+
+shortcut:
+  modo = "SAIR"
+  menu("PAPA PIZZA | Conferencia"):
+    case "NOVA CONFERÊNCIA":
+      modo = "NOVA"
+    case "CONTINUAR CONFERÊNCIA":
+      modo = "CONTINUAR"
+    case "GERAR RESUMO":
+      modo = "RESUMO"
+    case "SAIR":
+      modo = "SAIR"
+  if modo == "SAIR":
+    flow.stop()
+
+  pasta = files.create_folder(path: "PAPA PIZZA/V5/Conferencias")
+  backups = files.create_folder(path: "PAPA PIZZA/V5/Backups")
+  resumos = files.create_folder(path: "PAPA PIZZA/V5/Resumos")
+  ordem = list(["18", "53", "59", "31", "12", "6", "37", "38", "36", "56", "55", "49", "33", "32", "3", "7", "24", "13", "19", "25", "57", "41", "44", "40", "43", "47", "8", "46", "26", "54", "50", "5", "21", "42", "45", "35", "9", "34", "29", "1", "2", "27", "20", "48", "30", "28", "17", "60", "23", "11", "15", "4", "22", "52", "10", "14", "16", "39", "51", "58"])
+  nomesOrdenados = list(["Abacaxi Picado", "Açúcar", "Álcool", "Alho Frito", "Alho Poró Fatiado", "Bacon Frito", "Bobina Grande", "Bobina Impressora", "Bobina Pequena", "Bombril", "Bucha", "Cachaça", "Caixa 30", "Caixa 35", "Calabresa Fatiada", "Carne Seca", "Catupiry", "Cebola Fatiada", "Champignon", "Cheddar", "Cloro", "Coca Normal 1,5", "Coca Normal 600", "Coca Zero 1,5", "Coca Zero 600", "Coloral", "Costela", "Creme de Alho", "Creme De Leite", "Detergente", "Fermento", "Frango Temperado", "Gorgonzola", "Guaraná 1,5", "Guaraná 600", "Ketchup", "Lombo Fatiado", "Maionese", "Manjericão", "Massa", "Molho", "Molho Barbecue", "Muçarela Ralada", "Óleo", "Orégano", "Ovo Cozido", "Palmito", "Papel Toalha", "Parmesão", "Pepperoni", "Pimentão Picado", "Presunto Fatiado", "Provolone", "Sal", "Salaminho", "Tomate Picado", "Tomate Seco", "Touca", "Trigo", "Veja"])
+  referencia = data({"1": "Massa", "2": "Molho", "3": "Calabresa Fatiada", "4": "Presunto Fatiado", "5": "Frango Temperado", "6": "Bacon Frito", "7": "Carne Seca", "8": "Costela", "9": "Lombo Fatiado", "10": "Salaminho", "11": "Pepperoni", "12": "Alho Poró Fatiado", "13": "Cebola Fatiada", "14": "Tomate Picado", "15": "Pimentão Picado", "16": "Tomate Seco", "17": "Palmito", "18": "Abacaxi Picado", "19": "Champignon", "20": "Muçarela Ralada", "21": "Gorgonzola", "22": "Provolone", "23": "Parmesão", "24": "Catupiry", "25": "Cheddar", "26": "Creme De Leite", "27": "Molho Barbecue", "28": "Ovo Cozido", "29": "Manjericão", "30": "Orégano", "31": "Alho Frito", "32": "Caixa 35", "33": "Caixa 30", "34": "Maionese", "35": "Ketchup", "36": "Bobina Pequena", "37": "Bobina Grande", "38": "Bobina Impressora", "39": "Touca", "40": "Coca Zero 1,5", "41": "Coca Normal 1,5", "42": "Guaraná 1,5", "43": "Coca Zero 600", "44": "Coca Normal 600", "45": "Guaraná 600", "46": "Creme de Alho", "47": "Coloral", "48": "Óleo", "49": "Cachaça", "50": "Fermento", "51": "Trigo", "52": "Sal", "53": "Açúcar", "54": "Detergente", "55": "Bucha", "56": "Bombril", "57": "Cloro", "58": "Veja", "59": "Álcool", "60": "Papel Toalha"})
+  cadastro = data({})
+  registros = data({})
+  identificador = ""
+  inicio = ""
+  estado = "ABERTA"
+  origem = ""
+  nomeSessao = ""
+  ultimoJson = ""
+  ultimoHash = ""
+  recuperar = "NAO"
+  precisaSalvar = "NAO"
+  operacao = "MENU"
+  totalConferidos = 0
+
+  if modo == "NOVA":
+    alert("Selecione o cadastro original Papa_Pizza.json no iCloud Drive. Ele sera apenas lido.", title: "Cadastro")
+    arquivosCadastro = files.choose(picking_mode: "Files", select_multiple: false)
+    arquivoCadastro = item(arquivosCadastro, at: 1)
+    partesCadastro = text.detect(input: arquivoCadastro)
+    textoCadastro = combine(partesCadastro, separator: "")
+    cadastroBruto = data.decode_json(input: textoCadastro)
+    cadastro = as_type(cadastroBruto, "Dictionary")
+    precisaSalvar = "SIM"
+    operacao = "INICIAR"
+  else:
+    pastaLeitura = pasta
+    if modo == "CONTINUAR":
+      menu("Origem da retomada"):
+        case "ARQUIVO PRINCIPAL":
+          recuperar = "NAO"
+        case "RECUPERAR BACKUP":
+          recuperar = "SIM"
+          pastaLeitura = backups
+    arquivosHistorico = files.contents(folder: pastaLeitura)
+    ordenados = files.filter(items: arquivosHistorico, sort_by: "Name", order: "Descending")
+    recentes = list([])
+    anteriores = list([])
+    quantidadeHistorico = 0
+    for item in ordenados:
+      candidato = item
+      partesNome = files.name(item: candidato)
+      nome = combine(partesNome, separator: "")
+      if nome starts with "Conferencia_" and nome ends with ".json":
+        quantidadeHistorico = quantidadeHistorico + 1
+        if quantidadeHistorico <= 5:
+          variables.append(name: "recentes", value: nome)
+        else:
+          variables.append(name: "anteriores", value: nome)
+    if quantidadeHistorico == 0:
+      alert("Nao ha arquivos nesta pasta. O historico das versoes anteriores permanece na pasta antiga.", title: "Historico V5")
+      flow.stop()
+    listaHistorico = recentes
+    if quantidadeHistorico > 5:
+      menu("Historico"):
+        case "CINCO MAIS RECENTES":
+          listaHistorico = recentes
+        case "ANTERIORES":
+          listaHistorico = anteriores
+    selecionado = choose(listaHistorico)
+    partesSelecionado = text.detect(input: selecionado)
+    nomeSelecionado = combine(partesSelecionado, separator: "")
+    arquivosLidos = files.open(folder: pastaLeitura, path: nomeSelecionado, error_if_missing: true)
+    arquivoLidoBruto = item(arquivosLidos, at: 1)
+    arquivoLido = as_type(arquivoLidoBruto, "File")
+    hashesLidos = data.hash(input: arquivoLido, algorithm: "SHA256")
+    ultimoHash = combine(hashesLidos, separator: "")
+    partesLidas = text.detect(input: arquivoLido)
+    ultimoJson = combine(partesLidas, separator: "")
+    bruto = data.decode_json(input: ultimoJson)
+    sessaoLida = as_type(bruto, "Dictionary")
+    versao = campo(sessaoLida, "versao")
+    identificador = campo(sessaoLida, "id")
+    inicio = campo(sessaoLida, "inicio")
+    estado = campo(sessaoLida, "estado")
+    origem = campo(sessaoLida, "origem")
+    if versao != "5":
+      alert("Selecione uma conferencia V5. Os arquivos V3/V4 nao serao alterados.", title: "Formato diferente")
+      flow.stop()
+    idsValidos = match(identificador, pattern: "^[0-9_-]{19,40}$")
+    numeroIds = count(idsValidos)
+    if numeroIds != 1 or inicio is empty:
+      alert("Identificador ou data invalidos. Tente recuperar o backup.", title: "Arquivo invalido")
+      flow.stop()
+    if estado != "ABERTA" and estado != "FINALIZADA":
+      alert("Estado desconhecido. Tente recuperar o backup.", title: "Arquivo invalido")
+      flow.stop()
+    nomeEsperado = text("Conferencia_\(identificador).json")
+    if nomeSelecionado != nomeEsperado:
+      alert("O nome do arquivo nao corresponde ao identificador interno.", title: "Arquivo invalido")
+      flow.stop()
+    nomeSessao = nomeEsperado
+    cadastroSalvo = sessaoLida["cadastro"]
+    if cadastroSalvo has no value:
+      alert("A conferencia nao tem sua copia do cadastro.", title: "Arquivo invalido")
+      flow.stop()
+    cadastro = as_type(cadastroSalvo, "Dictionary")
+    chavesSessao = data.lookup(input: sessaoLida, get_dictionary_value_type: "All Keys")
+    temRegistros = "NAO"
+    if chavesSessao has value:
+      for item in chavesSessao:
+        partesChave = text.detect(input: item)
+        chaveSessao = combine(partesChave, separator: "")
+        if chaveSessao == "registros":
+          temRegistros = "SIM"
+    if temRegistros != "SIM":
+      alert("O arquivo perdeu a chave registros. Tente recuperar o backup.", title: "Arquivo invalido")
+      flow.stop()
+    registrosSalvos = sessaoLida["registros"]
+    if registrosSalvos has value:
+      registros = as_type(registrosSalvos, "Dictionary")
+    if modo == "CONTINUAR" and estado == "FINALIZADA":
+      alert("Conferencia encerrada. Use Gerar resumo para consulta.", title: "Somente leitura")
+      flow.stop()
+    if recuperar == "SIM":
+      origem = identificador
+      identificador = ""
+      ultimoJson = ""
+      ultimoHash = ""
+      precisaSalvar = "SIM"
+      operacao = "INICIAR"
+    if modo == "RESUMO":
+      operacao = "RESUMO"
+
+  if identificador is empty:
+    dataId = instante()
+    aleatorio = random(100000, 999999)
+    identificador = text("\(dataId)-\(aleatorio)")
+    nomeSessao = text("Conferencia_\(identificador).json")
+    if inicio is empty:
+      inicio = dataId
+
+  itensBrutos = cadastro["itens"]
+  if itensBrutos has no value:
+    alert("O cadastro esta sem produtos.", title: "Cadastro invalido")
+    flow.stop()
+  itensCadastro = require(itensBrutos, message: "Lista de produtos presente apos verificacao")
+  quantidadeProdutos = count(itensCadastro)
+  if quantidadeProdutos != 60:
+    alert("Esperados os 60 produtos originais. Nenhum cadastro sera alterado.", title: "Cadastro invalido")
+    flow.stop()
+  idsVistos = list([])
+  for item in itensCadastro:
+    produto = as_type(item, "Dictionary")
+    idProduto = campo(produto, "id")
+    nomeProduto = campo(produto, "nome")
+    esperado = campo(referencia, idProduto)
+    if esperado is empty or nomeProduto != esperado:
+      alert("ID ou nome difere dos 60 produtos originais. Atualize o projeto para mudar o cadastro.", title: "Cadastro divergente")
+      flow.stop()
+    for item in idsVistos:
+      partesVisto = text.detect(input: item)
+      visto = combine(partesVisto, separator: "")
+      if visto == idProduto:
+        alert("O cadastro possui IDs repetidos.", title: "Cadastro invalido")
+        flow.stop()
+    variables.append(name: "idsVistos", value: idProduto)
+
+  # Validate stored rows once, without regenerating the original catalog.
+  for item in ordem:
+    partesId = text.detect(input: item)
+    idLinha = combine(partesId, separator: "")
+    textoLinha = campo(registros, idLinha)
+    if textoLinha is not empty:
+      linhaBruta = data.decode_json(input: textoLinha)
+      linha = as_type(linhaBruta, "Dictionary")
+      estoqueLinha = campo(linha, "estoque")
+      compraLinha = campo(linha, "comprar")
+      processoLinha = campo(linha, "processar")
+      valoresLinha = text("\(estoqueLinha)|\(compraLinha)|\(processoLinha)")
+      linhasValidas = match(valoresLinha, pattern: "^[0-9]{1,9}\\|[0-9]{1,9}\\|[0-9]{1,9}$")
+      numeroLinhas = count(linhasValidas)
+      if numeroLinhas != 1:
+        alert("Um registro possui quantidades invalidas. Tente recuperar o backup.", title: "Arquivo invalido")
+        flow.stop()
+      totalConferidos = totalConferidos + 1
+  chavesRegistros = data.lookup(input: registros, get_dictionary_value_type: "All Keys")
+  numeroChaves = 0
+  if chavesRegistros has value:
+    numeroChaves = count(chavesRegistros)
+  if numeroChaves != totalConferidos:
+    alert("Existem registros desconhecidos ou vazios. Tente recuperar o backup.", title: "Arquivo invalido")
+    flow.stop()
+
+  idAtual = ""
+  cursor = 1
+  # Native repeats are bounded; pause/finalize stop immediately, without recursion.
+  repeat 1000 times:
+    if operacao == "MENU":
+      pendente = ""
+      primeiroPendente = ""
+      indicePendente = 1
+      primeiroIndice = 1
+      indice = 0
+      for item in ordem:
+        indice = indice + 1
+        partesId = text.detect(input: item)
+        idCandidato = combine(partesId, separator: "")
+        if pendente is empty:
+          registroCandidato = campo(registros, idCandidato)
+          if registroCandidato is empty:
+            if primeiroPendente is empty:
+              primeiroPendente = idCandidato
+              primeiroIndice = indice
+            if indice >= cursor:
+              pendente = idCandidato
+              indicePendente = indice
+      if pendente is empty:
+        pendente = primeiroPendente
+        indicePendente = primeiroIndice
+      faltam = 60 - totalConferidos
+      proximoNome = campo(referencia, pendente)
+      if pendente is empty:
+        proximoNome = "Todos conferidos"
+      menu("\(totalConferidos)/60 | Proximo: \(proximoNome)"):
+        case "PRÓXIMO ITEM":
+          operacao = "CONFERIR"
+        case "DEIXAR PRÓXIMO PARA DEPOIS":
+          operacao = "PULAR"
+        case "REVISAR ITEM":
+          operacao = "REVISAR"
+        case "PAUSAR":
+          operacao = "PAUSAR"
+        case "FINALIZAR":
+          operacao = "CONFIRMAR FIM"
+      idAtual = pendente
+      if operacao == "PULAR":
+        if pendente is not empty:
+          cursor = indicePendente + 1
+        operacao = "MENU"
+      if operacao == "CONFERIR":
+        if pendente is empty:
+          alert("Todos os itens foram conferidos. Voce pode revisar ou finalizar.", title: "Conferencia completa")
+          operacao = "MENU"
+        else:
+          cursor = indicePendente + 1
+      if operacao == "REVISAR":
+        nomeEscolhido = choose(nomesOrdenados)
+        partesNome = text.detect(input: nomeEscolhido)
+        nomeAtual = combine(partesNome, separator: "")
+        indice = 0
+        for item in nomesOrdenados:
+          indice = indice + 1
+          partesNome = text.detect(input: item)
+          candidatoNome = combine(partesNome, separator: "")
+          if candidatoNome == nomeAtual:
+            idEscolhido = item(ordem, at: indice)
+            partesId = text.detect(input: idEscolhido)
+            idAtual = combine(partesId, separator: "")
+        operacao = "CONFERIR"
+      if operacao == "CONFIRMAR FIM":
+        menu("Encerrar definitivamente? Faltam \(faltam) itens. A consulta continuara disponivel."):
+          case "SIM, ENCERRAR":
+            operacao = "FINALIZAR"
+            estado = "FINALIZADA"
+            precisaSalvar = "SIM"
+          case "VOLTAR":
+            operacao = "MENU"
+
+    if operacao == "CONFERIR":
+      nomeAtual = campo(referencia, idAtual)
+      anteriorTexto = campo(registros, idAtual)
+      estoqueAnterior = "0"
+      compraAnterior = "0"
+      processoAnterior = "0"
+      if anteriorTexto is not empty:
+        anteriorBruto = data.decode_json(input: anteriorTexto)
+        anterior = as_type(anteriorBruto, "Dictionary")
+        estoqueAnterior = campo(anterior, "estoque")
+        compraAnterior = campo(anterior, "comprar")
+        processoAnterior = campo(anterior, "processar")
+      estoque = quantidade("\(nomeAtual) | Estoque atual", estoqueAnterior)
+      compra = quantidade("\(nomeAtual) | Quantidade para COMPRAR (0 = nenhuma)", compraAnterior)
+      processo = quantidade("\(nomeAtual) | Quantidade para PROCESSAR (0 = nenhuma)", processoAnterior)
+      linhaJson = text("{\"estoque\":\"\(estoque)\",\"comprar\":\"\(compra)\",\"processar\":\"\(processo)\"}")
+      registros = data.set_value(dictionary: registros, key: idAtual, value: linhaJson)
+      if anteriorTexto is empty:
+        totalConferidos = totalConferidos + 1
+      precisaSalvar = "SIM"
+
+    # One checkpoint for initial creation, each completed item and finalization.
+    if precisaSalvar == "SIM":
+      sessao = data({"versao": 5, "id": identificador, "inicio": inicio, "estado": estado, "origem": origem, "cadastro": cadastro, "registros": registros})
+      partesJson = text.detect(input: sessao)
+      novoJson = combine(partesJson, separator: "")
+      testeBruto = data.decode_json(input: novoJson)
+      teste = as_type(testeBruto, "Dictionary")
+      idTeste = campo(teste, "id")
+      if idTeste != identificador:
+        alert("A serializacao JSON nao preservou o identificador. Nada sera gravado.", title: "JSON invalido")
+        flow.stop()
+      existentes = files.contents(folder: pasta)
+      arquivoAtual = null
+      for item in existentes:
+        partesNome = files.name(item: item)
+        nomeExistente = combine(partesNome, separator: "")
+        if nomeExistente == nomeSessao:
+          arquivoAtual = item
+      substituir = false
+      if arquivoAtual has value:
+        arquivoConfirmado = as_type(arquivoAtual, "File")
+        hashesAtuais = data.hash(input: arquivoConfirmado, algorithm: "SHA256")
+        hashAtual = combine(hashesAtuais, separator: "")
+        if hashAtual != ultimoHash:
+          alert("O principal mudou desde a leitura, ou houve colisao de nome. Nenhum arquivo sera sobrescrito. Retome a versao atual.", title: "Conflito")
+          flow.stop()
+        backupGravado = gravar(ultimoJson, backups, nomeSessao, true)
+        substituir = true
+      else:
+        if ultimoHash is not empty:
+          alert("O arquivo principal foi removido durante a conferencia. Pare e recupere o backup.", title: "Principal ausente")
+          flow.stop()
+      principalGravado = gravar(novoJson, pasta, nomeSessao, substituir)
+      ultimoJson = novoJson
+      hashesGravados = data.hash(input: principalGravado, algorithm: "SHA256")
+      ultimoHash = combine(hashesGravados, separator: "")
+      precisaSalvar = "NAO"
+
+    if operacao == "PAUSAR":
+      alert("Conferencia salva. Use Continuar conferencia para retomar no primeiro item nao conferido.", title: "Pausada")
+      flow.stop()
+
+    if operacao == "RESUMO" or operacao == "FINALIZAR":
+      linhas = ""
+      naoConferidos = ""
+      compras = ""
+      processos = ""
+      for item in ordem:
+        partesId = text.detect(input: item)
+        idResumo = combine(partesId, separator: "")
+        nomeResumoItem = campo(referencia, idResumo)
+        nomeHtml = escapar(nomeResumoItem)
+        registroTexto = campo(registros, idResumo)
+        estoqueResumo = ""
+        compraResumo = ""
+        processoResumo = ""
+        conferido = "N"
+        if registroTexto is not empty:
+          registroBruto = data.decode_json(input: registroTexto)
+          registro = as_type(registroBruto, "Dictionary")
+          estoqueResumo = campo(registro, "estoque")
+          compraResumo = campo(registro, "comprar")
+          processoResumo = campo(registro, "processar")
+          conferido = "S"
+          compraNumero = as_type(compraResumo, "Number")
+          processoNumero = as_type(processoResumo, "Number")
+          if compraNumero > 0:
+            compras = text("\(compras)<li>\(nomeHtml): \(compraResumo)</li>")
+          if processoNumero > 0:
+            processos = text("\(processos)<li>\(nomeHtml): \(processoResumo)</li>")
+        else:
+          naoConferidos = text("\(naoConferidos)<li>\(nomeHtml)</li>")
+        linhas = text("\(linhas)<tr><td>\(nomeHtml)</td><td>\(estoqueResumo)</td><td>\(conferido)</td><td>\(compraResumo)</td><td>\(processoResumo)</td></tr>")
+      if naoConferidos is empty:
+        naoConferidos = "<li>Nenhum.</li>"
+      if compras is empty:
+        compras = "<li>Nenhum.</li>"
+      if processos is empty:
+        processos = "<li>Nenhum.</li>"
+      inicioHtml = escapar(inicio)
+      estadoHtml = escapar(estado)
+      html = text("<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>PAPA PIZZA</title><style>body{font:16px -apple-system,Arial,sans-serif;margin:16px;color:#222}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #ccc;padding:8px;text-align:left}th{background:#eee}.tabela{overflow-x:auto}h2{margin-top:28px}</style></head><body><h1>PAPA PIZZA</h1><p>Inicio: \(inicioHtml) | Estado: \(estadoHtml)</p><p>Conferidos: \(totalConferidos)/60. Zero = nenhuma pendencia. Branco = nao conferido.</p><div class='tabela'><table><thead><tr><th>Item</th><th>Estoque atual</th><th>Conferido?</th><th>Qtd. comprar</th><th>Qtd. processar</th></tr></thead><tbody>\(linhas)</tbody></table></div><h2>Nao conferidos</h2><ul>\(naoConferidos)</ul><h2>Comprar</h2><ul>\(compras)</ul><h2>Processar</h2><ul>\(processos)</ul></body></html>")
+      dataResumo = instante()
+      numeroResumo = random(100000, 999999)
+      nomeHtmlArquivo = text("Resumo_\(identificador)_\(dataResumo)_\(numeroResumo).html")
+      arquivoHtml = gravar(html, resumos, nomeHtmlArquivo, false)
+      preview.show(item: arquivoHtml)
+      flow.stop()
+    operacao = "MENU"
+  alert("Limite de interacoes desta execucao atingido. O progresso ja foi salvo; use Continuar conferencia.", title: "Pausada")
