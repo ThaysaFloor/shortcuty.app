@@ -1,6 +1,6 @@
 # Validação obrigatória no iPhone
 
-Nenhum teste deste roteiro foi executado neste trabalho. Use dados descartáveis, mantenha cópias do cadastro e dos históricos e confirme a pasta do iCloud antes de começar.
+Este roteiro ainda não foi concluído. O usuário executou a V5 e enviou vídeo do erro “A localização não existe” na preparação de pastas. A correção V5.1 ainda precisa ser executada no iPhone. Use dados descartáveis, mantenha cópias do cadastro e dos históricos e confirme a pasta do iCloud antes de começar.
 
 1. **Instalação e abertura:** importar no Studio, executar Check/Build, revisar os avisos e assinar pelo Download. Confirmar abertura no iPhone e permissões do iCloud.
 2. **Cadastro:** selecionar uma cópia de `Papa_Pizza.json`. Conferir os 60 nomes e a ordem alfabética, especialmente nomes com acentos. Comparar o arquivo original antes/depois; ele deve permanecer idêntico.
@@ -19,3 +19,11 @@ Nenhum teste deste roteiro foi executado neste trabalho. Use dados descartáveis
 15. **Desempenho:** medir abertura, troca de item, salvamento e resumo no aparelho. Registrar modelo do iPhone e versão do iOS. O número de ações diminuiu, mas não há medição real de duração/memória.
 
 As verificações estáticas e o compilador oficial não substituem esses testes. Não usar o resultado como único registro de produção antes da validação.
+
+## Reteste prioritário da V5.1
+
+- Importar a versão cujo nome é **PAPA PIZZA V5.1**.
+- Selecionar uma pasta-base existente e vazia de teste no iCloud Drive; confirmar que foram criados PAPA PIZZA, V5 e as três subpastas, sem o erro do vídeo.
+- Confirmar que depois da preparação abre o seletor de Papa_Pizza.json. Cancelar se ainda não quiser conferir itens.
+- Executar novamente escolhendo exatamente a mesma base: a preparação deve reutilizar as pastas sem duplicá-las e permitir retomar os arquivos salvos nela.
+- Se houver falha, usar Mostrar e registrar a ação destacada e a mensagem. O Build não substitui esse reteste.

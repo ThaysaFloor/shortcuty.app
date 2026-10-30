@@ -87,6 +87,19 @@ def validate():
         assert action["call"] == "variables.set"
         return origin(action["parameters"]["WFInput"])
 
+    folders = [a for a in actions if a["call"] == "files.create_folder"]
+    assert [a["parameters"]["WFFilePath"] for a in folders] == [
+        "PAPA PIZZA", "V5", "Conferencias", "Backups", "Resumos"
+    ]
+    assert [origin(a["parameters"]["WFFolder"]) for a in folders] == [
+        "base", "raiz", "versaoPasta", "versaoPasta", "versaoPasta"
+    ]
+    pickers = [a for a in actions if a["call"] == "files.choose"]
+    assert pickers[0]["parameters"]["WFPickingMode"] == "Folders"
+    assert pickers[0]["index"] < folders[0]["index"]
+    assert all("/" not in a["parameters"]["WFFilePath"] for a in folders)
+    print("PASS: explicit folder picker and five anchored parent/child creation steps")
+
     saves = [a for a in actions if a["call"] == "files.save"]
     assert len(saves) == 3
     assert [origin(a["parameters"]["WFFolder"]) for a in saves] == ["backups", "pasta", "resumos"]

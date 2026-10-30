@@ -1,4 +1,4 @@
-# PAPA PIZZA V5 — fluxo alfabetico; Check/Build nao executam no iPhone.
+# PAPA PIZZA V5.1 — fluxo alfabetico; Check/Build nao executam no iPhone.
 # IDs/ordem gerados do cadastro original; o JSON original e somente leitura.
 def campo(dicionario: Dictionary, chave: Text) -> Text:
   bruto = data.lookup(input: dicionario, dictionary_key: chave)
@@ -56,9 +56,16 @@ shortcut:
   if modo == "SAIR":
     flow.stop()
 
-  pasta = files.create_folder(path: "PAPA PIZZA/V5/Conferencias")
-  backups = files.create_folder(path: "PAPA PIZZA/V5/Backups")
-  resumos = files.create_folder(path: "PAPA PIZZA/V5/Resumos")
+  alert("Selecione uma pasta-base EXISTENTE no iCloud Drive, por exemplo Atalhos. Use a MESMA pasta nas proximas execucoes. Nao selecione as subpastas PAPA PIZZA ou V5.", title: "Pasta-base do PAPA PIZZA")
+  bases = files.choose(picking_mode: "Folders", select_multiple: false)
+  base = item(bases, at: 1)
+  if base has no value:
+    flow.stop()
+  raiz = files.create_folder(folder: base, path: "PAPA PIZZA")
+  versaoPasta = files.create_folder(folder: raiz, path: "V5")
+  pasta = files.create_folder(folder: versaoPasta, path: "Conferencias")
+  backups = files.create_folder(folder: versaoPasta, path: "Backups")
+  resumos = files.create_folder(folder: versaoPasta, path: "Resumos")
   ordem = list(["18", "53", "59", "31", "12", "6", "37", "38", "36", "56", "55", "49", "33", "32", "3", "7", "24", "13", "19", "25", "57", "41", "44", "40", "43", "47", "8", "46", "26", "54", "50", "5", "21", "42", "45", "35", "9", "34", "29", "1", "2", "27", "20", "48", "30", "28", "17", "60", "23", "11", "15", "4", "22", "52", "10", "14", "16", "39", "51", "58"])
   nomesOrdenados = list(["Abacaxi Picado", "Açúcar", "Álcool", "Alho Frito", "Alho Poró Fatiado", "Bacon Frito", "Bobina Grande", "Bobina Impressora", "Bobina Pequena", "Bombril", "Bucha", "Cachaça", "Caixa 30", "Caixa 35", "Calabresa Fatiada", "Carne Seca", "Catupiry", "Cebola Fatiada", "Champignon", "Cheddar", "Cloro", "Coca Normal 1,5", "Coca Normal 600", "Coca Zero 1,5", "Coca Zero 600", "Coloral", "Costela", "Creme de Alho", "Creme De Leite", "Detergente", "Fermento", "Frango Temperado", "Gorgonzola", "Guaraná 1,5", "Guaraná 600", "Ketchup", "Lombo Fatiado", "Maionese", "Manjericão", "Massa", "Molho", "Molho Barbecue", "Muçarela Ralada", "Óleo", "Orégano", "Ovo Cozido", "Palmito", "Papel Toalha", "Parmesão", "Pepperoni", "Pimentão Picado", "Presunto Fatiado", "Provolone", "Sal", "Salaminho", "Tomate Picado", "Tomate Seco", "Touca", "Trigo", "Veja"])
   referencia = data({"1": "Massa", "2": "Molho", "3": "Calabresa Fatiada", "4": "Presunto Fatiado", "5": "Frango Temperado", "6": "Bacon Frito", "7": "Carne Seca", "8": "Costela", "9": "Lombo Fatiado", "10": "Salaminho", "11": "Pepperoni", "12": "Alho Poró Fatiado", "13": "Cebola Fatiada", "14": "Tomate Picado", "15": "Pimentão Picado", "16": "Tomate Seco", "17": "Palmito", "18": "Abacaxi Picado", "19": "Champignon", "20": "Muçarela Ralada", "21": "Gorgonzola", "22": "Provolone", "23": "Parmesão", "24": "Catupiry", "25": "Cheddar", "26": "Creme De Leite", "27": "Molho Barbecue", "28": "Ovo Cozido", "29": "Manjericão", "30": "Orégano", "31": "Alho Frito", "32": "Caixa 35", "33": "Caixa 30", "34": "Maionese", "35": "Ketchup", "36": "Bobina Pequena", "37": "Bobina Grande", "38": "Bobina Impressora", "39": "Touca", "40": "Coca Zero 1,5", "41": "Coca Normal 1,5", "42": "Guaraná 1,5", "43": "Coca Zero 600", "44": "Coca Normal 600", "45": "Guaraná 600", "46": "Creme de Alho", "47": "Coloral", "48": "Óleo", "49": "Cachaça", "50": "Fermento", "51": "Trigo", "52": "Sal", "53": "Açúcar", "54": "Detergente", "55": "Bucha", "56": "Bombril", "57": "Cloro", "58": "Veja", "59": "Álcool", "60": "Papel Toalha"})

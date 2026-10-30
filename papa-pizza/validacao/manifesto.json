@@ -1,14 +1,17 @@
 {
-  "source_sha256": "a6cf9f7492fa86aae8c60f8e11c31996afd8fec0560bfbbac5b1f460bf378488",
-  "project_sha256": "f2b51ba01391da74013ce391967bd0d21e9daa1120a2f5a0388870c0e28490a0",
+  "source_sha256": "ddbd1f86e83b2a5332d022725f185cd8cc8df980dc0be15a6eb5241e7304b391",
+  "project_sha256": "f4d50e29ff11739fb9048f75be32dd3a82c28c787179472262a37731476191d2",
   "cadastro_sha256": "b93b0daad59e491e88f6692d7ee22a3c5fa2c8851c8a55052cbdff4bba8b858b",
   "compiler_version": "0.1.4",
-  "actions": 1179,
+  "actions": 1191,
   "errors": 0,
-  "warnings": 30,
+  "warnings": 31,
   "baseline_v4_actions": 5023,
   "iphone_executed": false,
   "signed": false,
   "check_passed": true,
-  "check_warnings": 30
+  "check_warnings": 31,
+  "release": "5.1",
+  "previous_v5_actions": 1179,
+  "previous_v5_device_result": "User video: location does not exist during folder preparation"
 }

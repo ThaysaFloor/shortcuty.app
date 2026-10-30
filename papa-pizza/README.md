@@ -1,9 +1,9 @@
-# PAPA PIZZA V5
+# PAPA PIZZA V5.1
 
 ## Usar no Studio
 
 1. Baixe `PAPA_PIZZA_V5.shortcutystudio` deste repositório e importe no [Shortcuty Studio](https://studio.shortcuty.app/). A cópia `.shortcutystudio.json` contém exatamente o mesmo projeto.
-2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5** em Shortcut details.
+2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5.1** em Shortcut details.
 3. Execute **Check** e **Build**. Revise os avisos; o resultado esperado está em `validacao/`.
 4. Exporte o projeto pelo Studio. Depois de revisar o fluxo nativo, use o Download do Studio para assinar e instalar.
 5. Primeiro teste com uma cópia do cadastro e dados descartáveis. Não use como registro de produção até concluir o roteiro em `TESTES_IPHONE.md`.
@@ -23,7 +23,7 @@
 
 ## Arquivos e recuperação
 
-Na pasta padrão do Shortcuts, a V5 cria:
+Depois do menu, selecione uma pasta-base **existente** no iCloud Drive, por exemplo `Atalhos`. Use essa mesma pasta em todas as execuções. Não selecione `PAPA PIZZA`, `V5` ou suas subpastas. Dentro da base escolhida, a V5.1 cria cada nível separadamente:
 
 ```text
 PAPA PIZZA/V5/
@@ -32,7 +32,7 @@ PAPA PIZZA/V5/
   Resumos/Resumo_<id>_<data-hora>_<numero>.html
 ```
 
-Confirme no iPhone que a pasta padrão está no iCloud Drive desejado. O cadastro original pode ser escolhido no iCloud; ele nunca é gravado pelo atalho.
+A V5.1 não depende da localização padrão implícita do Shortcuts. O seletor aparece em cada execução para fornecer uma referência válida à pasta-base; escolher uma base diferente mostra outro conjunto de históricos. O cadastro original pode ser escolhido no iCloud; ele nunca é gravado pelo atalho.
 
 Existe um JSON principal por conferência e, após a primeira atualização, um backup. Antes de substituir o principal, o atalho verifica seu hash, grava o conteúdo anterior no backup e confere a releitura. Só depois grava e relê o principal. O backup guarda a versão anterior ao último checkpoint, não todas as alterações intermediárias.
 
@@ -63,3 +63,7 @@ A ordem alfabética foi gerada a partir do cadastro original e está documentada
 A linguagem não documenta `while` ou `break`. O fluxo usa um repeat nativo de até 1000 interações. Pausar e finalizar param imediatamente com `flow.stop()`; se o limite for atingido, avisa e permite retomar em outra execução. A repetição não duplica o código-fonte 1000 vezes no Build.
 
 Ainda há avisos e mais de mil ações. O Build confirma compilação, não rapidez ou funcionamento no iPhone. As evidências e limites estão em `RELATORIO.md`.
+
+## Correção V5.1 após teste no iPhone
+
+O vídeo da V5 mostrou “A localização não existe” antes de abrir o cadastro, na preparação de pastas. Foram removidas a raiz implícita “Atalhos” e as três criações de caminhos completos com pais possivelmente ausentes. Agora há seleção explícita da base e cinco criações encadeadas: PAPA PIZZA → V5 → Conferencias/Backups/Resumos. O vídeo não distingue se a causa original foi a raiz ou o caminho intermediário. A V5.1 compilou, mas a correção precisa ser confirmada no iPhone. Os nomes dos arquivos distribuídos e o formato JSON V5 foram mantidos para preservar os links e a compatibilidade.
