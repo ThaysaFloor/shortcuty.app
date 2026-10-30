@@ -1,44 +1,55 @@
-# PAPA PIZZA V5.4 — entrega para reteste
+# PAPA PIZZA V5.5 — entrega para reteste
 
 ## Resultado verificável
 
-Build oficial do Shortcuty Studio, compilador 0.1.4: **1028 ações, 0 erros e 38 avisos**. Redução de 79.5% em relação às 5023 ações da V4. Os arquivos fonte/projeto e o cadastro estão vinculados às evidências por hashes no manifesto. O schema oficial também é verificado localmente.
+Build oficial do Shortcuty Studio, compilador 0.1.4: **1108 ações, 0 erros e 43 avisos**. Redução de 77.9% em relação às 5023 ações da V4. O Check oficial deve corresponder aos mesmos arquivos; as evidências e hashes estão em validacao/. O schema oficial e o grafo nativo são verificados por scripts/validar.py.
 
-O Check oficial deve corresponder aos mesmos arquivos; sua evidência está em `validacao/check-oficial.json`. O roteiro de verificação está em `scripts/validar.py`. Não houve assinatura ou execução da V5.4 no iPhone neste trabalho.
+A V5.5 não foi executada no iPhone, assinada ou instalada neste trabalho. O reteste é obrigatório. Não houve supressão de avisos ou declaração de execução bem-sucedida desta revisão.
 
-## Observação que motivou esta revisão
+## Evidência de execução recebida
 
-No vídeo da V5.3, não aparece novamente o alerta Massa/Massa. Após a escolha do cadastro o atalho permanece em execução e não mostra o menu durante a gravação. O usuário confirmou que continua executando sem perguntas mesmo após aguardar. A etapa exata em que a execução permanece ainda não está isolada; não se concluiu que o cadastro está incorreto.
+O trecho completo da V5.4 mostra o aviso 3/3, o menu alfabético e as três perguntas do primeiro produto. Portanto o JSON inicial foi gravado e relido, e o fluxo chegou à entrada de quantidades. Depois apareceu Principal ausente: a rotina não reencontrou o arquivo por nome e concluiu indevidamente que havia sido removido. Não há evidência de exclusão pelo usuário no vídeo.
 
-A validação anterior de duplicatas percorria os IDs já vistos para cada produto: até 1770 comparações para 60 produtos, além das ações de leitura/conversão. A V5.4 usa consulta e inserção por chave em dicionário, mantendo a detecção de IDs repetidos sem a repetição interna. Não se faz a leitura de registros antigos em uma conferência nova, que começa vazia. São otimizações de trabalho executado, não uma medição de desempenho no aparelho.
+O usuário informou nomes como Conferencia_-numero.txt: extensão TXT e ausência da data no nome. A exportação anterior da ação de data não continha WFDateActionMode explícito. O Save recebia arquivo materializado como texto simples sem uma ação Set Name anterior. Isso motivou correções concretas de data, nome e identidade do arquivo, mas não comprova ainda sua execução corrigida no dispositivo.
 
-Três avisos temporários foram adicionados somente na criação inicial: cadastro validado, JSON preparado e principal salvo/relido. Eles distinguem uma demora na validação, preparação do JSON, gravação ou entrada no menu. O último aviso exibido deve ser informado caso a execução não avance. Não são confirmações de permissão nem aparecem após cada item.
+## Correções V5.5
 
-## Pastas prontas, conforme solicitado
-
-Prepare `iCloud Drive/Atalhos/PAPA PIZZA/V5/Conferencias`, `Backups` e `Resumos`. O atalho seleciona a pasta V5 e abre as subpastas existentes, com seletor adicional desativado e erro explícito se faltarem. Nenhuma ação nativa de criação de pastas permanece no Build. Veja `PREPARAR_PASTAS.md`.
-
-O único arquivo de consulta para começar é Papa_Pizza.json. O original permanece em Atalhos ou no local escolhido pelo usuário e não é alterado. Não é necessário criar JSON vazio, planilha, índice ou arquivo de configuração. Principal, backup e HTML são gerados pelo atalho.
+- A data é obtida com dates.value(date_action_mode: "Current Date"). O grafo contém explicitamente WFDateActionMode=Current Date nas duas ações de data, em vez de depender de um padrão implícito.
+- O resultado formatado deve corresponder a yyyy-MM-dd_HH-mm-ss-SSS. Se estiver vazio ou incompleto, o atalho para antes de criar um nome de conferência ou resumo inválido.
+- O arquivo temporário materializado por files.convert recebe Set Name com extensão incluída antes do Save. Isso é feito para principal, backup e HTML; nenhum arquivo histórico é renomeado por essa ação.
+- Depois de cada Save, a extensão é verificada: json para principal/backup e html para resumo. Uma divergência para a execução e mostra a extensão observada. A releitura do conteúdo continua presente.
+- A referência do arquivo retornada por Save é mantida em arquivoPrincipal após a verificação. Retomadas normais usam a referência do arquivo aberto. Atualizações não procuram novamente o principal pelo nome; a listagem por nome fica restrita à checagem de colisão na criação.
+- Antes de atualizar, o hash da referência é comparado ao último hash, e o conteúdo anterior é gravado/relido no backup. O controle é de melhor esforço: cache de conteúdo ou sincronização do iCloud podem limitar a observação de alterações externas. Não há bloqueio ou transação distribuída; use uma execução por conferência de cada vez.
+- O histórico usa a extensão real e reconstrói o nome completo quando Get Name retorna só o nome sem extensão. Arquivos TXT antigos ficam preservados e fora do histórico JSON. Não há conversão ou exclusão automática deles.
 
 ## Funcionalidades preservadas
 
-Lista alfabética dos mesmos 60 produtos e IDs; três quantidades por item, incluindo estoque zero; comprar/processar simultâneos; próximo, deixar para depois, revisar, pausar e retomar; confirmação de encerramento parcial; finalizados somente para consulta; cinco recentes e anteriores; tabela completa e listas Não conferidos/Comprar/Processar; cadastro completo em cada sessão; JSON principal e backup anterior; recuperação em nova conferência; independência de Lembretes.
+60 produtos e IDs originais em ordem alfabética; estoque atual, comprar e processar; zero válido; pendências simultâneas; deixar para depois, revisar, pausar e retomar; confirmação de encerramento parcial; finalizados somente para consulta; cinco recentes e anteriores; tabela completa e listas Não conferidos/Comprar/Processar; cadastro completo em cada sessão; um principal e um backup anterior; recuperação em nova conferência; sem dependência de Lembretes.
 
-O armazenamento permanece no formato JSON V5. Os registros são strings JSON por ID para respeitar o contrato Text de data.set_value. Ausência de chave significa não conferido. Revisão substitui a chave e não cria duplicata.
+Os registros permanecem strings JSON por ID, respeitando o contrato Text de data.set_value. Ausência significa não conferido. A revisão substitui a chave e não duplica o produto.
 
-O backup é escrito e relido antes de atualizar o principal. O hash detecta alterações do principal desde a leitura antes de iniciar a substituição. Não há transação atômica ou bloqueio distribuído: use uma execução por conferência. Falhas nativas de iCloud podem interromper o atalho e requerer recuperação manual; o backup pode perder o checkpoint mais recente.
+## Pastas e dados
 
-## Evidências de integridade
+Use as pastas já prontas iCloud Drive/Atalhos/PAPA PIZZA/V5/Conferencias, Backups e Resumos. Selecione V5 no primeiro seletor. Papa_Pizza.json original pode permanecer em Atalhos. Não há criação automática de pastas nem outro arquivo inicial obrigatório.
 
-Cadastro original preservado byte a byte, SHA-256 `b93b0daad59e491e88f6692d7ee22a3c5fa2c8851c8a55052cbdff4bba8b858b`: 60 IDs únicos e nove grupos. Os grupos continuam no arquivo e fora da interface. A referência exportada pelo compilador coincide com todos os pares ID/nome do original.
+Cadastro preservado byte a byte, SHA-256 `b93b0daad59e491e88f6692d7ee22a3c5fa2c8851c8a55052cbdff4bba8b858b`: 60 IDs únicos e nove grupos, com referência exportada conferida contra o original. O JSON original não é gravado pelo atalho.
 
-As nove comparações restantes entre variáveis de texto mantêm WFTextTokenString, com referências dinâmicas. A comparação de duplicatas por texto foi substituída pela presença da chave no dicionário. Não houve supressão de avisos, remoção da validação do cadastro ou uso de native_action para contornar o checker.
+Mantenha os .txt produzidos nos testes; a V5.5 não os renomeia nem os migra automaticamente. Como nomes/IDs desses arquivos podem estar incompletos, comece o reteste com Nova conferência. O erro da V5.4 ocorreu antes de gravar o primeiro item recebido; não há confirmação de que aquelas respostas tenham sido persistidas.
 
-## Limites
+## Reteste necessário
 
-V5.4 é uma revisão de diagnóstico ainda pendente de teste no iPhone. Abrir subpastas como referências de folder, materializar arquivos, JSON vazio, nomes/extensões, Unicode, backup, retomada, HTML e desempenho ainda precisam ser validados. O Build não homologa a execução. A compatibilidade mínima de iOS permanece parcialmente desconhecida no catálogo oficial.
+1. Nova conferência: selecionar V5 e o mesmo JSON original, acompanhar 1/3, 2/3 e 3/3.
+2. Verificar que o novo arquivo tem data/hora e extensão .json.
+3. Conferir um produto com as três quantidades; verificar que o principal e o backup continuam na pasta certa.
+4. Pausar, retomar e revisar o mesmo produto sem duplicação; conferir JSON e contador.
+5. Finalizar e gerar HTML com extensão .html e abertura visual correta.
+6. Se aparecer Data indisponível, Nome do arquivo ou Referência indisponível, registrar a mensagem e preservar todos os arquivos.
 
-O loop do fluxo é limitado a 1000 interações; pausar e finalizar usam flow.stop imediato. Ao atingir o limite, a execução avisa e pode ser retomada. Não se usa recursão. Arquivos V3/V4 e pastas antigas permanecem sem alteração e não aparecem no histórico V5.
+O roteiro completo continua em TESTES_IPHONE.md. A compatibilidade mínima de iOS é parcialmente desconhecida no catálogo; o Build não certifica permissões, formato físico, cache, desempenho ou execução de ações nativas.
+
+## Diagnóstico temporário e limites
+
+Os três avisos de inicialização permanecem temporariamente para localizar a etapa no iPhone. Há limite de 1000 interações por execução; pausar/finalizar param imediatamente com flow.stop. O progresso pode ser retomado se o limite for alcançado. Não há recursão ou exclusão de históricos. A validação de IDs usa dicionário e não a varredura quadrática anterior; conferências novas não leem registros antigos vazios.
 
 ## Avisos oficiais
 
@@ -47,13 +58,14 @@ O loop do fluxo é limitado a 1000 interações; pausar e finalizar usam flow.st
 - **2**: files.contents.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: chooseFromList.WFInput expects Any | Dictionary | Image, got List<Text | Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: setVariable: cannot verify conversion from File | Native<WFFolderContentItem> to File; the cast will be attempted at runtime. Verify the producer type and test this input.
-- **5**: count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
+- **7**: count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **9**: condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **3**: setVariable: cannot verify conversion from Value to Dictionary; the cast will be attempted at runtime. Verify the producer type and test this input.
 - **1**: count.Input expects Any | Text, got Value. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: condition.WFConditionalActionString expects Value, got Number. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: condition.WFNumberValue expects Value, got Number. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: setVariable: cannot verify conversion from File | Value to File; the cast will be attempted at runtime. Verify the producer type and test this input.
+- **3**: setVariable: cannot verify conversion from Value to File; the cast will be attempted at runtime. Verify the producer type and test this input.
 - **3**: files.save.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 
-A mudança para referências de pastas abertas por files.open acrescenta avisos de File | Native<WFFolderContentItem>. Eles foram mantidos e precisam de confirmação no aparelho; não são prova de segurança ou de falha.
+Os casts de saída Value de Set Name para File refletem uma lacuna de metadados: o produtor é um arquivo materializado que recebeu nome, mas a execução ainda precisa confirmar a conversão. Não foi usado cast para inventar dados nem para substituir a ação de nomeação.

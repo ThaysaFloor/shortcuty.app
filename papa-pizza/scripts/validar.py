@@ -115,6 +115,23 @@ def validate():
     }
     print("PASS: all 9 dynamic text comparison operands use token strings, preserving their variables")
 
+    current_dates = [a for a in actions if a["identifier"] == "is.workflow.actions.date"]
+    assert len(current_dates) == 2
+    assert all(a["parameters"]["WFDateActionMode"] == "Current Date" for a in current_dates)
+    renamed = [a for a in actions if a["call"] == "files.rename"]
+    assert len(renamed) == 3
+    assert all(a["parameters"]["WFDontIncludeFileExtension"] is False for a in renamed)
+    assert {
+        a["parameters"]["WFInput"]["Value"]["VariableName"] for a in renamed
+    } == {"convertido_5", "convertido_6", "convertido_11"}
+    extension_guards = [
+        a for a in actions if a["call"] == "flow.condition"
+        and a["parameters"].get("WFConditionalActionString") in ("json", "html")
+        and a["parameters"].get("WFCondition") == 5
+    ]
+    assert len(extension_guards) == 3
+    print("PASS: explicit Current Date mode, temporary files named before saving and extension guards")
+
     groups = collections.defaultdict(collections.Counter)
     for action in actions:
         params = action["parameters"]
@@ -181,6 +198,37 @@ def validate():
     assert all(a["parameters"]["WFAskWhereToSave"] is False for a in saves)
     assert not any(a["call"] in {"files.delete", "shortcuts.run_self", "reminders.create"} for a in actions)
     print("PASS: backup precedes principal, only three save sites, no deletion/recursion/Reminders")
+
+    principal_assignments = [
+        a for a in actions if a["call"] == "variables.set"
+        and a["parameters"].get("WFVariableName") == "arquivoPrincipal"
+    ]
+    assert any(
+        a["parameters"]["WFInput"]["Value"].get("VariableName") == "arquivoLido"
+        for a in principal_assignments
+    )
+    assert any(
+        a["parameters"]["WFInput"]["Value"].get("VariableName") == "principalGravado"
+        for a in principal_assignments
+    )
+    principal_guard = next(
+        a for a in actions if a["call"] == "flow.condition"
+        and a["parameters"].get("WFCondition") == 100
+        and a["parameters"].get("WFInput", {}).get("Variable", {}).get("Value", {}).get("VariableName") == "arquivoPrincipal"
+    )
+    branch_markers = [
+        a for a in actions
+        if a["parameters"].get("GroupingIdentifier") == principal_guard["parameters"]["GroupingIdentifier"]
+    ]
+    otherwise = next(a for a in branch_markers if a["parameters"].get("WFControlFlowMode") == 1)
+    end = next(a for a in branch_markers if a["parameters"].get("WFControlFlowMode") == 2)
+    assert principal_guard["index"] < saves[0]["index"] < otherwise["index"]
+    creation_listing = next(
+        a for a in actions if a["call"] == "files.contents"
+        and a["parameters"].get("WFFolder", {}).get("Value", {}).get("VariableName") == "pasta"
+    )
+    assert otherwise["index"] < creation_listing["index"] < end["index"] < saves[1]["index"]
+    print("PASS: active updates use the saved/opened file reference; directory-name lookup only on creation")
     print("PENDING: real iPhone/iCloud execution, runtime conversions, performance and signing")
 
 

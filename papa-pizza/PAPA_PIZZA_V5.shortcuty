@@ -1,4 +1,4 @@
-# PAPA PIZZA V5.4 — acoes nativas diretas; execucao corrigida pendente no iPhone.
+# PAPA PIZZA V5.5 — acoes nativas diretas; execucao corrigida pendente no iPhone.
 # Cadastro original somente leitura. Nenhuma funcao auxiliar ou condicao composta.
 shortcut:
   modo = "SAIR"
@@ -37,6 +37,7 @@ shortcut:
   nomeSessao = ""
   ultimoJson = ""
   ultimoHash = ""
+  arquivoPrincipal = null
   recuperar = "NAO"
   precisaSalvar = "NAO"
   operacao = "MENU"
@@ -70,13 +71,23 @@ shortcut:
       candidato = item
       partesNome = files.name(item: candidato)
       nome = combine(partesNome, separator: "")
-      if nome starts with "Conferencia_":
+      extensaoCandidato = files.detail(file: candidato, property: "File Extension")
+      partesExtensaoCandidato = text.detect(input: extensaoCandidato)
+      extensaoHistorico = combine(partesExtensaoCandidato, separator: "")
+      if extensaoHistorico == "json":
+        nomeCompleto = "NAO"
         if nome ends with ".json":
-          quantidadeHistorico = quantidadeHistorico + 1
-          if quantidadeHistorico <= 5:
-            variables.append(name: "recentes", value: nome)
-          else:
-            variables.append(name: "anteriores", value: nome)
+          nomeCompleto = "SIM"
+        if nomeCompleto == "NAO":
+          nome = text("\(nome).json")
+      if extensaoHistorico == "json":
+        if nome starts with "Conferencia_":
+          if nome ends with ".json":
+            quantidadeHistorico = quantidadeHistorico + 1
+            if quantidadeHistorico <= 5:
+              variables.append(name: "recentes", value: nome)
+            else:
+              variables.append(name: "anteriores", value: nome)
     if quantidadeHistorico == 0:
       alert("Nao ha arquivos nesta pasta. O historico das versoes anteriores permanece na pasta antiga.", title: "Historico V5")
       flow.stop()
@@ -169,6 +180,8 @@ shortcut:
       if estado == "FINALIZADA":
         alert("Conferencia encerrada. Use Gerar resumo para consulta.", title: "Somente leitura")
         flow.stop()
+    if recuperar == "NAO":
+      arquivoPrincipal = arquivoLido
     if recuperar == "SIM":
       origem = identificador
       identificador = ""
@@ -180,9 +193,14 @@ shortcut:
       operacao = "RESUMO"
 
   if identificador is empty:
-    agora_1 = now()
+    agora_1 = dates.value(date_action_mode: "Current Date")
     dataPartes_1 = dates.format(date: agora_1, date_style: "Custom", date_format: "yyyy-MM-dd_HH-mm-ss-SSS")
     dataId = combine(dataPartes_1, separator: "")
+    datasValidas_dataId = match(dataId, pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}_[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{3}$")
+    totalDatas_dataId = count(datasValidas_dataId)
+    if totalDatas_dataId != 1:
+      alert("A data/hora nao foi produzida corretamente. Nenhum arquivo com nome incompleto sera criado. Informe este erro.", title: "Data indisponivel")
+      flow.stop()
     aleatorio = random(100000, 999999)
     identificador = text("\(dataId)-\(aleatorio)")
     nomeSessao = text("Conferencia_\(identificador).json")
@@ -229,7 +247,7 @@ shortcut:
     idsVistos = data.set_value(dictionary: idsVistos, key: idProduto, value: "SIM")
 
   if modo == "NOVA":
-    alert("1/3 - Cadastro validado. Os 60 produtos foram lidos. Toque OK para preparar o arquivo da conferencia.", title: "Teste V5.4", cancel: false)
+    alert("1/3 - Cadastro validado. Os 60 produtos foram lidos. Toque OK para preparar o arquivo da conferencia.", title: "Teste V5.5", cancel: false)
 
   # Conferencias novas comecam vazias; validar registros somente ao reabrir.
   if modo != "NOVA":
@@ -430,17 +448,10 @@ shortcut:
         alert("A serializacao JSON nao preservou o identificador. Nada sera gravado.", title: "JSON invalido")
         flow.stop()
       if operacao == "INICIAR":
-        alert("2/3 - JSON preparado. Toque OK para gravar o arquivo inicial no iCloud Drive.", title: "Teste V5.4", cancel: false)
-      existentes = files.contents(folder: pasta)
-      arquivoAtual = null
-      for item in existentes:
-        partesNome = files.name(item: item)
-        nomeExistente = combine(partesNome, separator: "")
-        if nomeExistente == "\(nomeSessao)":
-          arquivoAtual = item
+        alert("2/3 - JSON preparado. Toque OK para gravar o arquivo inicial no iCloud Drive.", title: "Teste V5.5", cancel: false)
       substituir = false
-      if arquivoAtual has value:
-        arquivoConfirmado = as_type(arquivoAtual, "File")
+      if arquivoPrincipal has value:
+        arquivoConfirmado = as_type(arquivoPrincipal, "File")
         hashesAtuais = data.hash(input: arquivoConfirmado, algorithm: "SHA256")
         hashAtual = combine(hashesAtuais, separator: "")
         if hashAtual != "\(ultimoHash)":
@@ -448,8 +459,16 @@ shortcut:
           flow.stop()
         convertidos_5 = files.convert(input: ultimoJson, type: "public.plain-text")
         convertido_5 = item(convertidos_5, at: 1)
-        salvos_5 = files.save(item: convertido_5, folder: backups, destination: nomeSessao, ask_where: false, overwrite: true)
+        nomeado_5 = files.rename(item: convertido_5, name: nomeSessao, exclude_extension: false)
+        arquivoNomeado_5 = as_type(nomeado_5, "File")
+        salvos_5 = files.save(item: arquivoNomeado_5, folder: backups, destination: nomeSessao, ask_where: false, overwrite: true)
         backupGravado = item(salvos_5, at: 1)
+        extensaoBruta_5 = files.detail(file: backupGravado, property: "File Extension")
+        extensaoPartes_5 = text.detect(input: extensaoBruta_5)
+        extensaoSalva_5 = combine(extensaoPartes_5, separator: "")
+        if extensaoSalva_5 != "json":
+          alert("Extensao inesperada: [\(extensaoSalva_5)]. Esperada: json. Pare, preserve os arquivos e informe esta mensagem.", title: "Nome do arquivo")
+          flow.stop()
         partesRelidas_5 = text.detect(input: backupGravado)
         relido_5 = combine(partesRelidas_5, separator: "")
         if relido_5 != "\(ultimoJson)":
@@ -458,12 +477,28 @@ shortcut:
         substituir = true
       else:
         if ultimoHash is not empty:
-          alert("O arquivo principal foi removido durante a conferencia. Pare e recupere o backup.", title: "Principal ausente")
+          alert("A referencia do principal nao esta disponivel. A conferencia nao sera sobrescrita; reabra o arquivo ou recupere o backup.", title: "Referencia indisponivel")
           flow.stop()
+        # Somente na criacao: impedir substituicao de uma conferencia anterior.
+        existentes = files.contents(folder: pasta)
+        for item in existentes:
+          partesNome = files.name(item: item)
+          nomeExistente = combine(partesNome, separator: "")
+          if nomeExistente == "\(nomeSessao)":
+            alert("Ja existe um arquivo com este nome. Inicie outra conferencia; nada sera sobrescrito.", title: "Conflito de nome")
+            flow.stop()
       convertidos_6 = files.convert(input: novoJson, type: "public.plain-text")
       convertido_6 = item(convertidos_6, at: 1)
-      salvos_6 = files.save(item: convertido_6, folder: pasta, destination: nomeSessao, ask_where: false, overwrite: substituir)
+      nomeado_6 = files.rename(item: convertido_6, name: nomeSessao, exclude_extension: false)
+      arquivoNomeado_6 = as_type(nomeado_6, "File")
+      salvos_6 = files.save(item: arquivoNomeado_6, folder: pasta, destination: nomeSessao, ask_where: false, overwrite: substituir)
       principalGravado = item(salvos_6, at: 1)
+      extensaoBruta_6 = files.detail(file: principalGravado, property: "File Extension")
+      extensaoPartes_6 = text.detect(input: extensaoBruta_6)
+      extensaoSalva_6 = combine(extensaoPartes_6, separator: "")
+      if extensaoSalva_6 != "json":
+        alert("Extensao inesperada: [\(extensaoSalva_6)]. Esperada: json. Pare, preserve os arquivos e informe esta mensagem.", title: "Nome do arquivo")
+        flow.stop()
       partesRelidas_6 = text.detect(input: principalGravado)
       relido_6 = combine(partesRelidas_6, separator: "")
       if relido_6 != "\(novoJson)":
@@ -472,9 +507,10 @@ shortcut:
       ultimoJson = novoJson
       hashesGravados = data.hash(input: principalGravado, algorithm: "SHA256")
       ultimoHash = combine(hashesGravados, separator: "")
+      arquivoPrincipal = principalGravado
       precisaSalvar = "NAO"
       if operacao == "INICIAR":
-        alert("3/3 - Arquivo inicial salvo e relido. Toque OK para abrir o menu dos produtos.", title: "Teste V5.4", cancel: false)
+        alert("3/3 - Arquivo inicial salvo e relido. Toque OK para abrir o menu dos produtos.", title: "Teste V5.5", cancel: false)
 
     if operacao == "PAUSAR":
       alert("Conferencia salva. Use Continuar conferencia para retomar no primeiro item nao conferido.", title: "Pausada")
@@ -560,15 +596,28 @@ shortcut:
       escapeE_9 = replace(escapeD_9, ">", with: "&gt;")
       estadoHtml = combine(escapeE_9, separator: "")
       html = text("<!doctype html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>PAPA PIZZA</title><style>body{font:16px -apple-system,Arial,sans-serif;margin:16px;color:#222}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #ccc;padding:8px;text-align:left}th{background:#eee}.tabela{overflow-x:auto}h2{margin-top:28px}</style></head><body><h1>PAPA PIZZA</h1><p>Inicio: \(inicioHtml) | Estado: \(estadoHtml)</p><p>Conferidos: \(totalConferidos)/60. Zero = nenhuma pendencia. Branco = nao conferido.</p><div class='tabela'><table><thead><tr><th>Item</th><th>Estoque atual</th><th>Conferido?</th><th>Qtd. comprar</th><th>Qtd. processar</th></tr></thead><tbody>\(linhas)</tbody></table></div><h2>Nao conferidos</h2><ul>\(naoConferidos)</ul><h2>Comprar</h2><ul>\(compras)</ul><h2>Processar</h2><ul>\(processos)</ul></body></html>")
-      agora_10 = now()
+      agora_10 = dates.value(date_action_mode: "Current Date")
       dataPartes_10 = dates.format(date: agora_10, date_style: "Custom", date_format: "yyyy-MM-dd_HH-mm-ss-SSS")
       dataResumo = combine(dataPartes_10, separator: "")
+      datasValidas_dataResumo = match(dataResumo, pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}_[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{3}$")
+      totalDatas_dataResumo = count(datasValidas_dataResumo)
+      if totalDatas_dataResumo != 1:
+        alert("A data/hora nao foi produzida corretamente. Nenhum arquivo com nome incompleto sera criado. Informe este erro.", title: "Data indisponivel")
+        flow.stop()
       numeroResumo = random(100000, 999999)
       nomeHtmlArquivo = text("Resumo_\(identificador)_\(dataResumo)_\(numeroResumo).html")
       convertidos_11 = files.convert(input: html, type: "public.plain-text")
       convertido_11 = item(convertidos_11, at: 1)
-      salvos_11 = files.save(item: convertido_11, folder: resumos, destination: nomeHtmlArquivo, ask_where: false, overwrite: false)
+      nomeado_11 = files.rename(item: convertido_11, name: nomeHtmlArquivo, exclude_extension: false)
+      arquivoNomeado_11 = as_type(nomeado_11, "File")
+      salvos_11 = files.save(item: arquivoNomeado_11, folder: resumos, destination: nomeHtmlArquivo, ask_where: false, overwrite: false)
       arquivoHtml = item(salvos_11, at: 1)
+      extensaoBruta_11 = files.detail(file: arquivoHtml, property: "File Extension")
+      extensaoPartes_11 = text.detect(input: extensaoBruta_11)
+      extensaoSalva_11 = combine(extensaoPartes_11, separator: "")
+      if extensaoSalva_11 != "html":
+        alert("Extensao inesperada: [\(extensaoSalva_11)]. Esperada: html. Pare, preserve os arquivos e informe esta mensagem.", title: "Nome do arquivo")
+        flow.stop()
       partesRelidas_11 = text.detect(input: arquivoHtml)
       relido_11 = combine(partesRelidas_11, separator: "")
       if relido_11 != "\(html)":

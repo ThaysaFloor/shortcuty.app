@@ -50,3 +50,14 @@ As verificações estáticas e o compilador oficial não substituem esses testes
 3. Registrar se aparecem 1/3 Cadastro validado, 2/3 JSON preparado e 3/3 Arquivo inicial salvo e relido. Tocar OK em cada um.
 4. Se ficar executando, informar o último número exibido, ou dizer que não apareceu nenhum. Ainda não há causa comprovada para a demora.
 5. Se chegar ao menu, conferir um item com estoque zero, salvar, pausar e retomar. Verificar principal e backup antes de usar dados reais.
+
+## Reteste prioritário da V5.5 — arquivo JSON real e referência
+
+O vídeo da V5.4 chegou ao menu e às perguntas, mas mostrou Principal ausente no primeiro salvamento seguinte. O usuário informou arquivos TXT com a data ausente no nome. Não excluir nem renomear esses arquivos.
+
+1. Importar/assinar **PAPA PIZZA V5.5** e escolher Nova conferência, usando a mesma pasta V5 e o cadastro original.
+2. Confirmar os três avisos e verificar nome com data/hora e extensão JSON, não TXT.
+3. Registrar um item com estoque zero e comprar/processar positivos. A atualização deve concluir, gerar backup e abrir o menu novamente.
+4. Pausar, retomar, conferir as quantidades e revisar o mesmo ID sem duplicá-lo.
+5. Gerar resumo e verificar a extensão HTML e abertura visual.
+6. Se aparecer aviso de data ou extensão, registrar exatamente os valores exibidos. A correção ainda não foi homologada em aparelho.

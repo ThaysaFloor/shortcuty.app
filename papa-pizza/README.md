@@ -1,9 +1,9 @@
-# PAPA PIZZA V5.4
+# PAPA PIZZA V5.5
 
 ## Usar no Studio
 
 1. Baixe `PAPA_PIZZA_V5.shortcutystudio` deste repositório e importe no [Shortcuty Studio](https://studio.shortcuty.app/). A cópia `.shortcutystudio.json` contém exatamente o mesmo projeto.
-2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5.4** em Shortcut details.
+2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5.5** em Shortcut details.
 3. Execute **Check** e **Build**. Revise os avisos; o resultado esperado está em `validacao/`.
 4. Exporte o projeto pelo Studio. Depois de revisar o fluxo nativo, use o Download do Studio para assinar e instalar.
 5. Primeiro teste com uma cópia do cadastro e dados descartáveis. Não use como registro de produção até concluir o roteiro em `TESTES_IPHONE.md`.
@@ -38,7 +38,7 @@ iCloud Drive/Atalhos/
 
 Se já existirem pastas ou arquivos, preserve-os. Não selecione Atalhos como base na V5.4; selecione V5. O JSON original nunca é gravado pelo atalho. Nenhum outro arquivo de consulta é necessário: os arquivos das conferências e os resumos são gerados durante o uso.
 
-Existe um JSON principal por conferência e, após a primeira atualização, um backup. Antes de substituir o principal, o atalho verifica seu hash, grava o conteúdo anterior no backup e confere a releitura. Só depois grava e relê o principal. O backup guarda a versão anterior ao último checkpoint, não todas as alterações intermediárias.
+Existe um JSON principal por conferência e, após a primeira atualização, um backup. Antes de substituir o principal, o atalho verifica o hash da referência do arquivo aberto ou retornado por Salvar, grava o conteúdo anterior no backup e confere a releitura. Só depois grava e relê o principal. O backup guarda a versão anterior ao último checkpoint, não todas as alterações intermediárias.
 
 Se o principal estiver corrompido, execute **Continuar conferência → Recuperar backup**. A recuperação cria outra conferência com novo ID, preservando o principal problemático e registrando sua origem. O backup pode perder as respostas do checkpoint mais recente.
 
@@ -85,3 +85,9 @@ O vídeo da V5.2 mostrou ID 1 e Massa nos dois nomes, seguido da condição de d
 A checagem de IDs repetidos agora usa um dicionário em vez de uma varredura de todos os IDs anteriores; não há mais até 1770 comparações na entrada dos 60 produtos. Conferências novas não percorrem registros antigos, porque começam vazias. Isso reduz o trabalho de execução, mas ainda não foi cronometrado no aparelho.
 
 Nesta versão de diagnóstico, uma conferência nova exibe temporariamente **1/3 Cadastro validado**, **2/3 JSON preparado** e **3/3 Arquivo inicial salvo e relido**. Toque OK em cada etapa. Se continuar executando sem abrir o menu, informe o último número que apareceu. Essas mensagens não reaparecem a cada item e não substituem testes de gravação, pausa e recuperação.
+
+## Reteste V5.5 — data, extensão e referência do principal
+
+O vídeo completo da V5.4 chegou a 3/3, abriu o menu e coletou o primeiro item; depois o código não reencontrou o principal pelo nome. O usuário informou arquivos .txt com data ausente no nome. A V5.5 fixa explicitamente Data atual, valida o texto da data antes de formar nomes, aplica Set Name ao arquivo temporário antes de salvar e verifica a extensão retornada (.json para dados, .html para resumo). As atualizações usam a referência do arquivo salvo/aberto, e não uma nova busca pelo nome.
+
+Preserve os arquivos .txt existentes. Eles não são migrados ou renomeados automaticamente. Comece por **Nova conferência** na V5.5 e confirme que o novo arquivo tem data/hora e extensão .json. Depois confira um item, pause e retome. Os três avisos temporários de inicialização permanecem, agora com título Teste V5.5. O formato interno JSON continua versão 5; os nomes dos arquivos distribuídos foram mantidos para conservar os links.

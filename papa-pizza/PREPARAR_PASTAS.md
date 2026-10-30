@@ -1,4 +1,4 @@
-# Preparar as pastas para a V5.4
+# Preparar as pastas para a V5.5
 
 No app **Arquivos**, entre em **iCloud Drive → Atalhos** e confira esta estrutura:
 
@@ -20,7 +20,7 @@ Se você já tem o JSON em Atalhos, mantenha-o ali. Uma cópia intacta do arquiv
 
 ## No atalho
 
-1. Importe e assine a versão com o nome **PAPA PIZZA V5.4**.
+1. Importe e assine a versão com o nome **PAPA PIZZA V5.5**.
 2. Escolha Nova conferência.
 3. No seletor de pastas, abra `Atalhos → PAPA PIZZA → V5` e toque **Abrir** para selecionar a pasta **V5**.
 4. Quando solicitar o cadastro, volte à pasta Atalhos e selecione `Papa_Pizza.json`.
@@ -29,3 +29,5 @@ Se você já tem o JSON em Atalhos, mantenha-o ali. Uma cópia intacta do arquiv
 Nas próximas execuções, selecione a mesma pasta V5. O código abre as subpastas existentes; não tenta criá-las. Se faltar uma delas, o iOS poderá mostrar erro de localização antes de abrir o cadastro.
 
 Se o atalho continuar executando sem perguntas, informe o último número exibido, ou diga que nenhum dos três apareceu. Preparar as pastas elimina essa parte da configuração; ainda é necessário localizar a demora observada depois de ler o JSON.
+
+Para o reteste V5.5, preserve os .txt já criados. Escolha Nova conferência para gerar outro arquivo, agora com data e extensão JSON. Nenhuma renomeação manual dos arquivos antigos é necessária para esse teste.
