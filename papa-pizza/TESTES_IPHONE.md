@@ -42,3 +42,11 @@ As verificações estáticas e o compilador oficial não substituem esses testes
 - Selecionar a mesma pasta Atalhos e o mesmo JSON original. A leitura de Massa deve passar pela validação, sem trocar ou renomear esse produto.
 - Confirmar se chega ao primeiro item alfabético e se consegue salvar, pausar e retomar um registro.
 - Se a mensagem de comparação reaparecer, registrar a mensagem completa. Ainda não há confirmação de execução da V5.3 no aparelho.
+
+## Reteste prioritário da V5.4 — pastas manuais e etapas
+
+1. Preservar tudo que já existir. Preparar a árvore de PREPARAR_PASTAS.md, sem criar arquivos vazios.
+2. Importar/assinar o projeto com o nome **PAPA PIZZA V5.4**. Selecionar **V5**, não Atalhos, no primeiro seletor; depois selecionar o JSON original.
+3. Registrar se aparecem 1/3 Cadastro validado, 2/3 JSON preparado e 3/3 Arquivo inicial salvo e relido. Tocar OK em cada um.
+4. Se ficar executando, informar o último número exibido, ou dizer que não apareceu nenhum. Ainda não há causa comprovada para a demora.
+5. Se chegar ao menu, conferir um item com estoque zero, salvar, pausar e retomar. Verificar principal e backup antes de usar dados reais.

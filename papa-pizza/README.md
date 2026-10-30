@@ -1,9 +1,9 @@
-# PAPA PIZZA V5.3
+# PAPA PIZZA V5.4
 
 ## Usar no Studio
 
 1. Baixe `PAPA_PIZZA_V5.shortcutystudio` deste repositório e importe no [Shortcuty Studio](https://studio.shortcuty.app/). A cópia `.shortcutystudio.json` contém exatamente o mesmo projeto.
-2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5.3** em Shortcut details.
+2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5.4** em Shortcut details.
 3. Execute **Check** e **Build**. Revise os avisos; o resultado esperado está em `validacao/`.
 4. Exporte o projeto pelo Studio. Depois de revisar o fluxo nativo, use o Download do Studio para assinar e instalar.
 5. Primeiro teste com uma cópia do cadastro e dados descartáveis. Não use como registro de produção até concluir o roteiro em `TESTES_IPHONE.md`.
@@ -23,16 +23,20 @@
 
 ## Arquivos e recuperação
 
-Depois do menu, selecione uma pasta-base **existente** no iCloud Drive, por exemplo `Atalhos`. Use essa mesma pasta em todas as execuções. Não selecione `PAPA PIZZA`, `V5` ou suas subpastas. Dentro da base escolhida, a V5.1 cria cada nível separadamente:
+Prepare antes a estrutura de [PREPARAR_PASTAS.md](PREPARAR_PASTAS.md). O único arquivo de entrada é o `Papa_Pizza.json` original, que pode continuar em Atalhos.
+
+Depois do menu, selecione **a pasta V5**, em `iCloud Drive/Atalhos/PAPA PIZZA/V5`, e use sempre a mesma pasta. A V5.4 apenas abre suas três subpastas existentes; não cria pastas automaticamente:
 
 ```text
-PAPA PIZZA/V5/
-  Conferencias/Conferencia_<data-hora-milissegundos>-<numero>.json
-  Backups/Conferencia_<mesmo-id>.json
-  Resumos/Resumo_<id>_<data-hora>_<numero>.html
+iCloud Drive/Atalhos/
+  Papa_Pizza.json
+  PAPA PIZZA/V5/
+    Conferencias/
+    Backups/
+    Resumos/
 ```
 
-A V5.1 não depende da localização padrão implícita do Shortcuts. O seletor aparece em cada execução para fornecer uma referência válida à pasta-base; escolher uma base diferente mostra outro conjunto de históricos. O cadastro original pode ser escolhido no iCloud; ele nunca é gravado pelo atalho.
+Se já existirem pastas ou arquivos, preserve-os. Não selecione Atalhos como base na V5.4; selecione V5. O JSON original nunca é gravado pelo atalho. Nenhum outro arquivo de consulta é necessário: os arquivos das conferências e os resumos são gerados durante o uso.
 
 Existe um JSON principal por conferência e, após a primeira atualização, um backup. Antes de substituir o principal, o atalho verifica seu hash, grava o conteúdo anterior no backup e confere a releitura. Só depois grava e relê o principal. O backup guarda a versão anterior ao último checkpoint, não todas as alterações intermediárias.
 
@@ -75,3 +79,9 @@ O vídeo da V5.1 avançou pela preparação de pastas e seleção do JSON, mas p
 ## Comparações textuais na V5.3
 
 O vídeo da V5.2 mostrou ID 1 e Massa nos dois nomes, seguido da condição de divergência. A V5.3 mantém a validação e escreve o operando direito das dez comparações entre variáveis de texto como uma string interpolada. O grafo oficial agora usa WFTextTokenString nessas entradas WFConditionalActionString, em vez de WFTextTokenAttachment. Isso alcança nomes, IDs, hash e releitura de arquivos. O teste estático verifica esse formato, mas o comportamento no iPhone ainda precisa ser confirmado. O cadastro e o formato de armazenamento não mudaram.
+
+## Reteste V5.4
+
+A checagem de IDs repetidos agora usa um dicionário em vez de uma varredura de todos os IDs anteriores; não há mais até 1770 comparações na entrada dos 60 produtos. Conferências novas não percorrem registros antigos, porque começam vazias. Isso reduz o trabalho de execução, mas ainda não foi cronometrado no aparelho.
+
+Nesta versão de diagnóstico, uma conferência nova exibe temporariamente **1/3 Cadastro validado**, **2/3 JSON preparado** e **3/3 Arquivo inicial salvo e relido**. Toque OK em cada etapa. Se continuar executando sem abrir o menu, informe o último número que apareceu. Essas mensagens não reaparecem a cada item e não substituem testes de gravação, pausa e recuperação.

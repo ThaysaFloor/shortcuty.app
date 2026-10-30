@@ -1,4 +1,4 @@
-# PAPA PIZZA V5.3 — acoes nativas diretas; execucao corrigida pendente no iPhone.
+# PAPA PIZZA V5.4 — acoes nativas diretas; execucao corrigida pendente no iPhone.
 # Cadastro original somente leitura. Nenhuma funcao auxiliar ou condicao composta.
 shortcut:
   modo = "SAIR"
@@ -14,16 +14,17 @@ shortcut:
   if modo == "SAIR":
     flow.stop()
 
-  alert("Selecione uma pasta-base EXISTENTE no iCloud Drive, por exemplo Atalhos. Use a MESMA pasta nas proximas execucoes. Nao selecione as subpastas PAPA PIZZA ou V5.", title: "Pasta-base do PAPA PIZZA")
+  alert("Selecione a pasta V5 em iCloud Drive/Atalhos/PAPA PIZZA/V5. Ela deve conter Conferencias, Backups e Resumos. Use sempre esta mesma pasta.", title: "Pastas prontas")
   bases = files.choose(picking_mode: "Folders", select_multiple: false)
   base = item(bases, at: 1)
   if base has no value:
     flow.stop()
-  raiz = files.create_folder(folder: base, path: "PAPA PIZZA")
-  versaoPasta = files.create_folder(folder: raiz, path: "V5")
-  pasta = files.create_folder(folder: versaoPasta, path: "Conferencias")
-  backups = files.create_folder(folder: versaoPasta, path: "Backups")
-  resumos = files.create_folder(folder: versaoPasta, path: "Resumos")
+  pastasConferencias = files.open(folder: base, path: "Conferencias", folder_contents: false, error_if_missing: true, show_picker: false)
+  pasta = item(pastasConferencias, at: 1)
+  pastasBackups = files.open(folder: base, path: "Backups", folder_contents: false, error_if_missing: true, show_picker: false)
+  backups = item(pastasBackups, at: 1)
+  pastasResumos = files.open(folder: base, path: "Resumos", folder_contents: false, error_if_missing: true, show_picker: false)
+  resumos = item(pastasResumos, at: 1)
   ordem = list(["18", "53", "59", "31", "12", "6", "37", "38", "36", "56", "55", "49", "33", "32", "3", "7", "24", "13", "19", "25", "57", "41", "44", "40", "43", "47", "8", "46", "26", "54", "50", "5", "21", "42", "45", "35", "9", "34", "29", "1", "2", "27", "20", "48", "30", "28", "17", "60", "23", "11", "15", "4", "22", "52", "10", "14", "16", "39", "51", "58"])
   nomesOrdenados = list(["Abacaxi Picado", "Açúcar", "Álcool", "Alho Frito", "Alho Poró Fatiado", "Bacon Frito", "Bobina Grande", "Bobina Impressora", "Bobina Pequena", "Bombril", "Bucha", "Cachaça", "Caixa 30", "Caixa 35", "Calabresa Fatiada", "Carne Seca", "Catupiry", "Cebola Fatiada", "Champignon", "Cheddar", "Cloro", "Coca Normal 1,5", "Coca Normal 600", "Coca Zero 1,5", "Coca Zero 600", "Coloral", "Costela", "Creme de Alho", "Creme De Leite", "Detergente", "Fermento", "Frango Temperado", "Gorgonzola", "Guaraná 1,5", "Guaraná 600", "Ketchup", "Lombo Fatiado", "Maionese", "Manjericão", "Massa", "Molho", "Molho Barbecue", "Muçarela Ralada", "Óleo", "Orégano", "Ovo Cozido", "Palmito", "Papel Toalha", "Parmesão", "Pepperoni", "Pimentão Picado", "Presunto Fatiado", "Provolone", "Sal", "Salaminho", "Tomate Picado", "Tomate Seco", "Touca", "Trigo", "Veja"])
   referencia = data({"1": "Massa", "2": "Molho", "3": "Calabresa Fatiada", "4": "Presunto Fatiado", "5": "Frango Temperado", "6": "Bacon Frito", "7": "Carne Seca", "8": "Costela", "9": "Lombo Fatiado", "10": "Salaminho", "11": "Pepperoni", "12": "Alho Poró Fatiado", "13": "Cebola Fatiada", "14": "Tomate Picado", "15": "Pimentão Picado", "16": "Tomate Seco", "17": "Palmito", "18": "Abacaxi Picado", "19": "Champignon", "20": "Muçarela Ralada", "21": "Gorgonzola", "22": "Provolone", "23": "Parmesão", "24": "Catupiry", "25": "Cheddar", "26": "Creme De Leite", "27": "Molho Barbecue", "28": "Ovo Cozido", "29": "Manjericão", "30": "Orégano", "31": "Alho Frito", "32": "Caixa 35", "33": "Caixa 30", "34": "Maionese", "35": "Ketchup", "36": "Bobina Pequena", "37": "Bobina Grande", "38": "Bobina Impressora", "39": "Touca", "40": "Coca Zero 1,5", "41": "Coca Normal 1,5", "42": "Guaraná 1,5", "43": "Coca Zero 600", "44": "Coca Normal 600", "45": "Guaraná 600", "46": "Creme de Alho", "47": "Coloral", "48": "Óleo", "49": "Cachaça", "50": "Fermento", "51": "Trigo", "52": "Sal", "53": "Açúcar", "54": "Detergente", "55": "Bucha", "56": "Bombril", "57": "Cloro", "58": "Veja", "59": "Álcool", "60": "Papel Toalha"})
@@ -89,7 +90,7 @@ shortcut:
     selecionado = choose(listaHistorico)
     partesSelecionado = text.detect(input: selecionado)
     nomeSelecionado = combine(partesSelecionado, separator: "")
-    arquivosLidos = files.open(folder: pastaLeitura, path: nomeSelecionado, error_if_missing: true)
+    arquivosLidos = files.open(folder: pastaLeitura, path: nomeSelecionado, error_if_missing: true, show_picker: false)
     arquivoLidoBruto = item(arquivosLidos, at: 1)
     arquivoLido = as_type(arquivoLidoBruto, "File")
     hashesLidos = data.hash(input: arquivoLido, algorithm: "SHA256")
@@ -197,7 +198,7 @@ shortcut:
   if quantidadeProdutos != 60:
     alert("Esperados os 60 produtos originais. Nenhum cadastro sera alterado.", title: "Cadastro invalido")
     flow.stop()
-  idsVistos = list([])
+  idsVistos = data({})
   for item in itensCadastro:
     produto = as_type(item, "Dictionary")
     campoBruto_6 = data.lookup(input: produto, dictionary_key: "id")
@@ -221,55 +222,58 @@ shortcut:
     if nomeProduto != "\(esperado)":
       alert("A comparacao dos nomes divergiu.\nID: [\(idProduto)]\nNome lido: [\(nomeProduto)]\nNome esperado: [\(esperado)]\nNenhum registro foi gravado. O cadastro original foi preservado.", title: "Diagnostico do cadastro")
       flow.stop()
-    for item in idsVistos:
-      partesVisto = text.detect(input: item)
-      visto = combine(partesVisto, separator: "")
-      if visto == "\(idProduto)":
-        alert("O cadastro possui IDs repetidos.", title: "Cadastro invalido")
-        flow.stop()
-    variables.append(name: "idsVistos", value: idProduto)
+    idRepetido = data.lookup(input: idsVistos, dictionary_key: idProduto)
+    if idRepetido has value:
+      alert("O cadastro possui IDs repetidos.", title: "Cadastro invalido")
+      flow.stop()
+    idsVistos = data.set_value(dictionary: idsVistos, key: idProduto, value: "SIM")
 
-  # Validate stored rows once, without regenerating the original catalog.
-  for item in ordem:
-    partesId = text.detect(input: item)
-    idLinha = combine(partesId, separator: "")
-    campoBruto_9 = data.lookup(input: registros, dictionary_key: idLinha)
-    textoLinha = ""
-    if campoBruto_9 has value:
-      campoPartes_9 = text.detect(input: campoBruto_9)
-      textoLinha = combine(campoPartes_9, separator: "")
-    if textoLinha is not empty:
-      linhaBruta = data.decode_json(input: textoLinha)
-      linha = as_type(linhaBruta, "Dictionary")
-      campoBruto_10 = data.lookup(input: linha, dictionary_key: "estoque")
-      estoqueLinha = ""
-      if campoBruto_10 has value:
-        campoPartes_10 = text.detect(input: campoBruto_10)
-        estoqueLinha = combine(campoPartes_10, separator: "")
-      campoBruto_11 = data.lookup(input: linha, dictionary_key: "comprar")
-      compraLinha = ""
-      if campoBruto_11 has value:
-        campoPartes_11 = text.detect(input: campoBruto_11)
-        compraLinha = combine(campoPartes_11, separator: "")
-      campoBruto_12 = data.lookup(input: linha, dictionary_key: "processar")
-      processoLinha = ""
-      if campoBruto_12 has value:
-        campoPartes_12 = text.detect(input: campoBruto_12)
-        processoLinha = combine(campoPartes_12, separator: "")
-      valoresLinha = text("\(estoqueLinha)|\(compraLinha)|\(processoLinha)")
-      linhasValidas = match(valoresLinha, pattern: "^[0-9]{1,9}\\|[0-9]{1,9}\\|[0-9]{1,9}$")
-      numeroLinhas = count(linhasValidas)
-      if numeroLinhas != 1:
-        alert("Um registro possui quantidades invalidas. Tente recuperar o backup.", title: "Arquivo invalido")
-        flow.stop()
-      totalConferidos = totalConferidos + 1
-  chavesRegistros = data.lookup(input: registros, get_dictionary_value_type: "All Keys")
-  numeroChaves = 0
-  if chavesRegistros has value:
-    numeroChaves = count(chavesRegistros)
-  if numeroChaves != totalConferidos:
-    alert("Existem registros desconhecidos ou vazios. Tente recuperar o backup.", title: "Arquivo invalido")
-    flow.stop()
+  if modo == "NOVA":
+    alert("1/3 - Cadastro validado. Os 60 produtos foram lidos. Toque OK para preparar o arquivo da conferencia.", title: "Teste V5.4", cancel: false)
+
+  # Conferencias novas comecam vazias; validar registros somente ao reabrir.
+  if modo != "NOVA":
+    # Validate stored rows once, without regenerating the original catalog.
+    for item in ordem:
+      partesId = text.detect(input: item)
+      idLinha = combine(partesId, separator: "")
+      campoBruto_9 = data.lookup(input: registros, dictionary_key: idLinha)
+      textoLinha = ""
+      if campoBruto_9 has value:
+        campoPartes_9 = text.detect(input: campoBruto_9)
+        textoLinha = combine(campoPartes_9, separator: "")
+      if textoLinha is not empty:
+        linhaBruta = data.decode_json(input: textoLinha)
+        linha = as_type(linhaBruta, "Dictionary")
+        campoBruto_10 = data.lookup(input: linha, dictionary_key: "estoque")
+        estoqueLinha = ""
+        if campoBruto_10 has value:
+          campoPartes_10 = text.detect(input: campoBruto_10)
+          estoqueLinha = combine(campoPartes_10, separator: "")
+        campoBruto_11 = data.lookup(input: linha, dictionary_key: "comprar")
+        compraLinha = ""
+        if campoBruto_11 has value:
+          campoPartes_11 = text.detect(input: campoBruto_11)
+          compraLinha = combine(campoPartes_11, separator: "")
+        campoBruto_12 = data.lookup(input: linha, dictionary_key: "processar")
+        processoLinha = ""
+        if campoBruto_12 has value:
+          campoPartes_12 = text.detect(input: campoBruto_12)
+          processoLinha = combine(campoPartes_12, separator: "")
+        valoresLinha = text("\(estoqueLinha)|\(compraLinha)|\(processoLinha)")
+        linhasValidas = match(valoresLinha, pattern: "^[0-9]{1,9}\\|[0-9]{1,9}\\|[0-9]{1,9}$")
+        numeroLinhas = count(linhasValidas)
+        if numeroLinhas != 1:
+          alert("Um registro possui quantidades invalidas. Tente recuperar o backup.", title: "Arquivo invalido")
+          flow.stop()
+        totalConferidos = totalConferidos + 1
+    chavesRegistros = data.lookup(input: registros, get_dictionary_value_type: "All Keys")
+    numeroChaves = 0
+    if chavesRegistros has value:
+      numeroChaves = count(chavesRegistros)
+    if numeroChaves != totalConferidos:
+      alert("Existem registros desconhecidos ou vazios. Tente recuperar o backup.", title: "Arquivo invalido")
+      flow.stop()
 
   idAtual = ""
   cursor = 1
@@ -425,6 +429,8 @@ shortcut:
       if idTeste != "\(identificador)":
         alert("A serializacao JSON nao preservou o identificador. Nada sera gravado.", title: "JSON invalido")
         flow.stop()
+      if operacao == "INICIAR":
+        alert("2/3 - JSON preparado. Toque OK para gravar o arquivo inicial no iCloud Drive.", title: "Teste V5.4", cancel: false)
       existentes = files.contents(folder: pasta)
       arquivoAtual = null
       for item in existentes:
@@ -467,6 +473,8 @@ shortcut:
       hashesGravados = data.hash(input: principalGravado, algorithm: "SHA256")
       ultimoHash = combine(hashesGravados, separator: "")
       precisaSalvar = "NAO"
+      if operacao == "INICIAR":
+        alert("3/3 - Arquivo inicial salvo e relido. Toque OK para abrir o menu dos produtos.", title: "Teste V5.4", cancel: false)
 
     if operacao == "PAUSAR":
       alert("Conferencia salva. Use Continuar conferencia para retomar no primeiro item nao conferido.", title: "Pausada")

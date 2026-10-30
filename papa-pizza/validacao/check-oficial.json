@@ -2,16 +2,50 @@
   "diagnostics": [
     {
       "code": "SS2101",
-      "message": "files.create_folder.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "message": "files.open.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 63,
+          "column": 138,
           "line": 22
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 3,
           "line": 22
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "files.open.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 128,
+          "line": 24
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 3,
+          "line": 24
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "files.open.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 128,
+          "line": 26
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 3,
+          "line": 26
         }
       },
       "related": [],
@@ -23,12 +57,29 @@
       "range": {
         "end": {
           "column": 59,
-          "line": 50
+          "line": 51
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 5,
-          "line": 50
+          "line": 51
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "files.contents.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 61,
+          "line": 64
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 5,
+          "line": 64
         }
       },
       "related": [],
@@ -40,12 +91,29 @@
       "range": {
         "end": {
           "column": 41,
-          "line": 89
+          "line": 90
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 5,
-          "line": 89
+          "line": 90
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "files.open.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 120,
+          "line": 93
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 5,
+          "line": 93
         }
       },
       "related": [],
@@ -57,12 +125,12 @@
       "range": {
         "end": {
           "column": 52,
-          "line": 94
+          "line": 95
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 5,
-          "line": 94
+          "line": 95
         }
       },
       "related": [],
@@ -74,12 +142,12 @@
       "range": {
         "end": {
           "column": 48,
-          "line": 99
+          "line": 100
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 5,
-          "line": 99
+          "line": 100
         }
       },
       "related": [],
@@ -91,12 +159,12 @@
       "range": {
         "end": {
           "column": 34,
-          "line": 130
+          "line": 131
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 5,
-          "line": 130
+          "line": 131
         }
       },
       "related": [],
@@ -108,12 +176,12 @@
       "range": {
         "end": {
           "column": 45,
-          "line": 144
+          "line": 145
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 5,
-          "line": 144
+          "line": 145
         }
       },
       "related": [],
@@ -125,12 +193,12 @@
       "range": {
         "end": {
           "column": 52,
-          "line": 152
+          "line": 153
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 5,
-          "line": 152
+          "line": 153
         }
       },
       "related": [],
@@ -142,12 +210,12 @@
       "range": {
         "end": {
           "column": 57,
-          "line": 166
+          "line": 167
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 7,
-          "line": 166
+          "line": 167
         }
       },
       "related": [],
@@ -159,12 +227,12 @@
       "range": {
         "end": {
           "column": 44,
-          "line": 196
+          "line": 197
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 3,
-          "line": 196
+          "line": 197
         }
       },
       "related": [],
@@ -176,12 +244,12 @@
       "range": {
         "end": {
           "column": 42,
-          "line": 202
+          "line": 203
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 5,
-          "line": 202
+          "line": 203
         }
       },
       "related": [],
@@ -193,29 +261,12 @@
       "range": {
         "end": {
           "column": 37,
-          "line": 221
+          "line": 222
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 5,
-          "line": 221
-        }
-      },
-      "related": [],
-      "severity": "warning"
-    },
-    {
-      "code": "SS2101",
-      "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
-      "range": {
-        "end": {
-          "column": 34,
-          "line": 227
-        },
-        "file": "Main.shortcuty",
-        "start": {
-          "column": 7,
-          "line": 227
+          "line": 222
         }
       },
       "related": [],
@@ -226,13 +277,13 @@
       "message": "data.decode_json.input expects Dictionary, got Text. Shortcuts supports this content conversion; success still depends on the input at runtime.",
       "range": {
         "end": {
-          "column": 55,
-          "line": 242
+          "column": 57,
+          "line": 246
         },
         "file": "Main.shortcuty",
         "start": {
-          "column": 7,
-          "line": 242
+          "column": 9,
+          "line": 246
         }
       },
       "related": [],
@@ -243,13 +294,13 @@
       "message": "count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 42,
-          "line": 261
+          "column": 44,
+          "line": 265
         },
         "file": "Main.shortcuty",
         "start": {
-          "column": 7,
-          "line": 261
+          "column": 9,
+          "line": 265
         }
       },
       "related": [],
@@ -260,13 +311,13 @@
       "message": "condition.WFConditionalActionString expects Value, got Number. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 38,
-          "line": 270
+          "column": 40,
+          "line": 274
         },
         "file": "Main.shortcuty",
         "start": {
-          "column": 3,
-          "line": 270
+          "column": 5,
+          "line": 274
         }
       },
       "related": [],
@@ -278,12 +329,12 @@
       "range": {
         "end": {
           "column": 33,
-          "line": 298
+          "line": 302
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 13,
-          "line": 298
+          "line": 302
         }
       },
       "related": [],
@@ -295,12 +346,12 @@
       "range": {
         "end": {
           "column": 46,
-          "line": 343
+          "line": 347
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 11,
-          "line": 343
+          "line": 347
         }
       },
       "related": [],
@@ -312,12 +363,12 @@
       "range": {
         "end": {
           "column": 63,
-          "line": 372
+          "line": 376
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 9,
-          "line": 372
+          "line": 376
         }
       },
       "related": [],
@@ -329,12 +380,12 @@
       "range": {
         "end": {
           "column": 41,
-          "line": 391
+          "line": 395
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 7,
-          "line": 391
+          "line": 395
         }
       },
       "related": [],
@@ -346,12 +397,12 @@
       "range": {
         "end": {
           "column": 41,
-          "line": 397
+          "line": 401
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 7,
-          "line": 397
+          "line": 401
         }
       },
       "related": [],
@@ -363,12 +414,12 @@
       "range": {
         "end": {
           "column": 41,
-          "line": 403
+          "line": 407
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 7,
-          "line": 403
+          "line": 407
         }
       },
       "related": [],
@@ -380,12 +431,12 @@
       "range": {
         "end": {
           "column": 53,
-          "line": 418
+          "line": 422
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 7,
-          "line": 418
+          "line": 422
         }
       },
       "related": [],
@@ -397,12 +448,29 @@
       "range": {
         "end": {
           "column": 40,
-          "line": 425
+          "line": 429
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 7,
-          "line": 425
+          "line": 429
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "files.contents.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 49,
+          "line": 434
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 7,
+          "line": 434
         }
       },
       "related": [],
@@ -414,12 +482,12 @@
       "range": {
         "end": {
           "column": 45,
-          "line": 433
+          "line": 439
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 9,
-          "line": 433
+          "line": 439
         }
       },
       "related": [],
@@ -431,12 +499,12 @@
       "range": {
         "end": {
           "column": 58,
-          "line": 437
+          "line": 443
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 9,
-          "line": 437
+          "line": 443
         }
       },
       "related": [],
@@ -448,12 +516,29 @@
       "range": {
         "end": {
           "column": 41,
-          "line": 440
+          "line": 446
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 9,
-          "line": 440
+          "line": 446
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "files.save.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 127,
+          "line": 451
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 9,
+          "line": 451
         }
       },
       "related": [],
@@ -465,12 +550,29 @@
       "range": {
         "end": {
           "column": 40,
-          "line": 449
+          "line": 455
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 9,
-          "line": 449
+          "line": 455
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "files.save.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 129,
+          "line": 465
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 7,
+          "line": 465
         }
       },
       "related": [],
@@ -482,12 +584,12 @@
       "range": {
         "end": {
           "column": 36,
-          "line": 463
+          "line": 469
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 7,
-          "line": 463
+          "line": 469
         }
       },
       "related": [],
@@ -499,12 +601,29 @@
       "range": {
         "end": {
           "column": 65,
-          "line": 509
+          "line": 517
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 11,
-          "line": 509
+          "line": 517
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "files.save.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 133,
+          "line": 570
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 7,
+          "line": 570
         }
       },
       "related": [],
@@ -516,12 +635,12 @@
       "range": {
         "end": {
           "column": 33,
-          "line": 566
+          "line": 574
         },
         "file": "Main.shortcuty",
         "start": {
           "column": 7,
-          "line": 566
+          "line": 574
         }
       },
       "related": [],
@@ -531,7 +650,7 @@
   "ok": true,
   "rangeEncoding": "unicode-scalar",
   "sourceHashes": {
-    "Main.shortcuty": "0aea6b961a118aabff06e2031a445ac2723908f28329a9e6801846a8bf444afa"
+    "Main.shortcuty": "cee97dd7a82e50ce1e1d959ad5eb484ac2e8acd4c05e5c4b720fff2e94391b13"
   },
   "version": 1
 }

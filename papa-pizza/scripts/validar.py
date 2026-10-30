@@ -100,7 +100,7 @@ def validate():
         if a["call"] == "flow.condition"
         and isinstance(a["parameters"].get("WFConditionalActionString"), dict)
     ]
-    assert len(text_comparisons) == 10
+    assert len(text_comparisons) == 9
     comparison_variables = set()
     for operand in text_comparisons:
         assert operand["WFSerializationType"] == "WFTextTokenString"
@@ -110,10 +110,10 @@ def validate():
         assert attachments
         comparison_variables.update(token["VariableName"] for token in attachments.values())
     assert comparison_variables == {
-        "nomeEsperado", "esperado", "idProduto", "nomeAtual", "identificador",
+        "nomeEsperado", "esperado", "nomeAtual", "identificador",
         "nomeSessao", "ultimoHash", "ultimoJson", "novoJson", "html"
     }
-    print("PASS: all 10 dynamic text comparison operands use token strings, preserving their variables")
+    print("PASS: all 9 dynamic text comparison operands use token strings, preserving their variables")
 
     groups = collections.defaultdict(collections.Counter)
     for action in actions:
@@ -131,18 +131,48 @@ def validate():
         assert action["call"] == "variables.set"
         return origin(action["parameters"]["WFInput"])
 
-    folders = [a for a in actions if a["call"] == "files.create_folder"]
-    assert [a["parameters"]["WFFilePath"] for a in folders] == [
-        "PAPA PIZZA", "V5", "Conferencias", "Backups", "Resumos"
+    assert not any(a["call"] == "files.create_folder" for a in actions)
+    folder_reads = [
+        a for a in actions
+        if a["call"] == "files.open"
+        and a["parameters"].get("WFGetFilePath") in ("Conferencias", "Backups", "Resumos")
     ]
-    assert [origin(a["parameters"]["WFFolder"]) for a in folders] == [
-        "base", "raiz", "versaoPasta", "versaoPasta", "versaoPasta"
-    ]
+    assert [a["parameters"]["WFGetFilePath"] for a in folder_reads] == ["Conferencias", "Backups", "Resumos"]
+    assert all(origin(a["parameters"]["WFFile"]) == "base" for a in folder_reads)
+    assert all(a["parameters"]["WFShowFilePicker"] is False for a in folder_reads)
+    assert all(a["parameters"]["WFFileErrorIfNotFound"] is True for a in folder_reads)
     pickers = [a for a in actions if a["call"] == "files.choose"]
     assert pickers[0]["parameters"]["WFPickingMode"] == "Folders"
-    assert pickers[0]["index"] < folders[0]["index"]
-    assert all("/" not in a["parameters"]["WFFilePath"] for a in folders)
-    print("PASS: explicit folder picker and five anchored parent/child creation steps")
+    assert pickers[0]["index"] < folder_reads[0]["index"]
+    print("PASS: user-selected base, three existing subfolders, no automatic folder creation")
+
+    repeats = [a for a in actions if a["call"] == "flow.repeat_each"]
+    assert not any(
+        a["parameters"].get("WFInput", {}).get("Value", {}).get("VariableName") == "idsVistos"
+        for a in repeats
+    )
+    duplicate_updates = [
+        a for a in actions if a["call"] == "data.set_value"
+        and a["parameters"].get("WFDictionary", {}).get("Value", {}).get("VariableName") == "idsVistos"
+    ]
+    assert len(duplicate_updates) == 1
+    row_validation = next(
+        a for a in repeats
+        if a["parameters"].get("WFControlFlowMode", 0) == 0
+        and a["parameters"].get("WFInput", {}).get("Value", {}).get("VariableName") == "ordem"
+    )
+    saved_guard = next(
+        a for a in actions if a["call"] == "flow.condition"
+        and a["parameters"].get("WFCondition") == 5
+        and a["parameters"].get("WFConditionalActionString") == "NOVA"
+    )
+    guard_end = next(
+        a for a in actions
+        if a["parameters"].get("GroupingIdentifier") == saved_guard["parameters"]["GroupingIdentifier"]
+        and a["parameters"].get("WFControlFlowMode") == 2
+    )
+    assert saved_guard["index"] < row_validation["index"] < guard_end["index"]
+    print("PASS: duplicate IDs use dictionary updates; saved-row validation is skipped for new sessions")
 
     saves = [a for a in actions if a["call"] == "files.save"]
     assert len(saves) == 3

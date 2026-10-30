@@ -1,79 +1,59 @@
-# Revisão aprovada — PAPA PIZZA V5.3
+# PAPA PIZZA V5.4 — entrega para reteste
 
-## Resultado real
+## Resultado verificável
 
-O projeto foi submetido ao Check e ao Build oficiais do Shortcuty Studio, compilador 0.1.4. Ambos concluíram sem erros, com 31 avisos. O Build gerou **1,191 ações nativas**, contra 5.023 da V4: redução de **79.7%**. Ainda é um fluxo com mais de mil ações; rapidez e memória no iPhone permanecem desconhecidas.
+Build oficial do Shortcuty Studio, compilador 0.1.4: **1028 ações, 0 erros e 38 avisos**. Redução de 79.5% em relação às 5023 ações da V4. Os arquivos fonte/projeto e o cadastro estão vinculados às evidências por hashes no manifesto. O schema oficial também é verificado localmente.
 
-Evidências completas em `validacao/build-oficial.json`, `check-oficial.json`, `diagnosticos.json` e `manifesto.json`. O manifesto vincula as evidências aos hashes do código, projeto e cadastro. O schema oficial do projeto também foi validado.
+O Check oficial deve corresponder aos mesmos arquivos; sua evidência está em `validacao/check-oficial.json`. O roteiro de verificação está em `scripts/validar.py`. Não houve assinatura ou execução da V5.4 no iPhone neste trabalho.
 
-A V5.3 não foi executada em iPhone, assinada ou instalada neste trabalho. O vídeo enviado pelo usuário mostrou a V5 falhando na preparação de pastas, antes de abrir o cadastro. A compatibilidade de versão mínima do iOS no resultado oficial é parcial; não há versão mínima comprovada para o conjunto.
+## Observação que motivou esta revisão
 
-## Proposta implementada
+No vídeo da V5.3, não aparece novamente o alerta Massa/Massa. Após a escolha do cadastro o atalho permanece em execução e não mostra o menu durante a gravação. O usuário confirmou que continua executando sem perguntas mesmo após aguardar. A etapa exata em que a execução permanece ainda não está isolada; não se concluiu que o cadastro está incorreto.
 
-1. Lista alfabética única dos mesmos 60 produtos, com IDs originais. Grupos retirados da interface e preservados no cadastro e na cópia histórica.
-2. Estoque atual, quantidade para comprar e quantidade para processar, sem perguntas redundantes de OK/Pendência ou Sim/Não. Compra e processamento podem coexistir. Zero é válido; ausência de registro indica não conferido.
-3. Próximo item, deixar para depois, revisar qualquer item, pausar e finalizar. Retomada no primeiro não conferido; uma revisão substitui a chave do ID.
-4. Confirmação de encerramento mostrando quantos itens faltam. Encerramento parcial permitido e marcado FINALIZADA. Conferências encerradas ficam somente para consulta.
-5. Tabela completa com 60 linhas e três listas: Não conferidos, Comprar e Processar. Itens OK continuam visíveis. Quantidades entre produtos não são somadas.
-6. Um JSON principal e um backup anterior por conferência; gravação após cada item completo. O backup é gravado e relido antes do principal. O hash detecta mudanças do principal desde sua leitura antes de iniciar a substituição.
-7. Recuperação por backup em nova conferência, preservando o principal problemático. Históricos anteriores e cadastro original não são apagados.
-8. Cinco conferências mais recentes e acesso às anteriores.
-9. Cópia do cadastro completo em cada sessão, para manter o significado dos históricos.
-10. Sem Lembretes, aplicações de terceiros, filtros interativos ou edição de sessões encerradas.
+A validação anterior de duplicatas percorria os IDs já vistos para cada produto: até 1770 comparações para 60 produtos, além das ações de leitura/conversão. A V5.4 usa consulta e inserção por chave em dicionário, mantendo a detecção de IDs repetidos sem a repetição interna. Não se faz a leitura de registros antigos em uma conferência nova, que começa vazia. São otimizações de trabalho executado, não uma medição de desempenho no aparelho.
 
-## Redução de complexidade
+Três avisos temporários foram adicionados somente na criação inicial: cadastro validado, JSON preparado e principal salvo/relido. Eles distinguem uma demora na validação, preparação do JSON, gravação ou entrada no menu. O último aviso exibido deve ser informado caso a execução não avance. Não são confirmações de permissão nem aparecem após cada item.
 
-Foi eliminada a reconstrução reiterada de listas/grupos e o salvamento duplicado em vários pontos. Há um único checkpoint no fluxo, com três pontos nativos de escrita: backup, principal e HTML. A estrutura por ID permite atualizar o item com `data.set_value`, usando seu contrato documentado de valor Text. Por isso cada linha é uma string JSON com três quantidades dentro do dicionário de registros; não foi forçada uma conexão Dictionary -> Text incompatível.
+## Pastas prontas, conforme solicitado
 
-Na V5.2 não há funções auxiliares definidas pelo projeto: leitura, entrada, gravação, data e escape usam ações diretas. O compilador ainda emite Set Variable para atribuições comuns; a contagem permanece acima de mil ações. A contagem de ações mede o grafo nativo, não o tempo de execução. O repeat de até 1000 interações não é 1000 cópias desse grafo; pausar/finalizar executam flow.stop imediatamente. No limite, o progresso já salvo pode ser retomado em outra execução.
+Prepare `iCloud Drive/Atalhos/PAPA PIZZA/V5/Conferencias`, `Backups` e `Resumos`. O atalho seleciona a pasta V5 e abre as subpastas existentes, com seletor adicional desativado e erro explícito se faltarem. Nenhuma ação nativa de criação de pastas permanece no Build. Veja `PREPARAR_PASTAS.md`.
 
-## Dados preservados e pastas
+O único arquivo de consulta para começar é Papa_Pizza.json. O original permanece em Atalhos ou no local escolhido pelo usuário e não é alterado. Não é necessário criar JSON vazio, planilha, índice ou arquivo de configuração. Principal, backup e HTML são gerados pelo atalho.
 
-`Papa_Pizza.json` foi copiado byte a byte, SHA-256 `b93b0daad59e491e88f6692d7ee22a3c5fa2c8851c8a55052cbdff4bba8b858b`: 60 IDs únicos e nove grupos. A ordem está em `ordem.json` e foi gerada ignorando acentos para comparação alfabética. IDs e nomes são conferidos ao abrir a sessão; uma alteração de cadastro exige nova geração do projeto.
+## Funcionalidades preservadas
 
-A V5 usa `PAPA PIZZA/V5/Conferencias`, `Backups` e `Resumos` dentro de uma pasta-base existente selecionada explicitamente no iCloud Drive. Os níveis são criados sequencialmente, sem dependência da raiz implícita Atalhos. Use a mesma base para reencontrar o histórico. Arquivos V3/V4 permanecem em suas pastas antigas, sem migração automática; não aparecem no histórico V5.
+Lista alfabética dos mesmos 60 produtos e IDs; três quantidades por item, incluindo estoque zero; comprar/processar simultâneos; próximo, deixar para depois, revisar, pausar e retomar; confirmação de encerramento parcial; finalizados somente para consulta; cinco recentes e anteriores; tabela completa e listas Não conferidos/Comprar/Processar; cadastro completo em cada sessão; JSON principal e backup anterior; recuperação em nova conferência; independência de Lembretes.
 
-## Limites e testes pendentes
+O armazenamento permanece no formato JSON V5. Os registros são strings JSON por ID para respeitar o contrato Text de data.set_value. Ausência de chave significa não conferido. Revisão substitui a chave e não cria duplicata.
 
-- Não há transação atômica ou bloqueio distribuído no iCloud. Use um gravador por conferência. Uma alteração concorrente entre a verificação do hash e a escrita ainda pode gerar conflito.
-- Um backup guarda o checkpoint anterior, não todo o histórico de alterações. Se a última gravação principal falhar, o item mais recente pode precisar ser conferido novamente.
-- Uma falha nativa de leitura/gravação pode interromper o atalho; a recuperação é escolhida manualmente na próxima execução.
-- Entrada inválida ou cancelamento antes de completar as três perguntas não grava aquele item; os anteriores permanecem.
-- Materialização de Text em File por files.convert, nomes/extensões, JSON com objetos vazios, acentos, leitura/escrita do iCloud e abertura do HTML exigem teste real.
-- Não houve supressão de avisos, emprego de native_action para contornar o checker ou declaração de sucesso no iPhone. O roteiro completo está em `TESTES_IPHONE.md`.
+O backup é escrito e relido antes de atualizar o principal. O hash detecta alterações do principal desde a leitura antes de iniciar a substituição. Não há transação atômica ou bloqueio distribuído: use uma execução por conferência. Falhas nativas de iCloud podem interromper o atalho e requerer recuperação manual; o backup pode perder o checkpoint mais recente.
 
-## Regressão de pastas corrigida na V5.1
+## Evidências de integridade
 
-O vídeo mostrou o erro nativo “A localização não existe” no início da V5. Não houve evidência de leitura do cadastro ou gravação de conferência naquele teste. A causa exata entre a raiz implícita e os caminhos intermediários não pode ser isolada apenas pelo vídeo. A correção remove ambas as dependências: o usuário escolhe uma pasta-base existente e cada criação recebe explicitamente o resultado da pasta pai. Foram acrescentadas duas criações e um seletor de base; na V5.1, o Build passou de 1.179 para 1.191 ações. Não foi validada a execução corrigida no iPhone.
+Cadastro original preservado byte a byte, SHA-256 `b93b0daad59e491e88f6692d7ee22a3c5fa2c8851c8a55052cbdff4bba8b858b`: 60 IDs únicos e nove grupos. Os grupos continuam no arquivo e fora da interface. A referência exportada pelo compilador coincide com todos os pares ID/nome do original.
 
-## Reteste de leitura na V5.2
+As nove comparações restantes entre variáveis de texto mantêm WFTextTokenString, com referências dinâmicas. A comparação de duplicatas por texto foi substituída pela presença da chave no dicionário. Não houve supressão de avisos, remoção da validação do cadastro ou uso de native_action para contornar o checker.
 
-O segundo vídeo mostra a V5.1 chegando à escolha do JSON e, depois, à mensagem Cadastro divergente. A tabela de referência do grafo nativo coincide com os 60 pares ID/nome do JSON recebido. Isso não determina quais valores foram efetivamente lidos no aparelho e não prova uma divergência real do cadastro.
+## Limites
 
-Foram removidas funções auxiliares de leitura/retorno e substituídas todas as condições and/or por If simples. A validação continua presente, separada em ID ausente na referência e nome diferente, com diagnóstico dos valores lidos e esperados antes de qualquer gravação. Não houve mudança do cadastro, do formato de armazenamento V5, das pastas, do backup ou das funcionalidades aprovadas. Trata-se de uma revisão para reteste; a causa nativa exata ainda não está comprovada.
+V5.4 é uma revisão de diagnóstico ainda pendente de teste no iPhone. Abrir subpastas como referências de folder, materializar arquivos, JSON vazio, nomes/extensões, Unicode, backup, retomada, HTML e desempenho ainda precisam ser validados. O Build não homologa a execução. A compatibilidade mínima de iOS permanece parcialmente desconhecida no catálogo oficial.
 
-Ações nativas: V4 5.023 → V5 1.179 → V5.1 1.191 → V5.2 1.018. Os helpers removidos já não geram argumentos/retornos privados no grafo. A contagem não comprova desempenho no iPhone.
+O loop do fluxo é limitado a 1000 interações; pausar e finalizar usam flow.stop imediato. Ao atingir o limite, a execução avisa e pode ser retomada. Não se usa recursão. Arquivos V3/V4 e pastas antigas permanecem sem alteração e não aparecem no histórico V5.
 
-## Comparação de texto na V5.3
+## Avisos oficiais
 
-No vídeo da V5.2, o diagnóstico exibiu ID 1, nome lido Massa e nome esperado Massa, mas entrou no ramo de nomes diferentes. Os valores visíveis apontam para a comparação, e não justificam alterar o cadastro. O vídeo não fornece os bytes dos valores nem comprova a causa interna do iOS.
-
-A inspeção do grafo encontrou dez operandos direitos dinâmicos de WFConditionalActionString serializados como WFTextTokenAttachment. A V5.3 usa strings interpoladas no código-fonte: por exemplo, `if nomeProduto != "\(esperado)":`. O Build exporta agora WFTextTokenString, com string e attachmentsByRange, preservando a referência dinâmica ao valor esperado. A mudança foi aplicada também às comparações de nome de arquivo, ID, hash, backup e releitura do principal/HTML. As comparações numéricas e a validação dos produtos continuam presentes.
-
-Um teste de regressão inspeciona o grafo oficial e exige esse formato nas dez comparações. Isso comprova a mudança de serialização, não a execução no dispositivo. O cadastro original e o formato JSON V5 permanecem idênticos. Contagem atual: 1.018 ações, sem aumento em relação à V5.2.
-
-## Avisos oficiais pendentes
-
-- **1**: files.create_folder.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
+- **4**: files.open.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **6**: data.decode_json.input expects Dictionary, got Text. Shortcuts supports this content conversion; success still depends on the input at runtime.
+- **2**: files.contents.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: chooseFromList.WFInput expects Any | Dictionary | Image, got List<Text | Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: setVariable: cannot verify conversion from File | Native<WFFolderContentItem> to File; the cast will be attempted at runtime. Verify the producer type and test this input.
 - **5**: count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
-- **10**: condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
+- **9**: condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **3**: setVariable: cannot verify conversion from Value to Dictionary; the cast will be attempted at runtime. Verify the producer type and test this input.
 - **1**: count.Input expects Any | Text, got Value. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: condition.WFConditionalActionString expects Value, got Number. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: condition.WFNumberValue expects Value, got Number. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: setVariable: cannot verify conversion from File | Value to File; the cast will be attempted at runtime. Verify the producer type and test this input.
+- **3**: files.save.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 
-Os avisos não foram suprimidos. O Build não prova que o novo formato resolveu a falha observada no iPhone; é obrigatório retestar antes de usar dados de produção.
+A mudança para referências de pastas abertas por files.open acrescenta avisos de File | Native<WFFolderContentItem>. Eles foram mantidos e precisam de confirmação no aparelho; não são prova de segurança ou de falha.
