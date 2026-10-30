@@ -1,6 +1,6 @@
 # Validação obrigatória no iPhone
 
-Este roteiro ainda não foi concluído. O usuário executou a V5 e enviou vídeo do erro “A localização não existe” na preparação de pastas. A correção V5.1 ainda precisa ser executada no iPhone. Use dados descartáveis, mantenha cópias do cadastro e dos históricos e confirme a pasta do iCloud antes de começar.
+Este roteiro ainda não foi concluído. O usuário executou a V5 e enviou vídeo do erro “A localização não existe” na preparação de pastas. O segundo vídeo mostra a V5.1 avançando pela seleção de pastas e JSON, seguida da mensagem Cadastro divergente. A revisão V5.2 ainda precisa ser executada no iPhone. Use dados descartáveis, mantenha cópias do cadastro e dos históricos e confirme a pasta do iCloud antes de começar.
 
 1. **Instalação e abertura:** importar no Studio, executar Check/Build, revisar os avisos e assinar pelo Download. Confirmar abertura no iPhone e permissões do iCloud.
 2. **Cadastro:** selecionar uma cópia de `Papa_Pizza.json`. Conferir os 60 nomes e a ordem alfabética, especialmente nomes com acentos. Comparar o arquivo original antes/depois; ele deve permanecer idêntico.
@@ -27,3 +27,11 @@ As verificações estáticas e o compilador oficial não substituem esses testes
 - Confirmar que depois da preparação abre o seletor de Papa_Pizza.json. Cancelar se ainda não quiser conferir itens.
 - Executar novamente escolhendo exatamente a mesma base: a preparação deve reutilizar as pastas sem duplicá-las e permitir retomar os arquivos salvos nela.
 - Se houver falha, usar Mostrar e registrar a ação destacada e a mensagem. O Build não substitui esse reteste.
+
+## Reteste prioritário da V5.2
+
+- Importar/assinar o projeto cujo nome é **PAPA PIZZA V5.2**, para distinguir dos atalhos antigos.
+- Selecionar Atalhos como base e o mesmo JSON original; manter os arquivos existentes.
+- Confirmar se a comparação dos 60 produtos avança até o menu Próximo item.
+- Se houver mensagem Diagnostico do cadastro, registrar os valores entre colchetes: ID lido, nome lido e nome esperado. A mensagem não declara que o arquivo está incorreto; esses valores são necessários para isolar a causa.
+- Não renomear produtos, apagar arquivos ou dispensar a validação para contornar o erro.

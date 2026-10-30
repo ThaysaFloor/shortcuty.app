@@ -71,6 +71,29 @@ def validate():
     assert refs <= by_uuid.keys(), refs - by_uuid.keys()
     print("PASS: unique action identities and resolved native producer references")
 
+    reference_assignment = next(
+        a for a in actions
+        if a["call"] == "variables.set"
+        and a["parameters"].get("WFVariableName") == "referencia"
+    )
+    reference_uuid = reference_assignment["parameters"]["WFInput"]["Value"]["OutputUUID"]
+    reference_items = by_uuid[reference_uuid]["parameters"]["WFItems"]["Value"]["WFDictionaryFieldValueItems"]
+    exported_reference = {
+        row["WFKey"]["Value"]["string"]: row["WFValue"]["Value"]["string"]
+        for row in reference_items
+    }
+    assert exported_reference == {str(p["id"]): p["nome"] for p in products}
+    direct_product_keys = {
+        a["parameters"].get("WFDictionaryKey")
+        for a in actions
+        if a["call"] == "data.lookup"
+        and isinstance(a["parameters"].get("WFDictionaryKey"), str)
+        and a["parameters"].get("WFInput", {}).get("Value", {}).get("VariableName") == "produto"
+    }
+    assert {"id", "nome"} <= direct_product_keys
+    assert not any("WFConditions" in a["parameters"] for a in actions if a["call"] == "flow.condition")
+    print("PASS: original ID/name table exported intact, direct field reads and simple If conditions")
+
     groups = collections.defaultdict(collections.Counter)
     for action in actions:
         params = action["parameters"]

@@ -1,9 +1,9 @@
 {
-  "source_sha256": "ddbd1f86e83b2a5332d022725f185cd8cc8df980dc0be15a6eb5241e7304b391",
-  "project_sha256": "f4d50e29ff11739fb9048f75be32dd3a82c28c787179472262a37731476191d2",
+  "source_sha256": "32f3f7e02f315a595139a2db412f376f7d2ffac410f4e2c0d264bbbd97f30001",
+  "project_sha256": "db00b7a0a6e711511ba9dc98bb69b0cc719c5f8b20513ccdc285c9a6334e0c02",
   "cadastro_sha256": "b93b0daad59e491e88f6692d7ee22a3c5fa2c8851c8a55052cbdff4bba8b858b",
   "compiler_version": "0.1.4",
-  "actions": 1191,
+  "actions": 1018,
   "errors": 0,
   "warnings": 31,
   "baseline_v4_actions": 5023,
@@ -11,7 +11,9 @@
   "signed": false,
   "check_passed": true,
   "check_warnings": 31,
-  "release": "5.1",
+  "release": "5.2",
   "previous_v5_actions": 1179,
-  "previous_v5_device_result": "User video: location does not exist during folder preparation"
+  "previous_v5_device_result": "User video: location does not exist during folder preparation",
+  "previous_v5_1_actions": 1191,
+  "previous_v5_1_device_result": "User video: folder stage advances, original JSON chosen, Cadastro divergente before recording items"
 }

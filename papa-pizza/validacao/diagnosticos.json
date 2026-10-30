@@ -5,12 +5,12 @@
     "range": {
       "end": {
         "column": 63,
-        "line": 64
+        "line": 22
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 10,
-        "line": 64
+        "column": 3,
+        "line": 22
       }
     },
     "related": [],
@@ -22,12 +22,12 @@
     "range": {
       "end": {
         "column": 59,
-        "line": 92
+        "line": 50
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 21,
-        "line": 92
+        "column": 5,
+        "line": 50
       }
     },
     "related": [],
@@ -39,12 +39,12 @@
     "range": {
       "end": {
         "column": 41,
-        "line": 130
+        "line": 89
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 19,
-        "line": 130
+        "column": 5,
+        "line": 89
       }
     },
     "related": [],
@@ -56,12 +56,12 @@
     "range": {
       "end": {
         "column": 52,
-        "line": 135
+        "line": 94
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 19,
-        "line": 135
+        "column": 5,
+        "line": 94
       }
     },
     "related": [],
@@ -73,12 +73,12 @@
     "range": {
       "end": {
         "column": 48,
-        "line": 140
+        "line": 99
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 13,
-        "line": 140
+        "column": 5,
+        "line": 99
       }
     },
     "related": [],
@@ -90,12 +90,12 @@
     "range": {
       "end": {
         "column": 34,
-        "line": 151
+        "line": 130
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 17,
-        "line": 151
+        "column": 5,
+        "line": 130
       }
     },
     "related": [],
@@ -107,12 +107,12 @@
     "range": {
       "end": {
         "column": 40,
-        "line": 159
+        "line": 144
       },
       "file": "Main.shortcuty",
       "start": {
         "column": 5,
-        "line": 159
+        "line": 144
       }
     },
     "related": [],
@@ -124,12 +124,12 @@
     "range": {
       "end": {
         "column": 52,
-        "line": 167
+        "line": 152
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 16,
-        "line": 167
+        "column": 5,
+        "line": 152
       }
     },
     "related": [],
@@ -141,12 +141,12 @@
     "range": {
       "end": {
         "column": 57,
-        "line": 181
+        "line": 166
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 19,
-        "line": 181
+        "column": 7,
+        "line": 166
       }
     },
     "related": [],
@@ -158,12 +158,12 @@
     "range": {
       "end": {
         "column": 44,
-        "line": 208
+        "line": 196
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 24,
-        "line": 208
+        "column": 3,
+        "line": 196
       }
     },
     "related": [],
@@ -175,12 +175,12 @@
     "range": {
       "end": {
         "column": 42,
-        "line": 214
+        "line": 202
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 15,
-        "line": 214
+        "column": 5,
+        "line": 202
       }
     },
     "related": [],
@@ -191,13 +191,13 @@
     "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
     "range": {
       "end": {
-        "column": 53,
-        "line": 218
+        "column": 32,
+        "line": 221
       },
       "file": "Main.shortcuty",
       "start": {
         "column": 5,
-        "line": 218
+        "line": 221
       }
     },
     "related": [],
@@ -209,12 +209,12 @@
     "range": {
       "end": {
         "column": 29,
-        "line": 224
+        "line": 227
       },
       "file": "Main.shortcuty",
       "start": {
         "column": 7,
-        "line": 224
+        "line": 227
       }
     },
     "related": [],
@@ -226,12 +226,12 @@
     "range": {
       "end": {
         "column": 55,
-        "line": 235
+        "line": 242
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 20,
-        "line": 235
+        "column": 7,
+        "line": 242
       }
     },
     "related": [],
@@ -243,12 +243,12 @@
     "range": {
       "end": {
         "column": 42,
-        "line": 242
+        "line": 261
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 22,
-        "line": 242
+        "column": 7,
+        "line": 261
       }
     },
     "related": [],
@@ -260,12 +260,12 @@
     "range": {
       "end": {
         "column": 38,
-        "line": 251
+        "line": 270
       },
       "file": "Main.shortcuty",
       "start": {
         "column": 3,
-        "line": 251
+        "line": 270
       }
     },
     "related": [],
@@ -277,12 +277,12 @@
     "range": {
       "end": {
         "column": 33,
-        "line": 275
+        "line": 298
       },
       "file": "Main.shortcuty",
       "start": {
         "column": 13,
-        "line": 275
+        "line": 298
       }
     },
     "related": [],
@@ -294,12 +294,12 @@
     "range": {
       "end": {
         "column": 41,
-        "line": 316
+        "line": 343
       },
       "file": "Main.shortcuty",
       "start": {
         "column": 11,
-        "line": 316
+        "line": 343
       }
     },
     "related": [],
@@ -311,12 +311,12 @@
     "range": {
       "end": {
         "column": 63,
-        "line": 337
+        "line": 372
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 25,
-        "line": 337
+        "column": 9,
+        "line": 372
       }
     },
     "related": [],
@@ -327,31 +327,16 @@
     "message": "count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
     "range": {
       "end": {
-        "column": 26,
-        "line": 19
+        "column": 41,
+        "line": 391
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 12,
-        "line": 19
+        "column": 7,
+        "line": 391
       }
     },
-    "related": [
-      {
-        "message": "Called from here.",
-        "range": {
-          "end": {
-            "column": 76,
-            "line": 342
-          },
-          "file": "Main.shortcuty",
-          "start": {
-            "column": 17,
-            "line": 342
-          }
-        }
-      }
-    ],
+    "related": [],
     "severity": "warning"
   },
   {
@@ -359,31 +344,16 @@
     "message": "count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
     "range": {
       "end": {
-        "column": 26,
-        "line": 19
+        "column": 41,
+        "line": 397
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 12,
-        "line": 19
+        "column": 7,
+        "line": 397
       }
     },
-    "related": [
-      {
-        "message": "Called from here.",
-        "range": {
-          "end": {
-            "column": 98,
-            "line": 343
-          },
-          "file": "Main.shortcuty",
-          "start": {
-            "column": 16,
-            "line": 343
-          }
-        }
-      }
-    ],
+    "related": [],
     "severity": "warning"
   },
   {
@@ -391,31 +361,16 @@
     "message": "count.Input expects Any | Text, got List<Value>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
     "range": {
       "end": {
-        "column": 26,
-        "line": 19
+        "column": 41,
+        "line": 403
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 12,
-        "line": 19
+        "column": 7,
+        "line": 403
       }
     },
-    "related": [
-      {
-        "message": "Called from here.",
-        "range": {
-          "end": {
-            "column": 104,
-            "line": 344
-          },
-          "file": "Main.shortcuty",
-          "start": {
-            "column": 18,
-            "line": 344
-          }
-        }
-      }
-    ],
+    "related": [],
     "severity": "warning"
   },
   {
@@ -424,12 +379,12 @@
     "range": {
       "end": {
         "column": 53,
-        "line": 356
+        "line": 418
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 20,
-        "line": 356
+        "column": 7,
+        "line": 418
       }
     },
     "related": [],
@@ -441,12 +396,12 @@
     "range": {
       "end": {
         "column": 35,
-        "line": 359
+        "line": 425
       },
       "file": "Main.shortcuty",
       "start": {
         "column": 7,
-        "line": 359
+        "line": 425
       }
     },
     "related": [],
@@ -458,12 +413,12 @@
     "range": {
       "end": {
         "column": 40,
-        "line": 367
+        "line": 433
       },
       "file": "Main.shortcuty",
       "start": {
         "column": 9,
-        "line": 367
+        "line": 433
       }
     },
     "related": [],
@@ -475,12 +430,12 @@
     "range": {
       "end": {
         "column": 58,
-        "line": 371
+        "line": 437
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 29,
-        "line": 371
+        "column": 9,
+        "line": 437
       }
     },
     "related": [],
@@ -492,12 +447,12 @@
     "range": {
       "end": {
         "column": 36,
-        "line": 374
+        "line": 440
       },
       "file": "Main.shortcuty",
       "start": {
         "column": 9,
-        "line": 374
+        "line": 440
       }
     },
     "related": [],
@@ -508,31 +463,16 @@
     "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
     "range": {
       "end": {
-        "column": 25,
-        "line": 32
+        "column": 35,
+        "line": 449
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 3,
-        "line": 32
+        "column": 9,
+        "line": 449
       }
     },
-    "related": [
-      {
-        "message": "Called from here.",
-        "range": {
-          "end": {
-            "column": 70,
-            "line": 377
-          },
-          "file": "Main.shortcuty",
-          "start": {
-            "column": 25,
-            "line": 377
-          }
-        }
-      }
-    ],
+    "related": [],
     "severity": "warning"
   },
   {
@@ -540,31 +480,16 @@
     "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
     "range": {
       "end": {
-        "column": 25,
-        "line": 32
+        "column": 31,
+        "line": 463
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 3,
-        "line": 32
+        "column": 7,
+        "line": 463
       }
     },
-    "related": [
-      {
-        "message": "Called from here.",
-        "range": {
-          "end": {
-            "column": 73,
-            "line": 383
-          },
-          "file": "Main.shortcuty",
-          "start": {
-            "column": 26,
-            "line": 383
-          }
-        }
-      }
-    ],
+    "related": [],
     "severity": "warning"
   },
   {
@@ -573,12 +498,12 @@
     "range": {
       "end": {
         "column": 65,
-        "line": 409
+        "line": 509
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 27,
-        "line": 409
+        "column": 11,
+        "line": 509
       }
     },
     "related": [],
@@ -589,31 +514,16 @@
     "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
     "range": {
       "end": {
-        "column": 25,
-        "line": 32
+        "column": 28,
+        "line": 566
       },
       "file": "Main.shortcuty",
       "start": {
-        "column": 3,
-        "line": 32
+        "column": 7,
+        "line": 566
       }
     },
-    "related": [
-      {
-        "message": "Called from here.",
-        "range": {
-          "end": {
-            "column": 66,
-            "line": 436
-          },
-          "file": "Main.shortcuty",
-          "start": {
-            "column": 21,
-            "line": 436
-          }
-        }
-      }
-    ],
+    "related": [],
     "severity": "warning"
   }
 ]

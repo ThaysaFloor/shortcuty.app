@@ -1,9 +1,9 @@
-# PAPA PIZZA V5.1
+# PAPA PIZZA V5.2
 
 ## Usar no Studio
 
 1. Baixe `PAPA_PIZZA_V5.shortcutystudio` deste repositório e importe no [Shortcuty Studio](https://studio.shortcuty.app/). A cópia `.shortcutystudio.json` contém exatamente o mesmo projeto.
-2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5.1** em Shortcut details.
+2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5.2** em Shortcut details.
 3. Execute **Check** e **Build**. Revise os avisos; o resultado esperado está em `validacao/`.
 4. Exporte o projeto pelo Studio. Depois de revisar o fluxo nativo, use o Download do Studio para assinar e instalar.
 5. Primeiro teste com uma cópia do cadastro e dados descartáveis. Não use como registro de produção até concluir o roteiro em `TESTES_IPHONE.md`.
@@ -67,3 +67,7 @@ Ainda há avisos e mais de mil ações. O Build confirma compilação, não rapi
 ## Correção V5.1 após teste no iPhone
 
 O vídeo da V5 mostrou “A localização não existe” antes de abrir o cadastro, na preparação de pastas. Foram removidas a raiz implícita “Atalhos” e as três criações de caminhos completos com pais possivelmente ausentes. Agora há seleção explícita da base e cinco criações encadeadas: PAPA PIZZA → V5 → Conferencias/Backups/Resumos. O vídeo não distingue se a causa original foi a raiz ou o caminho intermediário. A V5.1 compilou, mas a correção precisa ser confirmada no iPhone. Os nomes dos arquivos distribuídos e o formato JSON V5 foram mantidos para preservar os links e a compatibilidade.
+
+## Reteste V5.2 após “Cadastro divergente”
+
+O vídeo da V5.1 avançou pela preparação de pastas e seleção do JSON, mas parou na comparação dos produtos. Isso não comprova que o arquivo do usuário esteja incorreto. A V5.2 substitui as funções auxiliares por ações nativas diretas e os predicados compostos por blocos If simples, mantendo a validação. Se houver divergência, a mensagem informa o ID, nome lido e nome esperado. A causa de execução ainda precisa ser isolada no iPhone; o Build não comprova a correção. Nenhum produto foi renomeado ou removido.
