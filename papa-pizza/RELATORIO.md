@@ -1,4 +1,4 @@
-# Revisão aprovada — PAPA PIZZA V5.2
+# Revisão aprovada — PAPA PIZZA V5.3
 
 ## Resultado real
 
@@ -6,7 +6,7 @@ O projeto foi submetido ao Check e ao Build oficiais do Shortcuty Studio, compil
 
 Evidências completas em `validacao/build-oficial.json`, `check-oficial.json`, `diagnosticos.json` e `manifesto.json`. O manifesto vincula as evidências aos hashes do código, projeto e cadastro. O schema oficial do projeto também foi validado.
 
-A V5.2 não foi executada em iPhone, assinada ou instalada neste trabalho. O vídeo enviado pelo usuário mostrou a V5 falhando na preparação de pastas, antes de abrir o cadastro. A compatibilidade de versão mínima do iOS no resultado oficial é parcial; não há versão mínima comprovada para o conjunto.
+A V5.3 não foi executada em iPhone, assinada ou instalada neste trabalho. O vídeo enviado pelo usuário mostrou a V5 falhando na preparação de pastas, antes de abrir o cadastro. A compatibilidade de versão mínima do iOS no resultado oficial é parcial; não há versão mínima comprovada para o conjunto.
 
 ## Proposta implementada
 
@@ -54,6 +54,14 @@ Foram removidas funções auxiliares de leitura/retorno e substituídas todas as
 
 Ações nativas: V4 5.023 → V5 1.179 → V5.1 1.191 → V5.2 1.018. Os helpers removidos já não geram argumentos/retornos privados no grafo. A contagem não comprova desempenho no iPhone.
 
+## Comparação de texto na V5.3
+
+No vídeo da V5.2, o diagnóstico exibiu ID 1, nome lido Massa e nome esperado Massa, mas entrou no ramo de nomes diferentes. Os valores visíveis apontam para a comparação, e não justificam alterar o cadastro. O vídeo não fornece os bytes dos valores nem comprova a causa interna do iOS.
+
+A inspeção do grafo encontrou dez operandos direitos dinâmicos de WFConditionalActionString serializados como WFTextTokenAttachment. A V5.3 usa strings interpoladas no código-fonte: por exemplo, `if nomeProduto != "\(esperado)":`. O Build exporta agora WFTextTokenString, com string e attachmentsByRange, preservando a referência dinâmica ao valor esperado. A mudança foi aplicada também às comparações de nome de arquivo, ID, hash, backup e releitura do principal/HTML. As comparações numéricas e a validação dos produtos continuam presentes.
+
+Um teste de regressão inspeciona o grafo oficial e exige esse formato nas dez comparações. Isso comprova a mudança de serialização, não a execução no dispositivo. O cadastro original e o formato JSON V5 permanecem idênticos. Contagem atual: 1.018 ações, sem aumento em relação à V5.2.
+
 ## Avisos oficiais pendentes
 
 - **1**: files.create_folder.folder expects File, got File | Native<WFFolderContentItem>. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
@@ -68,4 +76,4 @@ Ações nativas: V4 5.023 → V5 1.179 → V5.1 1.191 → V5.2 1.018. Os helpers
 - **1**: condition.WFNumberValue expects Value, got Number. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.
 - **1**: setVariable: cannot verify conversion from File | Value to File; the cast will be attempted at runtime. Verify the producer type and test this input.
 
-Os avisos não foram suprimidos. Conversões declaradas e contratos desconhecidos permanecem sujeitos a teste no aparelho.
+Os avisos não foram suprimidos. O Build não prova que o novo formato resolveu a falha observada no iPhone; é obrigatório retestar antes de usar dados de produção.

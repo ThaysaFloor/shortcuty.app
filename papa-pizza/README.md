@@ -1,9 +1,9 @@
-# PAPA PIZZA V5.2
+# PAPA PIZZA V5.3
 
 ## Usar no Studio
 
 1. Baixe `PAPA_PIZZA_V5.shortcutystudio` deste repositório e importe no [Shortcuty Studio](https://studio.shortcuty.app/). A cópia `.shortcutystudio.json` contém exatamente o mesmo projeto.
-2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5.2** em Shortcut details.
+2. Se a importação não estiver disponível, crie um projeto, substitua todo o conteúdo de `Main.shortcuty` pelo arquivo `PAPA_PIZZA_V5.shortcuty` e defina o nome como **PAPA PIZZA V5.3** em Shortcut details.
 3. Execute **Check** e **Build**. Revise os avisos; o resultado esperado está em `validacao/`.
 4. Exporte o projeto pelo Studio. Depois de revisar o fluxo nativo, use o Download do Studio para assinar e instalar.
 5. Primeiro teste com uma cópia do cadastro e dados descartáveis. Não use como registro de produção até concluir o roteiro em `TESTES_IPHONE.md`.
@@ -71,3 +71,7 @@ O vídeo da V5 mostrou “A localização não existe” antes de abrir o cadast
 ## Reteste V5.2 após “Cadastro divergente”
 
 O vídeo da V5.1 avançou pela preparação de pastas e seleção do JSON, mas parou na comparação dos produtos. Isso não comprova que o arquivo do usuário esteja incorreto. A V5.2 substitui as funções auxiliares por ações nativas diretas e os predicados compostos por blocos If simples, mantendo a validação. Se houver divergência, a mensagem informa o ID, nome lido e nome esperado. A causa de execução ainda precisa ser isolada no iPhone; o Build não comprova a correção. Nenhum produto foi renomeado ou removido.
+
+## Comparações textuais na V5.3
+
+O vídeo da V5.2 mostrou ID 1 e Massa nos dois nomes, seguido da condição de divergência. A V5.3 mantém a validação e escreve o operando direito das dez comparações entre variáveis de texto como uma string interpolada. O grafo oficial agora usa WFTextTokenString nessas entradas WFConditionalActionString, em vez de WFTextTokenAttachment. Isso alcança nomes, IDs, hash e releitura de arquivos. O teste estático verifica esse formato, mas o comportamento no iPhone ainda precisa ser confirmado. O cadastro e o formato de armazenamento não mudaram.

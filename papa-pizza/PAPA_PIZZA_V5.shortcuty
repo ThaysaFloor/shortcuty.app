@@ -1,4 +1,4 @@
-# PAPA PIZZA V5.2 — acoes nativas diretas; execucao corrigida pendente no iPhone.
+# PAPA PIZZA V5.3 — acoes nativas diretas; execucao corrigida pendente no iPhone.
 # Cadastro original somente leitura. Nenhuma funcao auxiliar ou condicao composta.
 shortcut:
   modo = "SAIR"
@@ -141,7 +141,7 @@ shortcut:
         alert("Estado desconhecido. Tente recuperar o backup.", title: "Arquivo invalido")
         flow.stop()
     nomeEsperado = text("Conferencia_\(identificador).json")
-    if nomeSelecionado != nomeEsperado:
+    if nomeSelecionado != "\(nomeEsperado)":
       alert("O nome do arquivo nao corresponde ao identificador interno.", title: "Arquivo invalido")
       flow.stop()
     nomeSessao = nomeEsperado
@@ -218,13 +218,13 @@ shortcut:
     if esperado is empty:
       alert("Nao foi encontrado o ID lido.\nID lido: [\(idProduto)]\nNome lido: [\(nomeProduto)]\nNenhum registro foi gravado. O cadastro original foi preservado.", title: "Diagnostico do cadastro")
       flow.stop()
-    if nomeProduto != esperado:
+    if nomeProduto != "\(esperado)":
       alert("A comparacao dos nomes divergiu.\nID: [\(idProduto)]\nNome lido: [\(nomeProduto)]\nNome esperado: [\(esperado)]\nNenhum registro foi gravado. O cadastro original foi preservado.", title: "Diagnostico do cadastro")
       flow.stop()
     for item in idsVistos:
       partesVisto = text.detect(input: item)
       visto = combine(partesVisto, separator: "")
-      if visto == idProduto:
+      if visto == "\(idProduto)":
         alert("O cadastro possui IDs repetidos.", title: "Cadastro invalido")
         flow.stop()
     variables.append(name: "idsVistos", value: idProduto)
@@ -340,7 +340,7 @@ shortcut:
           indice = indice + 1
           partesNome = text.detect(input: item)
           candidatoNome = combine(partesNome, separator: "")
-          if candidatoNome == nomeAtual:
+          if candidatoNome == "\(nomeAtual)":
             idEscolhido = item(ordem, at: indice)
             partesId = text.detect(input: idEscolhido)
             idAtual = combine(partesId, separator: "")
@@ -422,7 +422,7 @@ shortcut:
       if campoBruto_20 has value:
         campoPartes_20 = text.detect(input: campoBruto_20)
         idTeste = combine(campoPartes_20, separator: "")
-      if idTeste != identificador:
+      if idTeste != "\(identificador)":
         alert("A serializacao JSON nao preservou o identificador. Nada sera gravado.", title: "JSON invalido")
         flow.stop()
       existentes = files.contents(folder: pasta)
@@ -430,14 +430,14 @@ shortcut:
       for item in existentes:
         partesNome = files.name(item: item)
         nomeExistente = combine(partesNome, separator: "")
-        if nomeExistente == nomeSessao:
+        if nomeExistente == "\(nomeSessao)":
           arquivoAtual = item
       substituir = false
       if arquivoAtual has value:
         arquivoConfirmado = as_type(arquivoAtual, "File")
         hashesAtuais = data.hash(input: arquivoConfirmado, algorithm: "SHA256")
         hashAtual = combine(hashesAtuais, separator: "")
-        if hashAtual != ultimoHash:
+        if hashAtual != "\(ultimoHash)":
           alert("O principal mudou desde a leitura, ou houve colisao de nome. Nenhum arquivo sera sobrescrito. Retome a versao atual.", title: "Conflito")
           flow.stop()
         convertidos_5 = files.convert(input: ultimoJson, type: "public.plain-text")
@@ -446,7 +446,7 @@ shortcut:
         backupGravado = item(salvos_5, at: 1)
         partesRelidas_5 = text.detect(input: backupGravado)
         relido_5 = combine(partesRelidas_5, separator: "")
-        if relido_5 != ultimoJson:
+        if relido_5 != "\(ultimoJson)":
           alert("O texto relido divergiu do gravado. Pare e use a recuperacao por backup; nao continue gravando.", title: "Falha de gravacao")
           flow.stop()
         substituir = true
@@ -460,7 +460,7 @@ shortcut:
       principalGravado = item(salvos_6, at: 1)
       partesRelidas_6 = text.detect(input: principalGravado)
       relido_6 = combine(partesRelidas_6, separator: "")
-      if relido_6 != novoJson:
+      if relido_6 != "\(novoJson)":
         alert("O texto relido divergiu do gravado. Pare e use a recuperacao por backup; nao continue gravando.", title: "Falha de gravacao")
         flow.stop()
       ultimoJson = novoJson
@@ -563,7 +563,7 @@ shortcut:
       arquivoHtml = item(salvos_11, at: 1)
       partesRelidas_11 = text.detect(input: arquivoHtml)
       relido_11 = combine(partesRelidas_11, separator: "")
-      if relido_11 != html:
+      if relido_11 != "\(html)":
         alert("O texto relido divergiu do gravado. Pare e use a recuperacao por backup; nao continue gravando.", title: "Falha de gravacao")
         flow.stop()
       preview.show(item: arquivoHtml)

@@ -12,7 +12,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "31fbd7f2-6649-56a8-9ae5-e27c979b74fb",
+        "UUID": "9e9b3e56-a3fb-599c-9720-1e23c92245b7",
         "WFTextActionText": "SAIR"
       },
       "title": "Text"
@@ -42,7 +42,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "31fbd7f2-6649-56a8-9ae5-e27c979b74fb",
+            "OutputUUID": "9e9b3e56-a3fb-599c-9720-1e23c92245b7",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -76,7 +76,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "a7b33d4a-98b0-55c3-bd30-e4841079b418",
+        "GroupingIdentifier": "0df2c2f3-082c-5dc6-aa0a-f9b16ea315c8",
         "UUID": "ab5c4de2-4abc-53a1-9938-45f0d015205a",
         "WFControlFlowMode": 0,
         "WFMenuItems": [
@@ -104,8 +104,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "a7b33d4a-98b0-55c3-bd30-e4841079b418",
-        "UUID": "48275abc-54e4-55d4-ab02-eec28b89590e",
+        "GroupingIdentifier": "0df2c2f3-082c-5dc6-aa0a-f9b16ea315c8",
+        "UUID": "7f21f432-c322-52f2-92d5-05db5296dddb",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "NOVA CONFERÊNCIA"
       },
@@ -123,7 +123,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "d682e21d-a2cd-5cf3-9dd6-241a32ec002b",
+        "UUID": "17d3f61a-9c17-59d8-8973-980c33c98e31",
         "WFTextActionText": "NOVA"
       },
       "title": "Text"
@@ -153,7 +153,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "d682e21d-a2cd-5cf3-9dd6-241a32ec002b",
+            "OutputUUID": "17d3f61a-9c17-59d8-8973-980c33c98e31",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -177,8 +177,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "a7b33d4a-98b0-55c3-bd30-e4841079b418",
-        "UUID": "118f221b-0af0-5f73-a642-13f2d92fab8e",
+        "GroupingIdentifier": "0df2c2f3-082c-5dc6-aa0a-f9b16ea315c8",
+        "UUID": "2ab3d3cc-b4dd-532c-88bf-c2f80ecf319a",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "CONTINUAR CONFERÊNCIA"
       },
@@ -196,7 +196,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "6f05581e-67b3-51bc-820d-0e196519c4fa",
+        "UUID": "609ac90b-1705-5e70-8a05-a55199495466",
         "WFTextActionText": "CONTINUAR"
       },
       "title": "Text"
@@ -226,7 +226,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "6f05581e-67b3-51bc-820d-0e196519c4fa",
+            "OutputUUID": "609ac90b-1705-5e70-8a05-a55199495466",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -250,8 +250,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "a7b33d4a-98b0-55c3-bd30-e4841079b418",
-        "UUID": "4d03cb15-05ba-5af4-8bb1-55597d8a96fc",
+        "GroupingIdentifier": "0df2c2f3-082c-5dc6-aa0a-f9b16ea315c8",
+        "UUID": "0a9ea7c6-bc93-5ce0-b4c7-6efaa359a299",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "GERAR RESUMO"
       },
@@ -269,7 +269,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "b63656f9-251e-5867-ba7a-e37216d930a7",
+        "UUID": "4ab3ca11-4d3d-5842-995d-f2f2e12f5ad8",
         "WFTextActionText": "RESUMO"
       },
       "title": "Text"
@@ -299,7 +299,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "b63656f9-251e-5867-ba7a-e37216d930a7",
+            "OutputUUID": "4ab3ca11-4d3d-5842-995d-f2f2e12f5ad8",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -323,8 +323,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "a7b33d4a-98b0-55c3-bd30-e4841079b418",
-        "UUID": "d34058b9-6fa6-5d03-874c-2e7c1967539d",
+        "GroupingIdentifier": "0df2c2f3-082c-5dc6-aa0a-f9b16ea315c8",
+        "UUID": "13f6de30-2f9f-50f4-8fb4-a18116b4ba26",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "SAIR"
       },
@@ -342,7 +342,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "d050ffe2-b3a9-51a2-b62b-278f07f9ce6f",
+        "UUID": "a69a907b-7bdb-5084-b0aa-d9186eec8010",
         "WFTextActionText": "SAIR"
       },
       "title": "Text"
@@ -372,7 +372,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "d050ffe2-b3a9-51a2-b62b-278f07f9ce6f",
+            "OutputUUID": "a69a907b-7bdb-5084-b0aa-d9186eec8010",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -396,8 +396,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "a7b33d4a-98b0-55c3-bd30-e4841079b418",
-        "UUID": "02a407e9-1d1f-5b85-ac2a-50634c5406bd",
+        "GroupingIdentifier": "0df2c2f3-082c-5dc6-aa0a-f9b16ea315c8",
+        "UUID": "418af0a7-088f-5d99-8e81-ace4fe39cdcc",
         "WFControlFlowMode": 2
       },
       "title": "Choose from Menu"
@@ -436,7 +436,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "f429e044-4c2a-5743-8a18-ce0259ff2b37",
+        "GroupingIdentifier": "a93a406c-3f50-5668-8edf-af169d16eb98",
         "UUID": "45732e96-b8ec-57c6-9b13-094d7e85d297",
         "WFCondition": 4,
         "WFConditionalActionString": "SAIR",
@@ -534,8 +534,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "f429e044-4c2a-5743-8a18-ce0259ff2b37",
-        "UUID": "7fda8610-117f-593a-8a9d-ca2e3c807858",
+        "GroupingIdentifier": "a93a406c-3f50-5668-8edf-af169d16eb98",
+        "UUID": "0f63525c-9f5e-59df-9afd-5ab9f0381c16",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -737,7 +737,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "e0f487c0-9446-50bb-a802-417f31062715",
+        "GroupingIdentifier": "734d5f6d-12b9-55b7-911f-6cda2b418234",
         "UUID": "558fceaa-6550-562c-bfb3-ed881d392261",
         "WFCondition": 101,
         "WFControlFlowMode": 0,
@@ -823,8 +823,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "e0f487c0-9446-50bb-a802-417f31062715",
-        "UUID": "914eef9b-d2c5-528d-bb5e-df8b65490f06",
+        "GroupingIdentifier": "734d5f6d-12b9-55b7-911f-6cda2b418234",
+        "UUID": "441c2b80-794d-57b6-8f24-e27403d4440f",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -3479,7 +3479,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "44a3a670-84bb-5519-ad5e-3fb9a2288d32",
+        "UUID": "7de660b4-940a-5ba0-b39c-022d9b7060d3",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -3509,7 +3509,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "44a3a670-84bb-5519-ad5e-3fb9a2288d32",
+            "OutputUUID": "7de660b4-940a-5ba0-b39c-022d9b7060d3",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3530,7 +3530,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "2dcba1ab-72f6-5c97-be8f-7bd863a281f9",
+        "UUID": "c122fbc3-90a3-5cd2-a278-15c45cde77a1",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -3560,7 +3560,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "2dcba1ab-72f6-5c97-be8f-7bd863a281f9",
+            "OutputUUID": "c122fbc3-90a3-5cd2-a278-15c45cde77a1",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3581,7 +3581,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "170172ab-b33c-5b24-97ec-bab77438e008",
+        "UUID": "3547033f-35b1-51b6-ae24-eec37d4d38b6",
         "WFTextActionText": "ABERTA"
       },
       "title": "Text"
@@ -3611,7 +3611,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "170172ab-b33c-5b24-97ec-bab77438e008",
+            "OutputUUID": "3547033f-35b1-51b6-ae24-eec37d4d38b6",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3632,7 +3632,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "c4143655-fe2f-54a2-8a76-445f0c04585b",
+        "UUID": "050f3a37-3647-5813-84b8-f62010beb519",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -3662,7 +3662,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "c4143655-fe2f-54a2-8a76-445f0c04585b",
+            "OutputUUID": "050f3a37-3647-5813-84b8-f62010beb519",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3683,7 +3683,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "f46fc6a3-294f-5e99-a231-532328482867",
+        "UUID": "dd3baff5-5391-5f84-b9c4-30178017dbb0",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -3713,7 +3713,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "f46fc6a3-294f-5e99-a231-532328482867",
+            "OutputUUID": "dd3baff5-5391-5f84-b9c4-30178017dbb0",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3734,7 +3734,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "bf181d80-e40d-55a8-b910-f6d80b5b7d00",
+        "UUID": "f66cc355-0bf4-5a1d-9c5a-8463cca7c17f",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -3764,7 +3764,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "bf181d80-e40d-55a8-b910-f6d80b5b7d00",
+            "OutputUUID": "f66cc355-0bf4-5a1d-9c5a-8463cca7c17f",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3785,7 +3785,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "f89ed87c-0260-5777-a818-341b5306a15d",
+        "UUID": "b114ae00-f2f8-5238-9cdd-e6b745224e1b",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -3815,7 +3815,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "f89ed87c-0260-5777-a818-341b5306a15d",
+            "OutputUUID": "b114ae00-f2f8-5238-9cdd-e6b745224e1b",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3836,7 +3836,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "59676047-967b-56bd-b417-2ae15633710f",
+        "UUID": "07a2352f-6e19-59a0-b8db-1d19e4398f97",
         "WFTextActionText": "NAO"
       },
       "title": "Text"
@@ -3866,7 +3866,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "59676047-967b-56bd-b417-2ae15633710f",
+            "OutputUUID": "07a2352f-6e19-59a0-b8db-1d19e4398f97",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3887,7 +3887,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "fd5041e3-fe5e-5b9d-b0a1-889c86e5e20c",
+        "UUID": "83be5cb4-22c5-5c16-b598-053338b564d7",
         "WFTextActionText": "NAO"
       },
       "title": "Text"
@@ -3917,7 +3917,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "fd5041e3-fe5e-5b9d-b0a1-889c86e5e20c",
+            "OutputUUID": "83be5cb4-22c5-5c16-b598-053338b564d7",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3938,7 +3938,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "cbf36df7-7f8b-5992-9f9c-a5fa533710df",
+        "UUID": "e5fcd188-e286-5382-a1e7-a8c51a7448b1",
         "WFTextActionText": "MENU"
       },
       "title": "Text"
@@ -3968,7 +3968,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "cbf36df7-7f8b-5992-9f9c-a5fa533710df",
+            "OutputUUID": "e5fcd188-e286-5382-a1e7-a8c51a7448b1",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -3988,7 +3988,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "0daa8469-210b-5951-a426-061783034d09",
+        "UUID": "0ffff3a5-2d9a-559e-b53f-5d1c06ca2a92",
         "WFNumberActionNumber": 0
       },
       "title": "Number"
@@ -4018,7 +4018,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "0daa8469-210b-5951-a426-061783034d09",
+            "OutputUUID": "0ffff3a5-2d9a-559e-b53f-5d1c06ca2a92",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -4061,7 +4061,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "2a2696be-1ae7-5f7a-91fa-d53eca5d9545",
+        "GroupingIdentifier": "fa0e8c22-3c2b-5647-a995-d5e1ebe94221",
         "UUID": "8beed857-90ca-5d86-82f3-3f45e19ab6fb",
         "WFCondition": 4,
         "WFConditionalActionString": "NOVA",
@@ -4546,7 +4546,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "778f4f85-863b-5bb3-9a73-155638ac466a",
+        "UUID": "02818ec4-1076-5aac-8acb-abfca6b9db1c",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -4576,7 +4576,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "778f4f85-863b-5bb3-9a73-155638ac466a",
+            "OutputUUID": "02818ec4-1076-5aac-8acb-abfca6b9db1c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -4597,7 +4597,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "35aca04b-df4e-5661-9f7e-f397bb570cf1",
+        "UUID": "e46e051b-9ac9-546b-8161-9189833dbada",
         "WFTextActionText": "INICIAR"
       },
       "title": "Text"
@@ -4627,7 +4627,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "35aca04b-df4e-5661-9f7e-f397bb570cf1",
+            "OutputUUID": "e46e051b-9ac9-546b-8161-9189833dbada",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -4660,8 +4660,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2a2696be-1ae7-5f7a-91fa-d53eca5d9545",
-        "UUID": "83c95886-7e98-5c24-a866-2e169f44eb2b",
+        "GroupingIdentifier": "fa0e8c22-3c2b-5647-a995-d5e1ebe94221",
+        "UUID": "f3ec46d6-eaf5-5601-9e65-035521add3c2",
         "WFControlFlowMode": 1
       },
       "title": "If"
@@ -4733,7 +4733,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "ec0d899a-c277-5b39-9de8-a8443feb3d59",
+        "GroupingIdentifier": "95a31a57-e333-5b52-9272-5b5b375771db",
         "UUID": "1a2a75a5-961e-5431-bc94-2297a36f39a6",
         "WFCondition": 4,
         "WFConditionalActionString": "CONTINUAR",
@@ -4809,7 +4809,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "902f1e5c-5565-571e-b514-bb48504f69e0",
+        "GroupingIdentifier": "883a492c-3d62-5480-af52-35732430e3aa",
         "UUID": "42295a54-b388-5375-9c88-8e96c38ad80b",
         "WFControlFlowMode": 0,
         "WFMenuItems": [
@@ -4835,8 +4835,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "902f1e5c-5565-571e-b514-bb48504f69e0",
-        "UUID": "1388533a-bbbc-52be-ad52-e4dd2c91051a",
+        "GroupingIdentifier": "883a492c-3d62-5480-af52-35732430e3aa",
+        "UUID": "7efc9fde-f781-5220-9be1-83e74eecfddc",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "ARQUIVO PRINCIPAL"
       },
@@ -4854,7 +4854,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "e9fe27e4-84c5-5c63-88be-96c19c596716",
+        "UUID": "25fad89e-86d3-5aec-a860-759ed63be1fc",
         "WFTextActionText": "NAO"
       },
       "title": "Text"
@@ -4884,7 +4884,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "e9fe27e4-84c5-5c63-88be-96c19c596716",
+            "OutputUUID": "25fad89e-86d3-5aec-a860-759ed63be1fc",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -4908,8 +4908,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "902f1e5c-5565-571e-b514-bb48504f69e0",
-        "UUID": "7bca8287-b137-583d-84ad-e96290d0eeae",
+        "GroupingIdentifier": "883a492c-3d62-5480-af52-35732430e3aa",
+        "UUID": "9cba8a49-ff03-5d19-b826-c878127b0a6a",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "RECUPERAR BACKUP"
       },
@@ -4927,7 +4927,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "2c60d51d-a7d7-5ed1-be8c-adc6fd11632e",
+        "UUID": "e704d442-9961-5511-9533-36287fd1c61c",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -4957,7 +4957,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "2c60d51d-a7d7-5ed1-be8c-adc6fd11632e",
+            "OutputUUID": "e704d442-9961-5511-9533-36287fd1c61c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -5014,8 +5014,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "902f1e5c-5565-571e-b514-bb48504f69e0",
-        "UUID": "e7809c5d-174b-5f9e-805b-4757b3b4a23a",
+        "GroupingIdentifier": "883a492c-3d62-5480-af52-35732430e3aa",
+        "UUID": "17b5f677-105e-5c92-9a8e-18ce536fd00f",
         "WFControlFlowMode": 2
       },
       "title": "Choose from Menu"
@@ -5044,8 +5044,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "ec0d899a-c277-5b39-9de8-a8443feb3d59",
-        "UUID": "ce85c4c4-e9bb-5371-89ab-1d7545a5bba2",
+        "GroupingIdentifier": "95a31a57-e333-5b52-9272-5b5b375771db",
+        "UUID": "563cb1be-7141-5466-9706-ea8218e423a7",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -5321,7 +5321,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "1127ead8-e67a-5a05-964f-d831599e4839",
+        "UUID": "f58a0a10-9886-56c0-a02f-e40fcb41868c",
         "WFNumberActionNumber": 0
       },
       "title": "Number"
@@ -5351,7 +5351,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "1127ead8-e67a-5a05-964f-d831599e4839",
+            "OutputUUID": "f58a0a10-9886-56c0-a02f-e40fcb41868c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -5383,7 +5383,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "e501f5ee-fa43-575c-b92a-19bc361a8e97",
+        "GroupingIdentifier": "53b4e613-9992-5efe-bfe7-9e59694e9cb4",
         "UUID": "e39f8c26-6aa1-5403-ae89-e5f8faa448b5",
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -5606,7 +5606,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "d73ec7d8-38c5-59d9-8cc9-4408f6f5a2a7",
+        "GroupingIdentifier": "35d4b188-e4fa-559d-83a7-a9baa3b5e513",
         "UUID": "44ffd211-9736-5df4-8a9a-8fb6b07075e9",
         "WFCondition": 8,
         "WFConditionalActionString": "Conferencia_",
@@ -5691,7 +5691,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "411fd77d-612c-5a24-93f7-61406346a57f",
+        "GroupingIdentifier": "275e9cfc-c3d8-589d-a90c-658a51dff45e",
         "UUID": "117ba4f9-81ad-565e-a26e-208d75ac9711",
         "WFCondition": 9,
         "WFConditionalActionString": ".json",
@@ -5848,7 +5848,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "662c5f2d-cf65-52f3-879d-6b03eb4dd539",
+        "GroupingIdentifier": "8b942adc-bc54-5603-9333-0fb27e906c9e",
         "UUID": "42d8c4c8-00d8-53f7-b68e-c5d11fe6d85b",
         "WFCondition": 1,
         "WFControlFlowMode": 0,
@@ -5956,8 +5956,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "662c5f2d-cf65-52f3-879d-6b03eb4dd539",
-        "UUID": "7fc011c3-4fff-588e-8263-c4238a79d4b0",
+        "GroupingIdentifier": "8b942adc-bc54-5603-9333-0fb27e906c9e",
+        "UUID": "d399fc55-546a-59e1-b0ce-18e65f8a1bc6",
         "WFControlFlowMode": 1
       },
       "title": "If"
@@ -6019,8 +6019,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "662c5f2d-cf65-52f3-879d-6b03eb4dd539",
-        "UUID": "ba5abac3-900b-5eeb-a464-ee926fc98ec3",
+        "GroupingIdentifier": "8b942adc-bc54-5603-9333-0fb27e906c9e",
+        "UUID": "1b7c86a2-f27a-53b2-9a94-a6542508e1f3",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -6049,8 +6049,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "411fd77d-612c-5a24-93f7-61406346a57f",
-        "UUID": "1cbc3e54-2dcd-51d2-b375-b84466d3babf",
+        "GroupingIdentifier": "275e9cfc-c3d8-589d-a90c-658a51dff45e",
+        "UUID": "9677fb54-405a-5a23-bc8c-f757efc7d49c",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -6079,8 +6079,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "d73ec7d8-38c5-59d9-8cc9-4408f6f5a2a7",
-        "UUID": "b5d01e7b-92c0-50c7-b960-006b5b2a0358",
+        "GroupingIdentifier": "35d4b188-e4fa-559d-83a7-a9baa3b5e513",
+        "UUID": "9c1e09af-f4d1-5a3f-86d1-098081b7e3d0",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -6098,8 +6098,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "e501f5ee-fa43-575c-b92a-19bc361a8e97",
-        "UUID": "6a02d0f2-b28e-5dd7-8e50-4eae18f086c9",
+        "GroupingIdentifier": "53b4e613-9992-5efe-bfe7-9e59694e9cb4",
+        "UUID": "793de0d8-9333-52fe-8bc9-4babc2b8f141",
         "WFControlFlowMode": 2
       },
       "title": "Repeat with Each"
@@ -6138,7 +6138,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "e6c7b9d9-86b0-5f65-8b36-33495349a155",
+        "GroupingIdentifier": "8890bcd1-f2ce-527c-81f2-f2168e223c4b",
         "UUID": "6083a05d-1299-5681-ba6b-91a879a1938c",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -6265,8 +6265,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "e6c7b9d9-86b0-5f65-8b36-33495349a155",
-        "UUID": "0386300b-e592-5cea-b5a9-0a6114065c15",
+        "GroupingIdentifier": "8890bcd1-f2ce-527c-81f2-f2168e223c4b",
+        "UUID": "b83edf34-d6e8-5171-9869-a32bda3b714a",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -6338,7 +6338,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "993ef676-9477-510d-b5f7-6620ced0713d",
+        "GroupingIdentifier": "f2b0017d-b4c2-59a4-ae87-7a864e574c8f",
         "UUID": "10b101ed-1bce-5751-8b2c-3da0730345a5",
         "WFCondition": 2,
         "WFControlFlowMode": 0,
@@ -6414,7 +6414,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "67ef4871-22db-5b58-a225-01df6fca9f90",
+        "GroupingIdentifier": "00e1c1c8-6b89-54c1-a411-d8e45855d81a",
         "UUID": "8ad802fd-edb8-5e3b-aade-6b65df24851f",
         "WFControlFlowMode": 0,
         "WFMenuItems": [
@@ -6440,8 +6440,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "67ef4871-22db-5b58-a225-01df6fca9f90",
-        "UUID": "aa537885-b56f-56ad-963d-16caee01dc97",
+        "GroupingIdentifier": "00e1c1c8-6b89-54c1-a411-d8e45855d81a",
+        "UUID": "2ccb7f04-7d0d-567a-badc-8331fa1cad49",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "CINCO MAIS RECENTES"
       },
@@ -6495,8 +6495,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "67ef4871-22db-5b58-a225-01df6fca9f90",
-        "UUID": "ab88033f-dc05-5b02-af7b-28963771dbce",
+        "GroupingIdentifier": "00e1c1c8-6b89-54c1-a411-d8e45855d81a",
+        "UUID": "9e31f0ec-ff38-58ad-99ab-e6ddc173ed83",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "ANTERIORES"
       },
@@ -6550,8 +6550,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "67ef4871-22db-5b58-a225-01df6fca9f90",
-        "UUID": "0b3c3e38-d4b2-5232-846e-f1e1485f07be",
+        "GroupingIdentifier": "00e1c1c8-6b89-54c1-a411-d8e45855d81a",
+        "UUID": "56246a19-f13d-5c0a-9958-b16204c59b48",
         "WFControlFlowMode": 2
       },
       "title": "Choose from Menu"
@@ -6580,8 +6580,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "993ef676-9477-510d-b5f7-6620ced0713d",
-        "UUID": "e9770a54-64b9-50b8-9bea-acbcefd49588",
+        "GroupingIdentifier": "f2b0017d-b4c2-59a4-ae87-7a864e574c8f",
+        "UUID": "1091c945-d8ea-55cb-b7df-051e1fa60353",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -7503,7 +7503,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "0c95e399-4c2d-5fa3-8103-67df0545926e",
+        "UUID": "5cd8ef24-35bd-5cda-b125-3a6928079311",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -7533,7 +7533,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "0c95e399-4c2d-5fa3-8103-67df0545926e",
+            "OutputUUID": "5cd8ef24-35bd-5cda-b125-3a6928079311",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -7576,7 +7576,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "7bf46359-fcaf-54ff-ae4b-78cbf17a53d5",
+        "GroupingIdentifier": "cd1c77b2-4d45-5d6e-9f6e-2af10ffeff20",
         "UUID": "c8cb114b-5021-5d94-92b7-3708a73fa11e",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -7781,8 +7781,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "7bf46359-fcaf-54ff-ae4b-78cbf17a53d5",
-        "UUID": "235d5e2b-c521-543d-b5e9-302e3ff66e66",
+        "GroupingIdentifier": "cd1c77b2-4d45-5d6e-9f6e-2af10ffeff20",
+        "UUID": "25d6b8e6-3b54-52ec-8bb3-c35a373d0808",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -7868,7 +7868,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "ba4f5fdc-3b12-5147-878b-977f7a2361cf",
+        "UUID": "1621d94e-0a7b-5255-87d1-ecd0687f77ff",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -7898,7 +7898,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "ba4f5fdc-3b12-5147-878b-977f7a2361cf",
+            "OutputUUID": "1621d94e-0a7b-5255-87d1-ecd0687f77ff",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -7941,7 +7941,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "26370e58-d27d-5a0a-9aaa-d4cb7fb49fb5",
+        "GroupingIdentifier": "faf835c4-b539-5300-8c1b-af72c00debd5",
         "UUID": "21364208-6df6-50f4-847b-73c03c96a741",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -8146,8 +8146,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "26370e58-d27d-5a0a-9aaa-d4cb7fb49fb5",
-        "UUID": "66281bb9-28dd-53d0-a40b-3ad4bc37c9a7",
+        "GroupingIdentifier": "faf835c4-b539-5300-8c1b-af72c00debd5",
+        "UUID": "bb3646ad-bafe-5a86-bdce-4d4cae4fc45e",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -8233,7 +8233,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "63b99294-b4b1-50b9-965c-0c137059fc79",
+        "UUID": "520cd23d-8f62-52fe-8b6c-2f73c5edfbdf",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -8263,7 +8263,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "63b99294-b4b1-50b9-965c-0c137059fc79",
+            "OutputUUID": "520cd23d-8f62-52fe-8b6c-2f73c5edfbdf",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -8306,7 +8306,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "4df5bac8-4eac-53dc-acf1-15030812204c",
+        "GroupingIdentifier": "48076830-01d1-5d88-987e-0011be06147c",
         "UUID": "d701603b-7ed0-5aa1-8bc1-6c6c965775e2",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -8511,8 +8511,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "4df5bac8-4eac-53dc-acf1-15030812204c",
-        "UUID": "b32c1bc9-090c-5d24-83d3-23c2fc6a45df",
+        "GroupingIdentifier": "48076830-01d1-5d88-987e-0011be06147c",
+        "UUID": "cd00d84d-1588-5121-88ba-29a7ed0090b7",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -8598,7 +8598,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "eb2e5a02-6e67-5f76-89eb-abd6bcfebace",
+        "UUID": "d767f38b-41e9-5c16-ab04-246a26fbcff8",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -8628,7 +8628,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "eb2e5a02-6e67-5f76-89eb-abd6bcfebace",
+            "OutputUUID": "d767f38b-41e9-5c16-ab04-246a26fbcff8",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -8671,7 +8671,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "ad63ed02-9c42-5457-94e7-b47558479063",
+        "GroupingIdentifier": "d4838b97-3dbb-51e7-865d-d844836e5bbe",
         "UUID": "d76f0eab-c699-57ed-ae2c-1f7f5a97b0f7",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -8876,8 +8876,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "ad63ed02-9c42-5457-94e7-b47558479063",
-        "UUID": "e53eca0e-de2c-53f0-b376-282ff79c9dee",
+        "GroupingIdentifier": "d4838b97-3dbb-51e7-865d-d844836e5bbe",
+        "UUID": "a5a9ca24-b54d-53fb-8eac-291ea4c7d713",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -8963,7 +8963,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "2865ed8c-e677-50ec-a431-79b8fd59cb16",
+        "UUID": "710d4b8d-13a1-5d8c-be24-0c992dd08d21",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -8993,7 +8993,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "2865ed8c-e677-50ec-a431-79b8fd59cb16",
+            "OutputUUID": "710d4b8d-13a1-5d8c-be24-0c992dd08d21",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -9036,7 +9036,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "01cba084-a650-5ae7-a531-1fa16958e0f9",
+        "GroupingIdentifier": "82220f87-6c07-51a1-a4ed-cf1abe06b4f3",
         "UUID": "27e18d15-db31-5848-a18a-7ab94f7a21f3",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -9241,8 +9241,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "01cba084-a650-5ae7-a531-1fa16958e0f9",
-        "UUID": "c3bb45d7-a18d-50ba-b99b-cf8dfc99731b",
+        "GroupingIdentifier": "82220f87-6c07-51a1-a4ed-cf1abe06b4f3",
+        "UUID": "4d0f8246-411a-544b-854c-53856a2a40c7",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -9281,7 +9281,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "ff7e6775-8a9b-5643-9d24-2b30a149fe25",
+        "GroupingIdentifier": "67d9bc89-df06-5194-a57e-2396fccb178f",
         "UUID": "f9539cd4-75e8-5b36-afff-779ac594a043",
         "WFCondition": 5,
         "WFConditionalActionString": "5",
@@ -9408,8 +9408,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "ff7e6775-8a9b-5643-9d24-2b30a149fe25",
-        "UUID": "b61ad3d3-45a1-5f1a-bc4b-f8c06bfc999d",
+        "GroupingIdentifier": "67d9bc89-df06-5194-a57e-2396fccb178f",
+        "UUID": "f1f3c91e-f980-5af2-a67c-4d21f2cdc4be",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -9568,7 +9568,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "0af433b5-a60d-5a6e-bf7a-8ffd9589d0fa",
+        "UUID": "f2940597-8c5e-502c-97b2-0022bf40b41d",
         "WFTextActionText": "NAO"
       },
       "title": "Text"
@@ -9598,7 +9598,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "0af433b5-a60d-5a6e-bf7a-8ffd9589d0fa",
+            "OutputUUID": "f2940597-8c5e-502c-97b2-0022bf40b41d",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -9641,7 +9641,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "056abce0-f71e-5a25-8a56-53459b3902d0",
+        "GroupingIdentifier": "b3b58bda-88c6-5c85-8646-20ec59dd947e",
         "UUID": "8111e93d-dc45-5ba1-a61e-207f715e6689",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -9704,7 +9704,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "2c832ae9-f45c-5b64-ae60-7c6edeeadcd8",
+        "UUID": "a8153f41-f16c-57ac-abe4-db808de4ed0c",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -9734,7 +9734,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "2c832ae9-f45c-5b64-ae60-7c6edeeadcd8",
+            "OutputUUID": "a8153f41-f16c-57ac-abe4-db808de4ed0c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -9767,8 +9767,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "056abce0-f71e-5a25-8a56-53459b3902d0",
-        "UUID": "147d6e46-aa0e-5511-b821-a15bdaf071dd",
+        "GroupingIdentifier": "b3b58bda-88c6-5c85-8646-20ec59dd947e",
+        "UUID": "4e24c932-ca75-5084-b27a-7908c7cec09d",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -9792,7 +9792,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "351ee34f-5c0a-5d1f-841a-439f812d22a2",
+        "UUID": "44670945-a71c-50ec-9b40-9033baf975d0",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -9831,7 +9831,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "6c207a32-dcfc-582b-8c81-5ae2c53f8157",
+        "GroupingIdentifier": "b73c6f7a-b496-5231-bfa8-9116183507ca",
         "UUID": "59504b58-0053-5fd2-a468-aa6070a320fb",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -9840,7 +9840,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "351ee34f-5c0a-5d1f-841a-439f812d22a2",
+              "OutputUUID": "44670945-a71c-50ec-9b40-9033baf975d0",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -9884,7 +9884,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "f78422a1-addd-5c23-8805-454151f64bd4",
+        "UUID": "86be847c-981c-5ff6-9dbd-d20ea2108418",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -9914,7 +9914,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "f78422a1-addd-5c23-8805-454151f64bd4",
+            "OutputUUID": "86be847c-981c-5ff6-9dbd-d20ea2108418",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -9947,8 +9947,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "6c207a32-dcfc-582b-8c81-5ae2c53f8157",
-        "UUID": "aa08a61c-f781-5544-98ee-ec6a0d5011f3",
+        "GroupingIdentifier": "b73c6f7a-b496-5231-bfa8-9116183507ca",
+        "UUID": "10f39f5b-2650-56a7-acd4-a402c7d1ce43",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -9987,7 +9987,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "53835b18-0f4e-5c9e-a7d0-60151d63d401",
+        "GroupingIdentifier": "a0de6965-b0e2-5373-994d-edcd577bae42",
         "UUID": "e8adf676-91fb-5e4e-bc86-a280a0c03c49",
         "WFCondition": 4,
         "WFConditionalActionString": "SIM",
@@ -10114,8 +10114,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "53835b18-0f4e-5c9e-a7d0-60151d63d401",
-        "UUID": "7b3c29ad-0b84-5ad3-86c5-ee3ce487b0c3",
+        "GroupingIdentifier": "a0de6965-b0e2-5373-994d-edcd577bae42",
+        "UUID": "eea74031-b4e9-5db1-90a6-83bc267f0f18",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -10154,7 +10154,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "afce9ffb-8e91-5a39-8053-7ba3044c3880",
+        "GroupingIdentifier": "aae24de0-f1af-51ce-a98e-6b70482f2b75",
         "UUID": "83507653-b8a9-5273-913f-ae189f5058b9",
         "WFCondition": 5,
         "WFConditionalActionString": "ABERTA",
@@ -10239,7 +10239,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "253c6c9a-1266-5139-9c5c-672ae8bbd30a",
+        "GroupingIdentifier": "ee4a9687-08a9-51d1-990d-b4fe5db626d2",
         "UUID": "b0c8b137-f437-5c9d-8ba6-0b6f786c6ffe",
         "WFCondition": 5,
         "WFConditionalActionString": "FINALIZADA",
@@ -10366,8 +10366,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "253c6c9a-1266-5139-9c5c-672ae8bbd30a",
-        "UUID": "41d1e5be-f568-5ee2-a5ff-37103dad661a",
+        "GroupingIdentifier": "ee4a9687-08a9-51d1-990d-b4fe5db626d2",
+        "UUID": "4c3bda88-6a40-5db1-9b80-79809dfc6fb3",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -10396,8 +10396,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "afce9ffb-8e91-5a39-8053-7ba3044c3880",
-        "UUID": "2497d589-58c3-551a-a25e-decea926bc09",
+        "GroupingIdentifier": "aae24de0-f1af-51ce-a98e-6b70482f2b75",
+        "UUID": "7e078592-18df-5186-8d05-64c7542a0cca",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -10498,7 +10498,7 @@
       },
       "location": {
         "end": {
-          "column": 40,
+          "column": 45,
           "line": 144
         },
         "file": "Main.shortcuty",
@@ -10508,15 +10508,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "212f33b9-7ea8-5558-b26e-5e60f46369d0",
-        "UUID": "dded0651-e5de-5f32-a0bb-ea1c3924a206",
+        "GroupingIdentifier": "93209864-c9b8-59e5-b0a3-56b031f2f237",
+        "UUID": "d39e91e1-9ee4-5b2b-b50c-2a58331f684b",
         "WFCondition": 5,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "nomeEsperado"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "nomeEsperado"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -10641,8 +10646,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "212f33b9-7ea8-5558-b26e-5e60f46369d0",
-        "UUID": "bb0ce0a3-38f2-5309-bc53-1e1625c1a2ee",
+        "GroupingIdentifier": "93209864-c9b8-59e5-b0a3-56b031f2f237",
+        "UUID": "bbff5243-a167-5940-8e15-9705ff4a7434",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -10765,7 +10770,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "8062fc44-f9c3-514d-bca6-1aff25190ed3",
+        "GroupingIdentifier": "f79a97a8-ffa6-5632-84d3-11a7d7c8601a",
         "UUID": "fd42960b-0900-5090-b79e-c08646438b7a",
         "WFCondition": 101,
         "WFControlFlowMode": 0,
@@ -10880,8 +10885,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "8062fc44-f9c3-514d-bca6-1aff25190ed3",
-        "UUID": "4fb8b7f6-9b6c-54a9-a386-f1f3eb160b9b",
+        "GroupingIdentifier": "f79a97a8-ffa6-5632-84d3-11a7d7c8601a",
+        "UUID": "553348ef-8279-5fa8-9a84-801ffb84e3d0",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -11018,7 +11023,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "84706570-9a1e-5f11-a5a5-0688ea2839b0",
+        "UUID": "d704314a-442f-5a1d-ab01-c095da99653c",
         "WFTextActionText": "NAO"
       },
       "title": "Text"
@@ -11048,7 +11053,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "84706570-9a1e-5f11-a5a5-0688ea2839b0",
+            "OutputUUID": "d704314a-442f-5a1d-ab01-c095da99653c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -11091,7 +11096,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "c82bb49d-8e18-599b-b7d6-ec6f2b7dd68c",
+        "GroupingIdentifier": "cd418b26-046d-5127-adf8-64ab9c30b396",
         "UUID": "e12626fb-cb4e-5254-b80b-652e5afb2f0a",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -11153,7 +11158,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "84f7c2c8-42ca-5002-9465-718e967f4666",
+        "GroupingIdentifier": "1ab1d330-15d9-57df-a7ea-19d706361a51",
         "UUID": "7e720640-484b-522e-be75-14e50b2d75f8",
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -11342,7 +11347,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "2af095b5-4393-5d0e-96a4-d1bf7b9612c8",
+        "GroupingIdentifier": "732d7911-f5e4-5a7a-a02e-667c4d61d5be",
         "UUID": "996c4725-639f-5cae-9824-bf709d237088",
         "WFCondition": 4,
         "WFConditionalActionString": "registros",
@@ -11405,7 +11410,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "eea8fac1-1410-52b5-9fb8-1a6081c2cf3c",
+        "UUID": "49fedf8c-2a61-56d0-9a08-29d6cba2e586",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -11435,7 +11440,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "eea8fac1-1410-52b5-9fb8-1a6081c2cf3c",
+            "OutputUUID": "49fedf8c-2a61-56d0-9a08-29d6cba2e586",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -11468,8 +11473,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2af095b5-4393-5d0e-96a4-d1bf7b9612c8",
-        "UUID": "044cb539-8bb6-57f7-9ae9-236c4a73fe0e",
+        "GroupingIdentifier": "732d7911-f5e4-5a7a-a02e-667c4d61d5be",
+        "UUID": "0258ee00-9aa2-5cf4-b0e3-20a50be7fc17",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -11487,8 +11492,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "84f7c2c8-42ca-5002-9465-718e967f4666",
-        "UUID": "378ff1f4-e45a-5378-bdf7-b94107d0d2fe",
+        "GroupingIdentifier": "1ab1d330-15d9-57df-a7ea-19d706361a51",
+        "UUID": "10708afe-174b-584e-bee5-a6d881e2632f",
         "WFControlFlowMode": 2
       },
       "title": "Repeat with Each"
@@ -11517,8 +11522,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "c82bb49d-8e18-599b-b7d6-ec6f2b7dd68c",
-        "UUID": "7efbbce8-8bb6-5e8a-bd31-1e514feb064c",
+        "GroupingIdentifier": "cd418b26-046d-5127-adf8-64ab9c30b396",
+        "UUID": "18963c1f-d173-50bf-b9bc-731a0afa4237",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -11557,7 +11562,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "9ca28ee8-b737-5aff-9432-e1715f132944",
+        "GroupingIdentifier": "95e8c815-ba9c-50ff-8c89-175b5ec9bff9",
         "UUID": "a1f008c3-c82f-5340-bf4c-7f1ef2c607f6",
         "WFCondition": 5,
         "WFConditionalActionString": "SIM",
@@ -11684,8 +11689,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "9ca28ee8-b737-5aff-9432-e1715f132944",
-        "UUID": "eb14f672-9fb6-53c7-9726-33bfa36ddf73",
+        "GroupingIdentifier": "95e8c815-ba9c-50ff-8c89-175b5ec9bff9",
+        "UUID": "c165be66-5302-597c-965a-1fda5b34c25b",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -11775,7 +11780,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "e030e882-4ee8-5dcd-8712-f48c527a7f3a",
+        "GroupingIdentifier": "6e8b0f4b-843c-5fc4-bc47-3b40ba4acbb1",
         "UUID": "e2f5dbba-e428-511b-a38e-59af9c7bea8f",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -11889,8 +11894,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "e030e882-4ee8-5dcd-8712-f48c527a7f3a",
-        "UUID": "5e27653b-0782-5c35-8c1d-56429930b85d",
+        "GroupingIdentifier": "6e8b0f4b-843c-5fc4-bc47-3b40ba4acbb1",
+        "UUID": "364997f8-b268-5748-a28e-a2c4fcee7a5e",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -11929,7 +11934,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "3d90a781-4ec9-52e9-9dde-dcc0d1745c0e",
+        "GroupingIdentifier": "b17284b7-6d9e-552b-999a-fb4892bc8a58",
         "UUID": "a40bb285-6aad-5794-b26d-fbd5a7e64742",
         "WFCondition": 4,
         "WFConditionalActionString": "CONTINUAR",
@@ -12014,7 +12019,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "977c5ac6-062f-5f96-9448-05a619f618cf",
+        "GroupingIdentifier": "8a0f0203-49b1-5fcd-8858-9ccd75851eaa",
         "UUID": "7d587c7b-d6dc-5cc2-9f0d-c1194b8408f7",
         "WFCondition": 4,
         "WFConditionalActionString": "FINALIZADA",
@@ -12141,8 +12146,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "977c5ac6-062f-5f96-9448-05a619f618cf",
-        "UUID": "719425b5-9e2a-5198-9be9-bf55abd443b2",
+        "GroupingIdentifier": "8a0f0203-49b1-5fcd-8858-9ccd75851eaa",
+        "UUID": "21561c1e-b980-55a8-a5e8-899a1e99c304",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -12171,8 +12176,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "3d90a781-4ec9-52e9-9dde-dcc0d1745c0e",
-        "UUID": "b3b32962-1a03-53fb-b4f3-5d508bbae2ae",
+        "GroupingIdentifier": "b17284b7-6d9e-552b-999a-fb4892bc8a58",
+        "UUID": "953b6679-0b4a-5041-928a-b3f3a2c21cda",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -12211,7 +12216,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "8cf44389-696c-5f31-bc9a-2f0859d6af67",
+        "GroupingIdentifier": "463e7bf8-2ca2-5880-aa73-e78eec8a648d",
         "UUID": "6b01ce8c-1ae1-5bce-98cb-9449b0b16f09",
         "WFCondition": 4,
         "WFConditionalActionString": "SIM",
@@ -12307,7 +12312,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "af210cc0-8d33-5801-9eb6-c0f0b86fd408",
+        "UUID": "30f6a2b0-4ed1-5b28-be8f-1d6a25d2804e",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -12337,7 +12342,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "af210cc0-8d33-5801-9eb6-c0f0b86fd408",
+            "OutputUUID": "30f6a2b0-4ed1-5b28-be8f-1d6a25d2804e",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -12358,7 +12363,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "38f715cb-71d5-5790-8b1e-acb9eb8c0439",
+        "UUID": "5bc517ab-f08a-5390-b68e-327c65dd6936",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -12388,7 +12393,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "38f715cb-71d5-5790-8b1e-acb9eb8c0439",
+            "OutputUUID": "5bc517ab-f08a-5390-b68e-327c65dd6936",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -12409,7 +12414,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "0fd764f5-0f7d-5c1c-8335-000a85bb3bfb",
+        "UUID": "9e703d23-f57a-50a0-88a2-cadc93f47dd4",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -12439,7 +12444,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "0fd764f5-0f7d-5c1c-8335-000a85bb3bfb",
+            "OutputUUID": "9e703d23-f57a-50a0-88a2-cadc93f47dd4",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -12460,7 +12465,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "539465b8-e747-528c-8477-46d7753d398b",
+        "UUID": "0b84d692-9a81-5def-9058-4e6ed1d6ff51",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -12490,7 +12495,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "539465b8-e747-528c-8477-46d7753d398b",
+            "OutputUUID": "0b84d692-9a81-5def-9058-4e6ed1d6ff51",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -12511,7 +12516,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "a49989cb-aa24-5677-b8e9-17f8bf7c46e8",
+        "UUID": "7ee440d1-c4f9-5f12-b906-a0b23fbf4456",
         "WFTextActionText": "INICIAR"
       },
       "title": "Text"
@@ -12541,7 +12546,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "a49989cb-aa24-5677-b8e9-17f8bf7c46e8",
+            "OutputUUID": "7ee440d1-c4f9-5f12-b906-a0b23fbf4456",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -12574,8 +12579,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "8cf44389-696c-5f31-bc9a-2f0859d6af67",
-        "UUID": "a1c1241c-63bb-51a3-acc6-bdd3068ce393",
+        "GroupingIdentifier": "463e7bf8-2ca2-5880-aa73-e78eec8a648d",
+        "UUID": "d6a36a34-1865-5e19-94d5-f304cf878044",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -12614,7 +12619,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "e3cd3de9-6448-53c8-a631-4138184e9a6b",
+        "GroupingIdentifier": "8c5145fc-235f-548d-a160-b01c48f37018",
         "UUID": "bcf419f7-f2d1-5e0e-a5e3-5f9bfcf7e08f",
         "WFCondition": 4,
         "WFConditionalActionString": "RESUMO",
@@ -12677,7 +12682,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "c8036ac3-214d-51bb-a0e1-e59cc07dfbc5",
+        "UUID": "c747f407-083d-5e84-975d-c71f530c17e4",
         "WFTextActionText": "RESUMO"
       },
       "title": "Text"
@@ -12707,7 +12712,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "c8036ac3-214d-51bb-a0e1-e59cc07dfbc5",
+            "OutputUUID": "c747f407-083d-5e84-975d-c71f530c17e4",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -12740,8 +12745,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "e3cd3de9-6448-53c8-a631-4138184e9a6b",
-        "UUID": "1d599cd5-b729-5347-963a-b8cd17281131",
+        "GroupingIdentifier": "8c5145fc-235f-548d-a160-b01c48f37018",
+        "UUID": "b0490a69-812f-56ca-b4ac-ab5e27fe1748",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -12770,8 +12775,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2a2696be-1ae7-5f7a-91fa-d53eca5d9545",
-        "UUID": "6c114409-81e4-52ed-84b4-7efcaff8c559",
+        "GroupingIdentifier": "fa0e8c22-3c2b-5647-a995-d5e1ebe94221",
+        "UUID": "71ccc498-e40d-5e4e-83cd-7176758aa1a1",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -12795,7 +12800,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "0eb512fb-f93f-576c-9bf2-646dae4ae545",
+        "UUID": "f2c67ebe-37f7-5b28-8d8f-8aec92c3aa8b",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -12834,7 +12839,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "d2883c5d-fca9-57e8-a19f-c0952d6081e3",
+        "GroupingIdentifier": "cf570cd6-d670-5905-855e-77bc5bf7eca3",
         "UUID": "dc5cf3d3-800f-5356-a8c3-6ffac44cf589",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -12843,7 +12848,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "0eb512fb-f93f-576c-9bf2-646dae4ae545",
+              "OutputUUID": "f2c67ebe-37f7-5b28-8d8f-8aec92c3aa8b",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -13322,7 +13327,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "dac07169-ec6b-5936-9bcb-521d8e4f6b46",
+        "UUID": "59f47908-5ca1-5d62-b318-e40e90487d34",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -13361,7 +13366,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "dc625179-f908-5d05-bb3c-8122a05d1182",
+        "GroupingIdentifier": "b16788cd-f950-5987-a551-10bc83b30e66",
         "UUID": "cc17dd33-c2dd-5815-86f6-6385ad47ee00",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -13370,7 +13375,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "dac07169-ec6b-5936-9bcb-521d8e4f6b46",
+              "OutputUUID": "59f47908-5ca1-5d62-b318-e40e90487d34",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -13459,8 +13464,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "dc625179-f908-5d05-bb3c-8122a05d1182",
-        "UUID": "5e714f66-1f89-5b8c-bf72-78aa13b576e4",
+        "GroupingIdentifier": "b16788cd-f950-5987-a551-10bc83b30e66",
+        "UUID": "c5056100-a8d6-5b80-939f-77509f9d2e22",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -13489,8 +13494,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "d2883c5d-fca9-57e8-a19f-c0952d6081e3",
-        "UUID": "7de3385c-7a90-5cfd-ac6d-388a21a0c624",
+        "GroupingIdentifier": "cf570cd6-d670-5905-855e-77bc5bf7eca3",
+        "UUID": "80153a15-329e-5953-82bd-16b6532a51e1",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -13580,7 +13585,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "a3495d8e-9b0e-5952-b583-fcf75fc94cc3",
+        "GroupingIdentifier": "98617536-c89d-5ac3-9ab5-627e337e483a",
         "UUID": "b93eb0bd-c12c-54c7-a0bc-1fca1fdd1522",
         "WFCondition": 101,
         "WFControlFlowMode": 0,
@@ -13695,8 +13700,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "a3495d8e-9b0e-5952-b583-fcf75fc94cc3",
-        "UUID": "918de87f-2558-5566-afac-ea718c821647",
+        "GroupingIdentifier": "98617536-c89d-5ac3-9ab5-627e337e483a",
+        "UUID": "9dfd18a0-d06d-57d8-9860-54820780fb54",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -13711,7 +13716,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "77f39c86-f177-588b-911f-d35ce00e6ee7",
+        "UUID": "6f58e17d-6a49-540e-8926-a082fe50583a",
         "WFVariable": {
           "Value": {
             "Type": "Variable",
@@ -13747,7 +13752,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Require Value",
-            "OutputUUID": "77f39c86-f177-588b-911f-d35ce00e6ee7",
+            "OutputUUID": "6f58e17d-6a49-540e-8926-a082fe50583a",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -13857,7 +13862,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "f3dc405b-051a-539e-b42f-d017aa91eb60",
+        "GroupingIdentifier": "b3743a5b-d08a-5dad-978b-5d4738678f69",
         "UUID": "7cb01e79-13bc-515b-9c85-16f80ad57940",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -13984,8 +13989,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "f3dc405b-051a-539e-b42f-d017aa91eb60",
-        "UUID": "fb279f0a-e75e-5be7-b7f4-51dea821c16a",
+        "GroupingIdentifier": "b3743a5b-d08a-5dad-978b-5d4738678f69",
+        "UUID": "72f302ab-a8cc-5071-b605-58b3350efab2",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -14073,7 +14078,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "1a1ded12-306c-59dc-819b-de5557211217",
+        "GroupingIdentifier": "abc71aed-84a2-5bab-9594-0582c42f9be3",
         "UUID": "5ed63776-6ff4-52a8-8cf7-5afb3d7dd96f",
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -14218,7 +14223,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "ba5d43d2-0183-5562-9bce-888ee859e12f",
+        "UUID": "0361a70d-9800-58a3-93e0-8f652b921ddb",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -14248,7 +14253,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "ba5d43d2-0183-5562-9bce-888ee859e12f",
+            "OutputUUID": "0361a70d-9800-58a3-93e0-8f652b921ddb",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -14291,7 +14296,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "c73b0059-d906-51e3-abe7-e98fbd7d7302",
+        "GroupingIdentifier": "a5be4702-f3ea-5823-b447-6d05af833224",
         "UUID": "605a8097-b04f-5713-95fb-af5e8df39a4b",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -14496,8 +14501,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "c73b0059-d906-51e3-abe7-e98fbd7d7302",
-        "UUID": "24781fe9-b8ff-5616-814f-9ab7b785f761",
+        "GroupingIdentifier": "a5be4702-f3ea-5823-b447-6d05af833224",
+        "UUID": "c07e0bc0-5530-54d9-96ab-4c0dab38e7ee",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -14583,7 +14588,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "a241d088-f203-51e6-bedc-4dcc415b7967",
+        "UUID": "de1c09ba-ec00-50b3-a0ec-adbecf5fde73",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -14613,7 +14618,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "a241d088-f203-51e6-bedc-4dcc415b7967",
+            "OutputUUID": "de1c09ba-ec00-50b3-a0ec-adbecf5fde73",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -14656,7 +14661,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "bd6f811d-88d1-5fc8-a497-d67d5b7f3a3a",
+        "GroupingIdentifier": "ed730691-e39c-54fb-b3c1-4224dd77d239",
         "UUID": "8be7fede-cbdc-5b09-ae53-93f45c2fba87",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -14861,8 +14866,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "bd6f811d-88d1-5fc8-a497-d67d5b7f3a3a",
-        "UUID": "d830d830-a416-5410-98e3-54bf1c5660ab",
+        "GroupingIdentifier": "ed730691-e39c-54fb-b3c1-4224dd77d239",
+        "UUID": "b693af80-e64a-57d8-8cf7-06d90b5176f8",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -14959,7 +14964,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "49f97745-3caf-515a-8b53-3a122f52c717",
+        "UUID": "9148a653-1711-5b4a-9fc2-0d732d4c4fc9",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -14989,7 +14994,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "49f97745-3caf-515a-8b53-3a122f52c717",
+            "OutputUUID": "9148a653-1711-5b4a-9fc2-0d732d4c4fc9",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -15032,7 +15037,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "c62d8511-1a08-58b3-b322-978a116fee20",
+        "GroupingIdentifier": "84b1b103-7b93-517c-87dd-05d63deb8c11",
         "UUID": "dc9e8911-a8cd-51f6-86c3-098e6b2de5c7",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -15237,8 +15242,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "c62d8511-1a08-58b3-b322-978a116fee20",
-        "UUID": "b95358fa-f189-5cfc-8f2f-2f0e7ee541b9",
+        "GroupingIdentifier": "84b1b103-7b93-517c-87dd-05d63deb8c11",
+        "UUID": "a6aa2dc3-dce1-5e81-9a08-b984538e1565",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -15262,7 +15267,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "440cd0b5-8e33-58e4-90e7-a9575841c8f2",
+        "UUID": "c6587e6b-71eb-5533-83a4-7551c14947c9",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -15301,7 +15306,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "2d8e0861-80b6-5155-ac82-df5a52cdd53b",
+        "GroupingIdentifier": "7c6943b6-77a5-59e6-9825-e8d72c4fd1dd",
         "UUID": "184f16ef-b31a-5b25-b642-b3140252ab74",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -15310,7 +15315,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "440cd0b5-8e33-58e4-90e7-a9575841c8f2",
+              "OutputUUID": "c6587e6b-71eb-5533-83a4-7551c14947c9",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -15433,8 +15438,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2d8e0861-80b6-5155-ac82-df5a52cdd53b",
-        "UUID": "baa08a80-1c47-5d1b-ad9f-b099f9a4b166",
+        "GroupingIdentifier": "7c6943b6-77a5-59e6-9825-e8d72c4fd1dd",
+        "UUID": "9d68c38d-d1ec-5485-90bf-7f0a991523a0",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -15463,7 +15468,7 @@
       },
       "location": {
         "end": {
-          "column": 32,
+          "column": 37,
           "line": 221
         },
         "file": "Main.shortcuty",
@@ -15473,15 +15478,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "98857536-76c3-56f6-90c9-e0b7baecbe2f",
-        "UUID": "d38a48eb-179c-5942-95df-f33ad3d14e9f",
+        "GroupingIdentifier": "6248da30-af91-5ddd-8b85-5b7a3ae95779",
+        "UUID": "55ca499a-0f19-509e-977f-df931189ad35",
         "WFCondition": 5,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "esperado"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "esperado"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -15625,8 +15635,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "98857536-76c3-56f6-90c9-e0b7baecbe2f",
-        "UUID": "b7b8d212-f304-598d-9ce6-2fe9f740952a",
+        "GroupingIdentifier": "6248da30-af91-5ddd-8b85-5b7a3ae95779",
+        "UUID": "9fb3af9e-4508-5cd6-af8f-aa9557936f2d",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -15654,7 +15664,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "936fba3d-46de-507f-8492-3a20f7bb1f67",
+        "GroupingIdentifier": "6e640409-23f6-5bc3-ac4a-f83fee0cdde2",
         "UUID": "f707edbf-810a-5713-a290-99dcda76091d",
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -15833,7 +15843,7 @@
       },
       "location": {
         "end": {
-          "column": 29,
+          "column": 34,
           "line": 227
         },
         "file": "Main.shortcuty",
@@ -15843,15 +15853,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "63d7d5bd-2c11-5ced-bbde-5f4cccc7dc08",
-        "UUID": "759a1975-5b86-5198-9b22-027332df769c",
+        "GroupingIdentifier": "c9b36415-31d1-572c-9a07-2ea9344cede7",
+        "UUID": "ab48d7b2-0f92-5bf2-a759-566694d5e67e",
         "WFCondition": 4,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "idProduto"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "idProduto"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -15976,8 +15991,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "63d7d5bd-2c11-5ced-bbde-5f4cccc7dc08",
-        "UUID": "14fba2f7-447a-5848-b833-201b0699a6e3",
+        "GroupingIdentifier": "c9b36415-31d1-572c-9a07-2ea9344cede7",
+        "UUID": "f92de88c-4c28-57a5-b77d-54360e144ab6",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -15995,8 +16010,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "936fba3d-46de-507f-8492-3a20f7bb1f67",
-        "UUID": "9b54b0d2-9c76-515c-803a-ddadc9332b42",
+        "GroupingIdentifier": "6e640409-23f6-5bc3-ac4a-f83fee0cdde2",
+        "UUID": "01b9145c-0b57-54eb-8890-972946fc88da",
         "WFControlFlowMode": 2
       },
       "title": "Repeat with Each"
@@ -16047,8 +16062,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "1a1ded12-306c-59dc-819b-de5557211217",
-        "UUID": "f8e27e08-aba0-5fcb-b906-b1a116949b8a",
+        "GroupingIdentifier": "abc71aed-84a2-5bab-9594-0582c42f9be3",
+        "UUID": "c61e387b-d5c4-5151-b51c-8111807568fc",
         "WFControlFlowMode": 2
       },
       "title": "Repeat with Each"
@@ -16076,7 +16091,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "61dbd836-7bf6-5fd3-9280-13b2235a9eea",
+        "GroupingIdentifier": "0fdffb05-4d6a-5453-9c4d-7b2efade695b",
         "UUID": "1f9ab312-c889-504e-bcf1-412d44f26d79",
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -16323,7 +16338,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "d506b1ca-4895-5336-839b-71210fbdfd21",
+        "UUID": "f915cf12-6cd1-5b67-b9e1-c6670032128c",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -16353,7 +16368,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "d506b1ca-4895-5336-839b-71210fbdfd21",
+            "OutputUUID": "f915cf12-6cd1-5b67-b9e1-c6670032128c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -16396,7 +16411,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "108f383a-6ad7-5996-a45c-e930d4c5be8b",
+        "GroupingIdentifier": "1e5b40af-9a20-5935-a666-bff7a1b7489c",
         "UUID": "48e7afc5-6ff7-5a71-8f2f-4943119189b6",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -16601,8 +16616,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "108f383a-6ad7-5996-a45c-e930d4c5be8b",
-        "UUID": "945c914d-3cca-5d44-95e4-df5389050017",
+        "GroupingIdentifier": "1e5b40af-9a20-5935-a666-bff7a1b7489c",
+        "UUID": "b9a1e81f-8565-568c-a346-9a096701c4fa",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -16626,7 +16641,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "e3133095-4e50-5b30-965c-337dbf39cd4d",
+        "UUID": "68c6a1e6-71b0-51b6-a6af-315641981941",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -16665,7 +16680,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "2ee92282-c820-5fe8-91c3-1baba3c0be9d",
+        "GroupingIdentifier": "8f44a58f-7c93-548f-9f18-7faa4178c9b1",
         "UUID": "593f12ab-aa93-5429-ba2c-bc94440a9d52",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -16674,7 +16689,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "e3133095-4e50-5b30-965c-337dbf39cd4d",
+              "OutputUUID": "68c6a1e6-71b0-51b6-a6af-315641981941",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -16904,7 +16919,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "726b0e9c-26cd-5beb-bfa3-31cd84ae03d0",
+        "UUID": "e72deb7c-be63-5fee-baaf-b770b66bedef",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -16934,7 +16949,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "726b0e9c-26cd-5beb-bfa3-31cd84ae03d0",
+            "OutputUUID": "e72deb7c-be63-5fee-baaf-b770b66bedef",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -16977,7 +16992,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "0591be63-8df2-5ffb-aed5-f9c5b65c244b",
+        "GroupingIdentifier": "765113a3-6a0d-5633-9177-3300be3748ac",
         "UUID": "33f87216-4d53-51d4-9ceb-d217494d3471",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -17182,8 +17197,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "0591be63-8df2-5ffb-aed5-f9c5b65c244b",
-        "UUID": "8b42d088-3e68-5cad-8471-521caca133f8",
+        "GroupingIdentifier": "765113a3-6a0d-5633-9177-3300be3748ac",
+        "UUID": "fa6d4a95-b1ed-5227-b187-acebbca13a6a",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -17269,7 +17284,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "950cbf87-6c59-5de1-8d2d-0b7edfab2259",
+        "UUID": "33a96749-609b-5f89-a93b-1c9afce9cd1a",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -17299,7 +17314,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "950cbf87-6c59-5de1-8d2d-0b7edfab2259",
+            "OutputUUID": "33a96749-609b-5f89-a93b-1c9afce9cd1a",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -17342,7 +17357,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "45e7bb77-fa70-5161-9557-647650299bc3",
+        "GroupingIdentifier": "87b833c2-dcda-5564-bb48-f2489e8570c1",
         "UUID": "5872a78c-baea-5107-b9fc-6919059d6e71",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -17547,8 +17562,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "45e7bb77-fa70-5161-9557-647650299bc3",
-        "UUID": "b7ae3485-5e8f-5370-b55c-0490ab8c7740",
+        "GroupingIdentifier": "87b833c2-dcda-5564-bb48-f2489e8570c1",
+        "UUID": "471a8337-127f-54c3-bcf9-d1c734a6a2d5",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -17634,7 +17649,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "e8ef096c-c556-596d-8c68-3a3d27f69411",
+        "UUID": "dcd908c0-548f-5c03-8c8e-0652f203e336",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -17664,7 +17679,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "e8ef096c-c556-596d-8c68-3a3d27f69411",
+            "OutputUUID": "dcd908c0-548f-5c03-8c8e-0652f203e336",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -17707,7 +17722,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "6daca74b-859f-537e-afa0-d36e8fabbf93",
+        "GroupingIdentifier": "08e24ac2-4a36-55f1-8ea4-83274f5b3bea",
         "UUID": "7d29df08-a30c-59fa-adc0-5da6a634ff5d",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -17912,8 +17927,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "6daca74b-859f-537e-afa0-d36e8fabbf93",
-        "UUID": "795f2be7-d159-58e4-8e6b-7124e2d7415c",
+        "GroupingIdentifier": "08e24ac2-4a36-55f1-8ea4-83274f5b3bea",
+        "UUID": "a2dde24f-1629-57e7-8d9e-5161a6e97d26",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -18174,7 +18189,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "f25b8388-8dd3-59fa-a410-d875c11d3b22",
+        "GroupingIdentifier": "9139107f-76b4-5bfd-9517-e94dca1e0ceb",
         "UUID": "b4f019b0-b5c2-5f08-a3c3-ec880c19fa20",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -18301,8 +18316,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "f25b8388-8dd3-59fa-a410-d875c11d3b22",
-        "UUID": "e9bbcdd6-627e-5763-a177-328646413bba",
+        "GroupingIdentifier": "9139107f-76b4-5bfd-9517-e94dca1e0ceb",
+        "UUID": "97d7d82c-a1ce-577f-bb43-831c6f968ce4",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -18403,8 +18418,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2ee92282-c820-5fe8-91c3-1baba3c0be9d",
-        "UUID": "9314c370-c000-51d7-8d5a-7552a20c6876",
+        "GroupingIdentifier": "8f44a58f-7c93-548f-9f18-7faa4178c9b1",
+        "UUID": "a9a5251b-6147-5ad8-b997-182c80b7bb71",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -18422,8 +18437,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "61dbd836-7bf6-5fd3-9280-13b2235a9eea",
-        "UUID": "db50db6c-718d-5706-8433-13d206c91fe1",
+        "GroupingIdentifier": "0fdffb05-4d6a-5453-9c4d-7b2efade695b",
+        "UUID": "f813596a-2c7a-5623-ac1c-b1957032a420",
         "WFControlFlowMode": 2
       },
       "title": "Repeat with Each"
@@ -18508,7 +18523,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "2fa26b76-3a6a-5280-956f-c25c8f815a58",
+        "UUID": "967c228b-0f5f-55a0-935e-3a6c6dd3d648",
         "WFNumberActionNumber": 0
       },
       "title": "Number"
@@ -18538,7 +18553,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "2fa26b76-3a6a-5280-956f-c25c8f815a58",
+            "OutputUUID": "967c228b-0f5f-55a0-935e-3a6c6dd3d648",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -18581,7 +18596,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "81159c44-cf18-5e34-bbf4-dcfae6cd4612",
+        "GroupingIdentifier": "0a2378b7-b0e6-5314-b28c-9c3f35745973",
         "UUID": "6628b6ea-d207-55c8-8da7-70fc77f050c8",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -18711,8 +18726,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "81159c44-cf18-5e34-bbf4-dcfae6cd4612",
-        "UUID": "2acc219f-cc25-5a67-8463-74375e9d9d62",
+        "GroupingIdentifier": "0a2378b7-b0e6-5314-b28c-9c3f35745973",
+        "UUID": "b5269dc3-b42c-5e50-81ac-35769a6ccceb",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -18751,7 +18766,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "abc79d47-8948-5686-b050-9dc1f8140187",
+        "GroupingIdentifier": "4dfede05-e3d3-5579-9ab4-295a4944216a",
         "UUID": "74c27dae-dc95-5de4-9454-8358a20a53f4",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -18884,8 +18899,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "abc79d47-8948-5686-b050-9dc1f8140187",
-        "UUID": "fae80ec8-83ef-5af6-98ca-cf26376e211e",
+        "GroupingIdentifier": "4dfede05-e3d3-5579-9ab4-295a4944216a",
+        "UUID": "77d701fd-91a1-5df8-92f7-f0063b066382",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -18902,7 +18917,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "cce217cd-8b06-5763-9ebc-e389cf0778d0",
+        "UUID": "aa25cfdd-5fbd-57d0-958b-85c27b9f97f5",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -18932,7 +18947,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "cce217cd-8b06-5763-9ebc-e389cf0778d0",
+            "OutputUUID": "aa25cfdd-5fbd-57d0-958b-85c27b9f97f5",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -18952,7 +18967,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "1f8cb890-a0b2-5171-a672-8b58da8e16cf",
+        "UUID": "c4271a5c-6b0a-5e6d-b5e6-c0c76370d066",
         "WFNumberActionNumber": 1
       },
       "title": "Number"
@@ -18982,7 +18997,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "1f8cb890-a0b2-5171-a672-8b58da8e16cf",
+            "OutputUUID": "c4271a5c-6b0a-5e6d-b5e6-c0c76370d066",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -19013,7 +19028,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "da4f03db-f585-5bf4-80ca-516d7d298438",
+        "GroupingIdentifier": "8b8ed927-86ab-5401-9a17-19da33ea392f",
         "UUID": "0840268b-3929-5763-b525-8c548ea1237d",
         "WFControlFlowMode": 0,
         "WFRepeatCount": 1000
@@ -19054,7 +19069,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "0d7d37c5-4d5f-53f9-8f97-29b0c37957a6",
+        "GroupingIdentifier": "c0cf3549-0ca5-56ae-ab45-e1bf435964b1",
         "UUID": "18269561-f1cc-5ce9-abc1-536e4e88a6b6",
         "WFCondition": 4,
         "WFConditionalActionString": "MENU",
@@ -19117,7 +19132,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "16a351b8-2933-5d13-bdf7-a1f964240723",
+        "UUID": "cc97e567-1462-5da7-a1d9-cf47a593e219",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -19147,7 +19162,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "16a351b8-2933-5d13-bdf7-a1f964240723",
+            "OutputUUID": "cc97e567-1462-5da7-a1d9-cf47a593e219",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -19168,7 +19183,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "25c4033e-df4c-5686-8e75-883069d52ae7",
+        "UUID": "b9d07107-cc1a-57a4-908b-d6e80c262983",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -19198,7 +19213,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "25c4033e-df4c-5686-8e75-883069d52ae7",
+            "OutputUUID": "b9d07107-cc1a-57a4-908b-d6e80c262983",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -19218,7 +19233,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "08d2543f-9e00-5759-91e1-927ebfdc8369",
+        "UUID": "25d32455-7aa5-579b-bcc7-7e793bc1acf3",
         "WFNumberActionNumber": 1
       },
       "title": "Number"
@@ -19248,7 +19263,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "08d2543f-9e00-5759-91e1-927ebfdc8369",
+            "OutputUUID": "25d32455-7aa5-579b-bcc7-7e793bc1acf3",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -19268,7 +19283,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "f1280460-e538-5438-b20d-d39947c7add4",
+        "UUID": "5b764fef-dbc8-50cb-8a33-a2bedd044b34",
         "WFNumberActionNumber": 1
       },
       "title": "Number"
@@ -19298,7 +19313,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "f1280460-e538-5438-b20d-d39947c7add4",
+            "OutputUUID": "5b764fef-dbc8-50cb-8a33-a2bedd044b34",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -19318,7 +19333,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "38dc2ec7-5a3a-5e2c-b4e6-158e08e96141",
+        "UUID": "6b4acf9e-9dae-5dd3-bdc8-8077564f44e8",
         "WFNumberActionNumber": 0
       },
       "title": "Number"
@@ -19348,7 +19363,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "38dc2ec7-5a3a-5e2c-b4e6-158e08e96141",
+            "OutputUUID": "6b4acf9e-9dae-5dd3-bdc8-8077564f44e8",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -19380,7 +19395,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "9355a379-77fa-5c7c-aad2-d31b27766e43",
+        "GroupingIdentifier": "43c39c1d-1396-50f0-9656-003bf6f225cd",
         "UUID": "66067fe6-fb19-5627-9cf1-90e5431e7521",
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -19626,7 +19641,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "40e07bcc-f9be-5338-b1c4-cb67f97d1afd",
+        "UUID": "2e774f7a-03f8-590c-8939-639a2c1e9daa",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -19665,7 +19680,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "034c5454-6c6c-570e-9a80-66796830e92f",
+        "GroupingIdentifier": "d7803788-f5c9-596d-94c6-fc480843bed4",
         "UUID": "82f58cc4-d182-5529-92eb-3557a0cd5e60",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -19674,7 +19689,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "40e07bcc-f9be-5338-b1c4-cb67f97d1afd",
+              "OutputUUID": "2e774f7a-03f8-590c-8939-639a2c1e9daa",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -19798,7 +19813,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "7bcf1879-4731-57f0-8346-dbf53e7c5a84",
+        "UUID": "5b8ee4bd-f8df-5326-b2cd-dc84e0d855ff",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -19828,7 +19843,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "7bcf1879-4731-57f0-8346-dbf53e7c5a84",
+            "OutputUUID": "5b8ee4bd-f8df-5326-b2cd-dc84e0d855ff",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -19871,7 +19886,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "ef138757-d33d-5cb6-9a56-ef6eb6801abe",
+        "GroupingIdentifier": "dfe78a1e-9134-5474-adf3-7233533d5031",
         "UUID": "830c802b-1541-51c5-a64d-b7d156b4ec3a",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -20076,8 +20091,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "ef138757-d33d-5cb6-9a56-ef6eb6801abe",
-        "UUID": "ae362d0d-495f-510a-9c06-c118406aaea6",
+        "GroupingIdentifier": "dfe78a1e-9134-5474-adf3-7233533d5031",
+        "UUID": "ad0ecccd-50b0-5cf6-bf18-e68f199574c2",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -20101,7 +20116,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "e0a20ed9-3ecf-57e6-aef2-eff5d5a1d4b4",
+        "UUID": "a69b463b-54ca-5c3c-a6d3-23a2fe6dbf55",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -20140,7 +20155,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "54f52f98-c153-50fb-98a3-79fd3bffa307",
+        "GroupingIdentifier": "a16f5754-bc4f-5bde-aef3-0f0fdd82e862",
         "UUID": "b73eb1ac-cd4c-57af-be7c-24e1d93ed2b2",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -20149,7 +20164,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "e0a20ed9-3ecf-57e6-aef2-eff5d5a1d4b4",
+              "OutputUUID": "a69b463b-54ca-5c3c-a6d3-23a2fe6dbf55",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -20200,7 +20215,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "758b5b2c-33aa-50b5-80a3-dbe63763ae9a",
+        "UUID": "ffcf5fef-ef10-5bd8-a608-a69873fcf97e",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -20239,7 +20254,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "3892c90a-af93-55bd-898f-35b35b23be7e",
+        "GroupingIdentifier": "e78ada6e-2141-58b4-be76-161331f45a3e",
         "UUID": "b07dac84-6330-5d64-b448-8d7b926ed2d7",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -20248,7 +20263,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "758b5b2c-33aa-50b5-80a3-dbe63763ae9a",
+              "OutputUUID": "ffcf5fef-ef10-5bd8-a608-a69873fcf97e",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -20370,8 +20385,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "3892c90a-af93-55bd-898f-35b35b23be7e",
-        "UUID": "61fc038e-f86b-5bb3-8938-50431da428af",
+        "GroupingIdentifier": "e78ada6e-2141-58b4-be76-161331f45a3e",
+        "UUID": "36dbe485-c435-50c0-b552-1a189c72b050",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -20410,7 +20425,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "c92c9919-5cb3-542d-b43c-3632ef237fb7",
+        "GroupingIdentifier": "93a03dc4-06b5-5593-8326-983186f97376",
         "UUID": "7d91e3ba-8ca5-5dd6-ad6f-4b609d79e45e",
         "WFCondition": 3,
         "WFControlFlowMode": 0,
@@ -20557,8 +20572,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "c92c9919-5cb3-542d-b43c-3632ef237fb7",
-        "UUID": "bcec05f9-1928-5273-ba6e-584158f7c994",
+        "GroupingIdentifier": "93a03dc4-06b5-5593-8326-983186f97376",
+        "UUID": "77781ed4-28c2-50d5-be41-d9203f01b47b",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -20587,8 +20602,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "54f52f98-c153-50fb-98a3-79fd3bffa307",
-        "UUID": "df051d5a-375c-50c1-b8fe-e7e67a82136d",
+        "GroupingIdentifier": "a16f5754-bc4f-5bde-aef3-0f0fdd82e862",
+        "UUID": "a3f8a833-c65c-57b4-8432-da06aef489de",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -20617,8 +20632,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "034c5454-6c6c-570e-9a80-66796830e92f",
-        "UUID": "b24b56fe-feaa-578a-9fec-389d37d75cea",
+        "GroupingIdentifier": "d7803788-f5c9-596d-94c6-fc480843bed4",
+        "UUID": "809c5748-e538-53d6-aea6-c0e5b8bf4cc7",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -20636,8 +20651,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "9355a379-77fa-5c7c-aad2-d31b27766e43",
-        "UUID": "7bb16077-38cd-5e17-8b82-3bfd0db99b82",
+        "GroupingIdentifier": "43c39c1d-1396-50f0-9656-003bf6f225cd",
+        "UUID": "a1585c7c-3dbf-5902-9493-dfb402a23c2a",
         "WFControlFlowMode": 2
       },
       "title": "Repeat with Each"
@@ -20661,7 +20676,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "2fbd156c-333e-5e84-962f-7da883c69a96",
+        "UUID": "33687684-e13f-5375-a268-f2a11ea1bec7",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -20700,7 +20715,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "04ce1b89-6a53-5b5b-9eb4-0e751fa94daf",
+        "GroupingIdentifier": "4b2c1d22-e648-5abb-91b0-d425bd146753",
         "UUID": "995cebd5-6e60-5b54-857c-0e25b8bec182",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -20709,7 +20724,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "2fbd156c-333e-5e84-962f-7da883c69a96",
+              "OutputUUID": "33687684-e13f-5375-a268-f2a11ea1bec7",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -20831,8 +20846,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "04ce1b89-6a53-5b5b-9eb4-0e751fa94daf",
-        "UUID": "60fd94d5-2fa2-5d5b-a38a-957d98479821",
+        "GroupingIdentifier": "4b2c1d22-e648-5abb-91b0-d425bd146753",
+        "UUID": "7980af2b-7d6d-5a8f-9ac8-971f4630378d",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -21001,7 +21016,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "bb3bb654-4599-57ec-bd2e-f43a1b849743",
+        "UUID": "e9e981c3-d982-5a3d-a55b-cc094493c10a",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -21031,7 +21046,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "bb3bb654-4599-57ec-bd2e-f43a1b849743",
+            "OutputUUID": "e9e981c3-d982-5a3d-a55b-cc094493c10a",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -21074,7 +21089,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "0c4e8b53-46c2-5e28-9722-557325df9661",
+        "GroupingIdentifier": "ddcd2ef5-cb98-5b29-bdb8-ee3e94362951",
         "UUID": "208659c5-eee0-5743-b7f2-9ec776e670d7",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -21279,8 +21294,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "0c4e8b53-46c2-5e28-9722-557325df9661",
-        "UUID": "61499271-2536-5f94-ad11-618f39f5fdd0",
+        "GroupingIdentifier": "ddcd2ef5-cb98-5b29-bdb8-ee3e94362951",
+        "UUID": "bebd874e-98e6-5908-b4b5-149e21b9a5a9",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -21304,7 +21319,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "7e213cb5-e908-5580-bc29-736c98f2d30b",
+        "UUID": "f51676da-0cae-575b-9305-c6b15500ba59",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -21343,7 +21358,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "2755283e-3f4c-5c23-9c3c-6e0ce75bb102",
+        "GroupingIdentifier": "7bfd022f-3aee-50c4-9ad1-3a778b570aac",
         "UUID": "cf6792dd-d5ea-5195-b10a-5e50863c19b6",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -21352,7 +21367,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "7e213cb5-e908-5580-bc29-736c98f2d30b",
+              "OutputUUID": "f51676da-0cae-575b-9305-c6b15500ba59",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -21396,7 +21411,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "a7470697-4bc3-58ec-b5a4-1e97da713d60",
+        "UUID": "127c6048-c8b6-5a58-a1fd-67c415b32806",
         "WFTextActionText": "Todos conferidos"
       },
       "title": "Text"
@@ -21426,7 +21441,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "a7470697-4bc3-58ec-b5a4-1e97da713d60",
+            "OutputUUID": "127c6048-c8b6-5a58-a1fd-67c415b32806",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -21459,8 +21474,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2755283e-3f4c-5c23-9c3c-6e0ce75bb102",
-        "UUID": "0930957f-1490-5c19-9544-42f74f56216b",
+        "GroupingIdentifier": "7bfd022f-3aee-50c4-9ad1-3a778b570aac",
+        "UUID": "916aa207-2d07-5be3-85a2-a52272f555c4",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -21490,7 +21505,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "5b03f4d3-afe1-5d7a-b497-996afd7a3a4d",
+        "GroupingIdentifier": "641b25f8-fa51-5f21-abc3-40d4515f7414",
         "UUID": "0bcde15e-6e8b-5c95-ab1b-8e7bf9cda5c1",
         "WFControlFlowMode": 0,
         "WFMenuItems": [
@@ -21534,8 +21549,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "5b03f4d3-afe1-5d7a-b497-996afd7a3a4d",
-        "UUID": "8507f027-1cfb-5583-9013-8bb8c4478a32",
+        "GroupingIdentifier": "641b25f8-fa51-5f21-abc3-40d4515f7414",
+        "UUID": "622a2daf-fe83-532e-89ee-70f25090570f",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "PRÓXIMO ITEM"
       },
@@ -21553,7 +21568,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "5e3e4b6f-1f02-5a6a-8ec6-7f66f3d9c77c",
+        "UUID": "3df13a87-31b1-5066-8fe4-3aa22a871b62",
         "WFTextActionText": "CONFERIR"
       },
       "title": "Text"
@@ -21583,7 +21598,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "5e3e4b6f-1f02-5a6a-8ec6-7f66f3d9c77c",
+            "OutputUUID": "3df13a87-31b1-5066-8fe4-3aa22a871b62",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -21607,8 +21622,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "5b03f4d3-afe1-5d7a-b497-996afd7a3a4d",
-        "UUID": "3129da0b-0b6c-5181-91ab-a618bbecb168",
+        "GroupingIdentifier": "641b25f8-fa51-5f21-abc3-40d4515f7414",
+        "UUID": "75bb7711-b7e6-53fc-8fe9-b1d6cc53e402",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "DEIXAR PRÓXIMO PARA DEPOIS"
       },
@@ -21626,7 +21641,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "f76dcf8b-c47c-521a-893f-204d466fd9e3",
+        "UUID": "3f1b615e-dd38-5b9c-8147-063d2d9aae57",
         "WFTextActionText": "PULAR"
       },
       "title": "Text"
@@ -21656,7 +21671,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "f76dcf8b-c47c-521a-893f-204d466fd9e3",
+            "OutputUUID": "3f1b615e-dd38-5b9c-8147-063d2d9aae57",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -21680,8 +21695,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "5b03f4d3-afe1-5d7a-b497-996afd7a3a4d",
-        "UUID": "66510beb-b0a4-512e-8785-9d90faf44eb4",
+        "GroupingIdentifier": "641b25f8-fa51-5f21-abc3-40d4515f7414",
+        "UUID": "f4185d4d-15fb-5623-8e13-8a2954fa3738",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "REVISAR ITEM"
       },
@@ -21699,7 +21714,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "1f772fd8-92c1-5fb8-81fa-73dee1f9f168",
+        "UUID": "5a7b1156-58a3-5bd2-85cf-aa16e4888ee2",
         "WFTextActionText": "REVISAR"
       },
       "title": "Text"
@@ -21729,7 +21744,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "1f772fd8-92c1-5fb8-81fa-73dee1f9f168",
+            "OutputUUID": "5a7b1156-58a3-5bd2-85cf-aa16e4888ee2",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -21753,8 +21768,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "5b03f4d3-afe1-5d7a-b497-996afd7a3a4d",
-        "UUID": "de3382b5-4be5-5616-9049-3397aaf2ce6c",
+        "GroupingIdentifier": "641b25f8-fa51-5f21-abc3-40d4515f7414",
+        "UUID": "e3ec34bd-aeac-5d96-b8df-c27d85a6593d",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "PAUSAR"
       },
@@ -21772,7 +21787,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "6e806fc2-363a-58bb-9bbe-98d61152fc29",
+        "UUID": "b117d6d8-060d-57e4-84f7-7480dbb78ef4",
         "WFTextActionText": "PAUSAR"
       },
       "title": "Text"
@@ -21802,7 +21817,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "6e806fc2-363a-58bb-9bbe-98d61152fc29",
+            "OutputUUID": "b117d6d8-060d-57e4-84f7-7480dbb78ef4",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -21826,8 +21841,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "5b03f4d3-afe1-5d7a-b497-996afd7a3a4d",
-        "UUID": "b6b4b5be-5382-5fa0-ad47-c4c8b6bad825",
+        "GroupingIdentifier": "641b25f8-fa51-5f21-abc3-40d4515f7414",
+        "UUID": "e23566e3-f853-5d7f-a7d6-d54c4b612f8b",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "FINALIZAR"
       },
@@ -21845,7 +21860,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "09b87933-4544-591a-a5a0-0a7167f6d4d3",
+        "UUID": "0baa7da4-21d2-57bb-bfdc-4888f9945d53",
         "WFTextActionText": "CONFIRMAR FIM"
       },
       "title": "Text"
@@ -21875,7 +21890,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "09b87933-4544-591a-a5a0-0a7167f6d4d3",
+            "OutputUUID": "0baa7da4-21d2-57bb-bfdc-4888f9945d53",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -21899,8 +21914,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "5b03f4d3-afe1-5d7a-b497-996afd7a3a4d",
-        "UUID": "01175d59-da72-5103-82eb-63ce91fad3e3",
+        "GroupingIdentifier": "641b25f8-fa51-5f21-abc3-40d4515f7414",
+        "UUID": "eecac8bb-1097-5e6b-b0cf-137ad58acfe1",
         "WFControlFlowMode": 2
       },
       "title": "Choose from Menu"
@@ -21972,7 +21987,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "cdb56ced-f590-53dd-833f-d11bd61401fb",
+        "GroupingIdentifier": "e49d1b1b-9f0d-5890-a388-4322f62a2636",
         "UUID": "7d331224-273f-5948-8eb3-4398ac3f98bc",
         "WFCondition": 4,
         "WFConditionalActionString": "PULAR",
@@ -22042,7 +22057,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "0a7c20e5-59aa-529b-974b-23b632e5663b",
+        "UUID": "97a163c9-51a2-5e89-ba82-581838f8c2af",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -22081,7 +22096,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "e6973ff7-de9e-5936-a9ee-b978dead9196",
+        "GroupingIdentifier": "d43b44da-ffdd-54c4-9e5d-0c16383e0598",
         "UUID": "e67849f3-6682-5f31-ba6b-d3430c917289",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -22090,7 +22105,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "0a7c20e5-59aa-529b-974b-23b632e5663b",
+              "OutputUUID": "97a163c9-51a2-5e89-ba82-581838f8c2af",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -22218,8 +22233,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "e6973ff7-de9e-5936-a9ee-b978dead9196",
-        "UUID": "30d1d25e-c7b2-5661-87fc-986395d408c2",
+        "GroupingIdentifier": "d43b44da-ffdd-54c4-9e5d-0c16383e0598",
+        "UUID": "a3ac7810-16e2-5a84-aab3-01e3f12ac2d0",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -22236,7 +22251,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "aaf46fdd-e31f-5436-a4bb-e7e90d2c13c5",
+        "UUID": "d098802b-79d2-5157-b197-000075aca85b",
         "WFTextActionText": "MENU"
       },
       "title": "Text"
@@ -22266,7 +22281,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "aaf46fdd-e31f-5436-a4bb-e7e90d2c13c5",
+            "OutputUUID": "d098802b-79d2-5157-b197-000075aca85b",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -22299,8 +22314,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "cdb56ced-f590-53dd-833f-d11bd61401fb",
-        "UUID": "fab18762-168a-5c71-8ac2-6c4ca08a3729",
+        "GroupingIdentifier": "e49d1b1b-9f0d-5890-a388-4322f62a2636",
+        "UUID": "2491fab8-e7fa-50bb-96bb-955527690637",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -22339,7 +22354,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "6ff65044-2581-59c0-aaf2-02f67b93fb32",
+        "GroupingIdentifier": "0852e903-aadc-5688-8195-11fe59a7d812",
         "UUID": "3ea71fb7-20f9-52a1-8975-22f59f8841ae",
         "WFCondition": 4,
         "WFConditionalActionString": "CONFERIR",
@@ -22409,7 +22424,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "16608b8c-4107-5cb9-a844-628d2d946644",
+        "UUID": "1f5e496e-2e19-5637-802e-49b8f27b39e0",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -22448,7 +22463,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "21f85508-08f5-5f49-9908-d2286e3fcb0a",
+        "GroupingIdentifier": "f72bdfbe-e703-543c-bc85-474ec2bc2496",
         "UUID": "65dcf031-78c4-5940-86f2-5605be635fab",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -22457,7 +22472,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "16608b8c-4107-5cb9-a844-628d2d946644",
+              "OutputUUID": "1f5e496e-2e19-5637-802e-49b8f27b39e0",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -22530,7 +22545,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "6d906e93-d148-576a-82a1-c5b5a5384696",
+        "UUID": "d5f47e8e-bdfc-5381-a33e-1f6e2c7af87d",
         "WFTextActionText": "MENU"
       },
       "title": "Text"
@@ -22560,7 +22575,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "6d906e93-d148-576a-82a1-c5b5a5384696",
+            "OutputUUID": "d5f47e8e-bdfc-5381-a33e-1f6e2c7af87d",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -22593,8 +22608,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "21f85508-08f5-5f49-9908-d2286e3fcb0a",
-        "UUID": "38fde5a1-3a7a-54ba-87d8-32b612f0ad00",
+        "GroupingIdentifier": "f72bdfbe-e703-543c-bc85-474ec2bc2496",
+        "UUID": "9caaf643-d8b5-5aac-82ab-1d5dbe4654c7",
         "WFControlFlowMode": 1
       },
       "title": "If"
@@ -22695,8 +22710,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "21f85508-08f5-5f49-9908-d2286e3fcb0a",
-        "UUID": "3e8fee82-2ab4-514f-8986-ef9d802d478b",
+        "GroupingIdentifier": "f72bdfbe-e703-543c-bc85-474ec2bc2496",
+        "UUID": "c9cf6918-78eb-5005-9f92-9dd5c525b755",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -22725,8 +22740,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "6ff65044-2581-59c0-aaf2-02f67b93fb32",
-        "UUID": "75efaed7-b9f1-56ad-af24-6b50a1af44c0",
+        "GroupingIdentifier": "0852e903-aadc-5688-8195-11fe59a7d812",
+        "UUID": "100a9111-0e40-5fb6-880e-004d27e33206",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -22765,7 +22780,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "89af73e7-9f62-581c-9c9a-ed5ef8435f29",
+        "GroupingIdentifier": "d0de4e39-1236-5a4e-8bc3-209ced902ef4",
         "UUID": "506ff42e-9584-5bc3-9822-2779805cfd86",
         "WFCondition": 4,
         "WFConditionalActionString": "REVISAR",
@@ -23038,7 +23053,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "c53dbe49-1642-52cd-a3f9-3301c56b44b0",
+        "UUID": "26e91929-61b6-548b-982a-e7c5cee5f131",
         "WFNumberActionNumber": 0
       },
       "title": "Number"
@@ -23068,7 +23083,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "c53dbe49-1642-52cd-a3f9-3301c56b44b0",
+            "OutputUUID": "26e91929-61b6-548b-982a-e7c5cee5f131",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -23100,7 +23115,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "71f7752c-b5d0-55ee-9312-7a5a81ba818e",
+        "GroupingIdentifier": "86cbc5f2-9f77-509d-ba97-0f434f8f931d",
         "UUID": "cb1fedfb-855e-5d4d-9589-e5e13d9939d6",
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -23351,7 +23366,7 @@
       },
       "location": {
         "end": {
-          "column": 41,
+          "column": 46,
           "line": 343
         },
         "file": "Main.shortcuty",
@@ -23361,15 +23376,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "322d95aa-4b2c-561b-bcd3-a747d72dd5da",
-        "UUID": "eb18683f-2c70-54a6-b9a0-4054903484e3",
+        "GroupingIdentifier": "a4cab271-8afd-5b17-bd5f-b8dc10738386",
+        "UUID": "af9ccf44-cf2e-55a3-93ed-237ca0cb0b69",
         "WFCondition": 4,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "nomeAtual"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "nomeAtual"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -23662,8 +23682,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "322d95aa-4b2c-561b-bcd3-a747d72dd5da",
-        "UUID": "5728849f-3868-50fc-9ba1-22b888719028",
+        "GroupingIdentifier": "a4cab271-8afd-5b17-bd5f-b8dc10738386",
+        "UUID": "740a8598-b197-5b10-aa15-190c0ac91a43",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -23681,8 +23701,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "71f7752c-b5d0-55ee-9312-7a5a81ba818e",
-        "UUID": "6d4f956a-c78a-5928-a235-939754832421",
+        "GroupingIdentifier": "86cbc5f2-9f77-509d-ba97-0f434f8f931d",
+        "UUID": "83c1d1b5-e53a-5567-ba0a-7435a7a64f10",
         "WFControlFlowMode": 2
       },
       "title": "Repeat with Each"
@@ -23699,7 +23719,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "3218b239-8311-5954-88a2-6f519ade5164",
+        "UUID": "965d22e0-121c-5d90-87e3-8de82052f7f8",
         "WFTextActionText": "CONFERIR"
       },
       "title": "Text"
@@ -23729,7 +23749,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "3218b239-8311-5954-88a2-6f519ade5164",
+            "OutputUUID": "965d22e0-121c-5d90-87e3-8de82052f7f8",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -23762,8 +23782,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "89af73e7-9f62-581c-9c9a-ed5ef8435f29",
-        "UUID": "ee82014b-eb0e-5261-8852-70b6a4f99a3d",
+        "GroupingIdentifier": "d0de4e39-1236-5a4e-8bc3-209ced902ef4",
+        "UUID": "cc050b1a-077e-5043-bd0c-6e17e8b8a58c",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -23802,7 +23822,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "7a265b8a-0c84-53cf-8e13-07eb5d0d4ff1",
+        "GroupingIdentifier": "a63dab52-14ff-5e2d-ade7-d502e7e8ae72",
         "UUID": "d44ab093-86bb-55fb-add4-d140fe932e7b",
         "WFCondition": 4,
         "WFConditionalActionString": "CONFIRMAR FIM",
@@ -23878,7 +23898,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "2221c716-b1a9-5baa-b59f-be1a5a498a2b",
+        "GroupingIdentifier": "e7e3b020-1ed8-591d-be05-c7b7cb3d30d8",
         "UUID": "a38f5455-3313-5fb3-bb16-49970fa0b86d",
         "WFControlFlowMode": 0,
         "WFMenuItems": [
@@ -23915,8 +23935,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2221c716-b1a9-5baa-b59f-be1a5a498a2b",
-        "UUID": "e5fa2001-1f73-5ffe-b84e-1a735f9c4eb1",
+        "GroupingIdentifier": "e7e3b020-1ed8-591d-be05-c7b7cb3d30d8",
+        "UUID": "e9f7eeb2-b2b3-532e-92e5-1ef0dd0d802f",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "SIM, ENCERRAR"
       },
@@ -23934,7 +23954,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "c52cae6e-7a08-5221-a076-5dcda5a73faa",
+        "UUID": "f4314f7e-64ee-5a3a-8ef8-a305ca995ca2",
         "WFTextActionText": "FINALIZAR"
       },
       "title": "Text"
@@ -23964,7 +23984,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "c52cae6e-7a08-5221-a076-5dcda5a73faa",
+            "OutputUUID": "f4314f7e-64ee-5a3a-8ef8-a305ca995ca2",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -23985,7 +24005,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "bdab857b-2e8e-5efa-916e-37229edc5473",
+        "UUID": "a010227a-6216-584b-9b7e-c61d43046b85",
         "WFTextActionText": "FINALIZADA"
       },
       "title": "Text"
@@ -24015,7 +24035,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "bdab857b-2e8e-5efa-916e-37229edc5473",
+            "OutputUUID": "a010227a-6216-584b-9b7e-c61d43046b85",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -24036,7 +24056,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "33be18a0-93e2-5c7c-8454-6af71686743e",
+        "UUID": "3ceba7c6-8490-5cac-a5dd-594b6765fc7a",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -24066,7 +24086,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "33be18a0-93e2-5c7c-8454-6af71686743e",
+            "OutputUUID": "3ceba7c6-8490-5cac-a5dd-594b6765fc7a",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -24090,8 +24110,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2221c716-b1a9-5baa-b59f-be1a5a498a2b",
-        "UUID": "3b048f80-5136-5585-9166-212d9e423d77",
+        "GroupingIdentifier": "e7e3b020-1ed8-591d-be05-c7b7cb3d30d8",
+        "UUID": "e60d6550-4218-506d-a74c-d5c1a6289420",
         "WFControlFlowMode": 1,
         "WFMenuItemTitle": "VOLTAR"
       },
@@ -24109,7 +24129,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "6152a2d8-a93e-5fc6-8582-bfcba296dcd0",
+        "UUID": "94b20952-5347-57f4-a097-a0970ac2f464",
         "WFTextActionText": "MENU"
       },
       "title": "Text"
@@ -24139,7 +24159,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "6152a2d8-a93e-5fc6-8582-bfcba296dcd0",
+            "OutputUUID": "94b20952-5347-57f4-a097-a0970ac2f464",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -24163,8 +24183,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2221c716-b1a9-5baa-b59f-be1a5a498a2b",
-        "UUID": "8f7412dd-b31e-5d3e-b7bc-7187024525d2",
+        "GroupingIdentifier": "e7e3b020-1ed8-591d-be05-c7b7cb3d30d8",
+        "UUID": "274d27c2-e2af-5889-9b78-1e676b480b2d",
         "WFControlFlowMode": 2
       },
       "title": "Choose from Menu"
@@ -24193,8 +24213,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "7a265b8a-0c84-53cf-8e13-07eb5d0d4ff1",
-        "UUID": "13c41f0a-4fd0-5a07-9ba7-fcb14d12d6b9",
+        "GroupingIdentifier": "a63dab52-14ff-5e2d-ade7-d502e7e8ae72",
+        "UUID": "4a6eef72-7f99-5fce-a6a7-dfc7886082d4",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -24223,8 +24243,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "0d7d37c5-4d5f-53f9-8f97-29b0c37957a6",
-        "UUID": "9b128bb9-ac66-50c9-afe8-0b233c1529d6",
+        "GroupingIdentifier": "c0cf3549-0ca5-56ae-ab45-e1bf435964b1",
+        "UUID": "8af13e7c-8227-5f24-b9e6-6f8b8bfe7ddf",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -24263,7 +24283,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "01c1401f-584e-5fcb-a92d-85168e96f7e3",
+        "GroupingIdentifier": "b00b712e-bdae-52ec-85fb-5152cabe3f8b",
         "UUID": "7ecb4ada-aaeb-5145-b53a-e79e6fbaa5fa",
         "WFCondition": 4,
         "WFConditionalActionString": "CONFERIR",
@@ -24406,7 +24426,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "0a74971a-a346-5d3b-ab36-19969ed6abe7",
+        "UUID": "bc64f21e-fbcc-566c-9be6-a9bd54a797b6",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -24436,7 +24456,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "0a74971a-a346-5d3b-ab36-19969ed6abe7",
+            "OutputUUID": "bc64f21e-fbcc-566c-9be6-a9bd54a797b6",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -24479,7 +24499,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "1fd17ede-a0ae-5f64-a4bc-c9321e748230",
+        "GroupingIdentifier": "b63f398d-1d9a-5cd4-a459-975d8d7d257c",
         "UUID": "d3af2de0-9948-546c-b45c-f1789f19a8ba",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -24684,8 +24704,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "1fd17ede-a0ae-5f64-a4bc-c9321e748230",
-        "UUID": "d2548917-05db-5400-90d0-d6358c8cd695",
+        "GroupingIdentifier": "b63f398d-1d9a-5cd4-a459-975d8d7d257c",
+        "UUID": "7b60c068-4ba0-5867-a3f4-a14b09e8e698",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -24782,7 +24802,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "16b29d21-eb83-5162-adde-d0c0c716c64f",
+        "UUID": "1b66cca3-becf-58c0-be68-212c24e2108d",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -24812,7 +24832,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "16b29d21-eb83-5162-adde-d0c0c716c64f",
+            "OutputUUID": "1b66cca3-becf-58c0-be68-212c24e2108d",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -24855,7 +24875,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "f713c496-7daa-5165-9d52-168463cc6461",
+        "GroupingIdentifier": "63ccc33f-1f1d-55d4-b9e7-99896deecd56",
         "UUID": "1b22bef0-7a49-55e2-a635-1d522043735b",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -25060,8 +25080,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "f713c496-7daa-5165-9d52-168463cc6461",
-        "UUID": "619f9ef2-7089-5e49-bd79-a7ac17bd26d8",
+        "GroupingIdentifier": "63ccc33f-1f1d-55d4-b9e7-99896deecd56",
+        "UUID": "4f40a51a-9c01-5990-a905-9905d7134330",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -25078,7 +25098,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "fef13458-0be1-5432-9f35-9b7b91c0672a",
+        "UUID": "4e21aa1c-20e8-548f-9a46-07b9dbacaf46",
         "WFTextActionText": "0"
       },
       "title": "Text"
@@ -25108,7 +25128,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "fef13458-0be1-5432-9f35-9b7b91c0672a",
+            "OutputUUID": "4e21aa1c-20e8-548f-9a46-07b9dbacaf46",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -25129,7 +25149,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "00b4cffd-a1a1-5517-abb8-43bb3598feeb",
+        "UUID": "1b3b2103-bc61-50a1-822c-e8bcb68f2973",
         "WFTextActionText": "0"
       },
       "title": "Text"
@@ -25159,7 +25179,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "00b4cffd-a1a1-5517-abb8-43bb3598feeb",
+            "OutputUUID": "1b3b2103-bc61-50a1-822c-e8bcb68f2973",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -25180,7 +25200,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "f7817020-07bb-5935-a628-c3d771fc5af2",
+        "UUID": "0a9a1a5d-57d4-5d9c-8018-bb0100d62762",
         "WFTextActionText": "0"
       },
       "title": "Text"
@@ -25210,7 +25230,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "f7817020-07bb-5935-a628-c3d771fc5af2",
+            "OutputUUID": "0a9a1a5d-57d4-5d9c-8018-bb0100d62762",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -25238,7 +25258,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "9654c1e0-37fb-5858-b318-603f9ee6b792",
+        "UUID": "d36aebee-58aa-5d51-af1e-4ccf6a93473a",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -25277,7 +25297,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "e9258ce0-96a0-5c4e-8f8f-b638b5f2fe79",
+        "GroupingIdentifier": "18cf935a-18e0-5c01-95ae-066c7890e50d",
         "UUID": "2d7daa8a-91e2-558d-92c2-4c3a346db769",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -25286,7 +25306,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "9654c1e0-37fb-5858-b318-603f9ee6b792",
+              "OutputUUID": "d36aebee-58aa-5d51-af1e-4ccf6a93473a",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -25516,7 +25536,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "3f05c662-997e-59e5-a002-2a88f05d5f40",
+        "UUID": "35b95d36-b653-5b4e-9b76-273aa6f248d8",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -25546,7 +25566,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "3f05c662-997e-59e5-a002-2a88f05d5f40",
+            "OutputUUID": "35b95d36-b653-5b4e-9b76-273aa6f248d8",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -25589,7 +25609,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "56d7f7cb-2954-54fd-80b5-796189b04093",
+        "GroupingIdentifier": "af8b68e1-3a2d-5bd8-92a0-b19a37557b90",
         "UUID": "b58b7712-4664-5daa-837d-0562ce552e69",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -25794,8 +25814,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "56d7f7cb-2954-54fd-80b5-796189b04093",
-        "UUID": "eada2602-7f18-52dc-b522-546e2e3de383",
+        "GroupingIdentifier": "af8b68e1-3a2d-5bd8-92a0-b19a37557b90",
+        "UUID": "8d78e45b-55ed-5559-8ecb-2a7a02974e96",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -25881,7 +25901,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "c8abeab5-fc54-58e7-aab1-dcafeb2992a0",
+        "UUID": "8f1ba867-e4ea-5bc6-8a85-acfcd720be74",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -25911,7 +25931,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "c8abeab5-fc54-58e7-aab1-dcafeb2992a0",
+            "OutputUUID": "8f1ba867-e4ea-5bc6-8a85-acfcd720be74",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -25954,7 +25974,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "2ddb89c6-e4e0-5ef6-95eb-68cb4f5e21bf",
+        "GroupingIdentifier": "0ecb0444-d194-5d50-9ed9-89893796133c",
         "UUID": "66a37c7a-5e22-56a8-9b40-2cc5d90a3e60",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -26159,8 +26179,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2ddb89c6-e4e0-5ef6-95eb-68cb4f5e21bf",
-        "UUID": "b0e87cf1-cca5-5643-9db9-7e1b59858616",
+        "GroupingIdentifier": "0ecb0444-d194-5d50-9ed9-89893796133c",
+        "UUID": "b26cabe6-1332-58ec-ae3e-71272db85108",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -26246,7 +26266,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "09b3f8bb-5713-541e-ad80-117b0ee9f848",
+        "UUID": "9f3dccae-22e5-53f4-9f2c-9ae12586c2e3",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -26276,7 +26296,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "09b3f8bb-5713-541e-ad80-117b0ee9f848",
+            "OutputUUID": "9f3dccae-22e5-53f4-9f2c-9ae12586c2e3",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -26319,7 +26339,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "7830b324-ad47-5a87-8410-07b883cedfa9",
+        "GroupingIdentifier": "2bf6792b-4570-5594-9d31-b60bd8a84455",
         "UUID": "073d17ce-f2b4-58d1-a291-1cce06b1b292",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -26524,8 +26544,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "7830b324-ad47-5a87-8410-07b883cedfa9",
-        "UUID": "1fd1c2f4-0cce-5732-8dc4-b9571af5bf4b",
+        "GroupingIdentifier": "2bf6792b-4570-5594-9d31-b60bd8a84455",
+        "UUID": "ee762aeb-3e40-59ca-affc-4f56f5849ae8",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -26554,8 +26574,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "e9258ce0-96a0-5c4e-8f8f-b638b5f2fe79",
-        "UUID": "fdd41e8f-2afb-5457-b445-9f66f7284d08",
+        "GroupingIdentifier": "18cf935a-18e0-5c01-95ae-066c7890e50d",
+        "UUID": "ca217fbe-961a-5756-935b-c229a3d0d943",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -26828,7 +26848,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "91215789-7124-5ba0-9d37-f2cf76fc8d7e",
+        "GroupingIdentifier": "cdcd22f0-08f4-5f1b-ab22-b72873f0ef7c",
         "UUID": "40b58788-43e2-5195-acc6-e2bab30f45e4",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -26955,8 +26975,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "91215789-7124-5ba0-9d37-f2cf76fc8d7e",
-        "UUID": "722abe89-ac35-5d8c-87d7-40d05a1a029a",
+        "GroupingIdentifier": "cdcd22f0-08f4-5f1b-ab22-b72873f0ef7c",
+        "UUID": "836ac16e-6a8c-57ce-a826-8a5da707778f",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -27229,7 +27249,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "7c4cf624-8b12-52d8-82a3-b9686ae2e8dc",
+        "GroupingIdentifier": "d6be580b-9a84-51bf-af08-212094e4d948",
         "UUID": "42d79333-6f1b-5eea-88dc-3d3fa132b38d",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -27356,8 +27376,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "7c4cf624-8b12-52d8-82a3-b9686ae2e8dc",
-        "UUID": "9f30b1a3-eb72-59d5-acc7-a46d529dabcc",
+        "GroupingIdentifier": "d6be580b-9a84-51bf-af08-212094e4d948",
+        "UUID": "83bef682-478f-5fd1-ac2e-255aabb2b486",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -27630,7 +27650,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "60ef5317-5750-5aba-8ff8-83f9e11de3a7",
+        "GroupingIdentifier": "13615ad4-88b0-5c4f-94da-f30a995018e3",
         "UUID": "b2bfef43-259e-5c77-8215-f89d166b2e6b",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -27757,8 +27777,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "60ef5317-5750-5aba-8ff8-83f9e11de3a7",
-        "UUID": "ab2a3b19-0500-5883-88e3-aab5132f0bc8",
+        "GroupingIdentifier": "13615ad4-88b0-5c4f-94da-f30a995018e3",
+        "UUID": "ac732dd7-68d3-5252-8ce2-17683c83eec3",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -27954,7 +27974,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "b09c1fdd-3e99-55bb-a7c7-6e8bbdb8e699",
+        "UUID": "56725c39-6f0a-518b-bb05-6261fa3a7337",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -27993,7 +28013,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "1de4a77c-c575-58d9-98f5-d0af42f5ad3d",
+        "GroupingIdentifier": "2891f130-e05e-5933-9c49-b4ad27f4a5e3",
         "UUID": "b3158671-b3d5-5770-a5c5-c065b1b1294f",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -28002,7 +28022,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "b09c1fdd-3e99-55bb-a7c7-6e8bbdb8e699",
+              "OutputUUID": "56725c39-6f0a-518b-bb05-6261fa3a7337",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -28130,8 +28150,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "1de4a77c-c575-58d9-98f5-d0af42f5ad3d",
-        "UUID": "97d70758-3859-5069-a6fc-79f1ad36d203",
+        "GroupingIdentifier": "2891f130-e05e-5933-9c49-b4ad27f4a5e3",
+        "UUID": "20e41788-3979-5e39-a10c-d130cb74edf8",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -28148,7 +28168,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "a510b0ba-a960-5c05-af09-8a10bbf7d56a",
+        "UUID": "e8ad9b03-bcf4-5d45-93c6-1f55dc7d0301",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -28178,7 +28198,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "a510b0ba-a960-5c05-af09-8a10bbf7d56a",
+            "OutputUUID": "e8ad9b03-bcf4-5d45-93c6-1f55dc7d0301",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -28211,8 +28231,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "01c1401f-584e-5fcb-a92d-85168e96f7e3",
-        "UUID": "bc42e4ca-f398-5405-9878-4cdacdce7214",
+        "GroupingIdentifier": "b00b712e-bdae-52ec-85fb-5152cabe3f8b",
+        "UUID": "1d261b99-c5c3-5f69-8d0d-b9a581fedccc",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -28251,7 +28271,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "5a00dc11-f420-5f29-b9a9-6d210dc2ece7",
+        "GroupingIdentifier": "a8f2ab8d-cf59-56a1-b749-3fdfe6711c58",
         "UUID": "37e40bbb-f9a8-58a7-91d3-50f238088782",
         "WFCondition": 4,
         "WFConditionalActionString": "SIM",
@@ -28872,7 +28892,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "ac0105c1-9e7a-5143-9a0e-cf47e2b22767",
+        "UUID": "23069e5d-286f-59b4-b163-1b71a5de0c1d",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -28902,7 +28922,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "ac0105c1-9e7a-5143-9a0e-cf47e2b22767",
+            "OutputUUID": "23069e5d-286f-59b4-b163-1b71a5de0c1d",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -28945,7 +28965,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "b0bed32c-cfb8-5837-8562-11ccaadcccf4",
+        "GroupingIdentifier": "b3e76859-0507-5e1c-b2d9-71b4b801a0e1",
         "UUID": "f3868227-7a3d-5884-b544-bb497d871cc3",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -29150,8 +29170,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "b0bed32c-cfb8-5837-8562-11ccaadcccf4",
-        "UUID": "7c53a726-e472-5213-a8e8-b09460ff3420",
+        "GroupingIdentifier": "b3e76859-0507-5e1c-b2d9-71b4b801a0e1",
+        "UUID": "c7f7fea9-aa51-5405-9e8d-5544509cd802",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -29180,7 +29200,7 @@
       },
       "location": {
         "end": {
-          "column": 35,
+          "column": 40,
           "line": 425
         },
         "file": "Main.shortcuty",
@@ -29190,15 +29210,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "770e8293-17c0-597e-975d-dbae89173e27",
-        "UUID": "30d968e1-af7e-55d9-9d59-930739d7b797",
+        "GroupingIdentifier": "1754fe33-38e3-5b10-befe-7cf01a009ab6",
+        "UUID": "dfb63aa1-b5bb-5d4b-872d-d9972001a73c",
         "WFCondition": 5,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "identificador"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "identificador"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -29323,8 +29348,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "770e8293-17c0-597e-975d-dbae89173e27",
-        "UUID": "1cf5aaff-983d-5e51-885e-54f1abca155d",
+        "GroupingIdentifier": "1754fe33-38e3-5b10-befe-7cf01a009ab6",
+        "UUID": "1a150922-414d-570e-ae76-8e1f17b3e954",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -29404,7 +29429,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "4437ab84-a8af-5cd2-b437-eb7926795996"
+        "UUID": "ab4983a7-0764-52d9-9398-adcbc08e944d"
       },
       "title": "scripting.nothing"
     },
@@ -29433,7 +29458,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "4437ab84-a8af-5cd2-b437-eb7926795996",
+            "OutputUUID": "ab4983a7-0764-52d9-9398-adcbc08e944d",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -29465,7 +29490,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "b742be49-44cc-57d4-9dab-c6894fee8ed6",
+        "GroupingIdentifier": "826bdbc3-a5ee-5511-a2e4-5f8d435e3d87",
         "UUID": "8b862596-2e07-568a-9402-3ce578bd5245",
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -29645,7 +29670,7 @@
       },
       "location": {
         "end": {
-          "column": 40,
+          "column": 45,
           "line": 433
         },
         "file": "Main.shortcuty",
@@ -29655,15 +29680,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "dc2cd0f2-42fd-5d72-a248-fcd2365e50a6",
-        "UUID": "18f18ed9-f9f5-546a-a8e6-53c3eb881cd7",
+        "GroupingIdentifier": "4348f39c-60a6-5708-9210-da2fdf98888d",
+        "UUID": "edcd2688-d2fc-5f85-ad0a-fc594676bd5e",
         "WFCondition": 4,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "nomeSessao"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "nomeSessao"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -29769,8 +29799,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "dc2cd0f2-42fd-5d72-a248-fcd2365e50a6",
-        "UUID": "a8f4e255-7579-5fdf-85b5-fd0966aefdfb",
+        "GroupingIdentifier": "4348f39c-60a6-5708-9210-da2fdf98888d",
+        "UUID": "ec98da46-8b30-5c01-8db7-9cd41871e3a6",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -29788,8 +29818,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "b742be49-44cc-57d4-9dab-c6894fee8ed6",
-        "UUID": "647a40ab-d624-5f20-b70c-e5fc98b692d4",
+        "GroupingIdentifier": "826bdbc3-a5ee-5511-a2e4-5f8d435e3d87",
+        "UUID": "de972222-9d8d-5bf6-b44b-dbbc98051502",
         "WFControlFlowMode": 2
       },
       "title": "Repeat with Each"
@@ -29805,7 +29835,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "46a56317-449a-53c0-8c9d-3d6e93a94f49",
+        "UUID": "56cbda5c-0196-568c-bc35-5d72410f9a50",
         "WFItems": {
           "Value": {
             "WFDictionaryFieldValueItems": [
@@ -29842,12 +29872,12 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "b3927b4d-c269-5a1c-836d-7b99af5e2a3f",
+        "UUID": "7b480041-42a3-538e-9ce7-dccc0cfce28b",
         "WFDictionaryKey": "value",
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "46a56317-449a-53c0-8c9d-3d6e93a94f49",
+            "OutputUUID": "56cbda5c-0196-568c-bc35-5d72410f9a50",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -29880,7 +29910,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Dictionary Value",
-            "OutputUUID": "b3927b4d-c269-5a1c-836d-7b99af5e2a3f",
+            "OutputUUID": "7b480041-42a3-538e-9ce7-dccc0cfce28b",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -29923,7 +29953,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "a86e40bc-1de2-53be-9722-c3d6d99c4a11",
+        "GroupingIdentifier": "d47b0aa8-62af-5d74-ac57-12820fb2d17e",
         "UUID": "ca0d56d9-1909-5354-9cee-cb029e5e90e6",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -30197,7 +30227,7 @@
       },
       "location": {
         "end": {
-          "column": 36,
+          "column": 41,
           "line": 440
         },
         "file": "Main.shortcuty",
@@ -30207,15 +30237,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "05321345-4a92-5b15-8693-a8651a33ed62",
-        "UUID": "3a8f4dfe-372d-534f-8e16-db67c70eb12b",
+        "GroupingIdentifier": "a5656fdf-da03-57f3-af3c-afce2264e76e",
+        "UUID": "526a4e9e-1860-5f00-a6e5-7ee6a4dcf29c",
         "WFCondition": 5,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "ultimoHash"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "ultimoHash"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -30340,8 +30375,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "05321345-4a92-5b15-8693-a8651a33ed62",
-        "UUID": "59a98cf1-234f-5412-bf45-9a3faa1c9038",
+        "GroupingIdentifier": "a5656fdf-da03-57f3-af3c-afce2264e76e",
+        "UUID": "29f292b0-9a38-56d0-8623-d1e37e4c93cd",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -30815,7 +30850,7 @@
       },
       "location": {
         "end": {
-          "column": 35,
+          "column": 40,
           "line": 449
         },
         "file": "Main.shortcuty",
@@ -30825,15 +30860,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "97a7e8e4-b45b-5948-8798-1d1d85cfeb04",
-        "UUID": "924a8d0a-f955-5a1d-b976-af41260d9878",
+        "GroupingIdentifier": "2e89618a-3710-5d34-a6cb-a8c2b9797144",
+        "UUID": "d49f74d2-3ca6-5dd5-98ff-c97834da9e50",
         "WFCondition": 5,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "ultimoJson"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "ultimoJson"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -30958,8 +30998,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "97a7e8e4-b45b-5948-8798-1d1d85cfeb04",
-        "UUID": "920bcc1a-46c5-5d14-90bb-0c7a9961609f",
+        "GroupingIdentifier": "2e89618a-3710-5d34-a6cb-a8c2b9797144",
+        "UUID": "a07e6997-86b8-5b82-9277-415c84797685",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -30975,7 +31015,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "df09d3d4-03e2-5b1a-a3af-0456c83ea988",
+        "UUID": "55fd4503-3ad9-58e7-9892-e5d8a5a09548",
         "WFItems": {
           "Value": {
             "WFDictionaryFieldValueItems": [
@@ -31012,12 +31052,12 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "4c3f721a-9f12-51a4-8940-df258a95256a",
+        "UUID": "334dd09a-1cec-5b15-9d10-f8f20dfa6a6b",
         "WFDictionaryKey": "value",
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "df09d3d4-03e2-5b1a-a3af-0456c83ea988",
+            "OutputUUID": "55fd4503-3ad9-58e7-9892-e5d8a5a09548",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -31050,7 +31090,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Dictionary Value",
-            "OutputUUID": "4c3f721a-9f12-51a4-8940-df258a95256a",
+            "OutputUUID": "334dd09a-1cec-5b15-9d10-f8f20dfa6a6b",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -31083,8 +31123,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "a86e40bc-1de2-53be-9722-c3d6d99c4a11",
-        "UUID": "f42817d1-e92d-53c4-afab-350789603299",
+        "GroupingIdentifier": "d47b0aa8-62af-5d74-ac57-12820fb2d17e",
+        "UUID": "72d8d90e-42ce-5b30-accb-f8f85fcf2615",
         "WFControlFlowMode": 1
       },
       "title": "If"
@@ -31108,7 +31148,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "0c4bf2bd-6f47-5f9f-bcec-5886f95fe9ae",
+        "UUID": "ae446a6d-4fcc-5943-9e7e-a934fee172e7",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -31147,7 +31187,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "8ecf19ce-e46e-52f6-8b23-51317564b731",
+        "GroupingIdentifier": "bed2f6e9-52d3-5ddb-b8ef-039bc5c846c1",
         "UUID": "182ff797-0535-52cb-becc-b59237799f3b",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -31156,7 +31196,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "0c4bf2bd-6f47-5f9f-bcec-5886f95fe9ae",
+              "OutputUUID": "ae446a6d-4fcc-5943-9e7e-a934fee172e7",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -31264,8 +31304,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "8ecf19ce-e46e-52f6-8b23-51317564b731",
-        "UUID": "69b3136a-fca0-5f5c-a164-8ac67997cebb",
+        "GroupingIdentifier": "bed2f6e9-52d3-5ddb-b8ef-039bc5c846c1",
+        "UUID": "706d593d-bb21-50cf-b83f-b382ad7872ee",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -31294,8 +31334,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "a86e40bc-1de2-53be-9722-c3d6d99c4a11",
-        "UUID": "c7895ca8-76e2-5905-be89-3e0dfce215c6",
+        "GroupingIdentifier": "d47b0aa8-62af-5d74-ac57-12820fb2d17e",
+        "UUID": "7cc93c41-ee7c-5f37-a20c-5d79663a5180",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -31775,7 +31815,7 @@
       },
       "location": {
         "end": {
-          "column": 31,
+          "column": 36,
           "line": 463
         },
         "file": "Main.shortcuty",
@@ -31785,15 +31825,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "bcdfbde8-b283-5b32-ab0c-06d4dfd10030",
-        "UUID": "b6d10666-f23d-5e03-8008-9f9547213d92",
+        "GroupingIdentifier": "3d6e5170-ea99-5b0d-acd6-7ccd6052d513",
+        "UUID": "473b0402-6df9-56a2-8efe-9a64c8f09087",
         "WFCondition": 5,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "novoJson"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "novoJson"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -31918,8 +31963,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "bcdfbde8-b283-5b32-ab0c-06d4dfd10030",
-        "UUID": "771e3411-ac46-5924-85c4-aa34456aa520",
+        "GroupingIdentifier": "3d6e5170-ea99-5b0d-acd6-7ccd6052d513",
+        "UUID": "653a5f38-c204-55b8-b813-9ca5dd8de9d9",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -32124,7 +32169,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "768891a7-0fc5-5e3b-9260-e05c3b49a667",
+        "UUID": "f559cb9b-4a39-561f-83ce-3ec1aa0e9609",
         "WFTextActionText": "NAO"
       },
       "title": "Text"
@@ -32154,7 +32199,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "768891a7-0fc5-5e3b-9260-e05c3b49a667",
+            "OutputUUID": "f559cb9b-4a39-561f-83ce-3ec1aa0e9609",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -32187,8 +32232,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "5a00dc11-f420-5f29-b9a9-6d210dc2ece7",
-        "UUID": "1a674669-0df0-52f2-8399-4b06d009342a",
+        "GroupingIdentifier": "a8f2ab8d-cf59-56a1-b749-3fdfe6711c58",
+        "UUID": "ae8c50fc-58b6-500b-b6b9-61f46526f616",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -32227,7 +32272,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "bc6ba9f1-f31a-5ae5-acfe-28d474fb9944",
+        "GroupingIdentifier": "e739f5da-8a36-5438-bb79-23475ef4290c",
         "UUID": "63507dc9-37a4-5f4d-b039-64f6a2be553c",
         "WFCondition": 4,
         "WFConditionalActionString": "PAUSAR",
@@ -32354,8 +32399,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "bc6ba9f1-f31a-5ae5-acfe-28d474fb9944",
-        "UUID": "c865af44-ea35-5453-b286-0d152c0d905a",
+        "GroupingIdentifier": "e739f5da-8a36-5438-bb79-23475ef4290c",
+        "UUID": "272f5e0e-5b0c-5d1d-8e17-cdaa1990ed36",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -32372,7 +32417,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "f26992fe-0de2-5fc4-a1d6-ca630e98447f",
+        "UUID": "47fc2323-795f-5722-86ad-12569375985c",
         "WFTextActionText": "NAO"
       },
       "title": "Text"
@@ -32402,7 +32447,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "f26992fe-0de2-5fc4-a1d6-ca630e98447f",
+            "OutputUUID": "47fc2323-795f-5722-86ad-12569375985c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -32445,7 +32490,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "862649b0-d600-5b1d-a32e-fea348a3a769",
+        "GroupingIdentifier": "cc2ca1aa-4bb7-5732-b52a-396241cc3b01",
         "UUID": "356df8c4-02b0-5634-9142-384251d9b50e",
         "WFCondition": 4,
         "WFConditionalActionString": "RESUMO",
@@ -32508,7 +32553,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "44750afe-6678-5b01-b5ba-27227236fed3",
+        "UUID": "16d40b09-1151-51f5-93c1-6955d63024a4",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -32538,7 +32583,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "44750afe-6678-5b01-b5ba-27227236fed3",
+            "OutputUUID": "16d40b09-1151-51f5-93c1-6955d63024a4",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -32571,8 +32616,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "862649b0-d600-5b1d-a32e-fea348a3a769",
-        "UUID": "dc968991-3b23-5b08-9eb2-a55bad6f0bb6",
+        "GroupingIdentifier": "cc2ca1aa-4bb7-5732-b52a-396241cc3b01",
+        "UUID": "fa514711-4a7a-5c90-899f-5aee6a446f3d",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -32611,7 +32656,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "fae01ef4-281b-5702-a1d5-b3b9fb468e35",
+        "GroupingIdentifier": "f19fcbf7-9b2c-5f06-abcf-9cc486abd661",
         "UUID": "1ddf4324-5a30-5333-80b9-33f5be516b65",
         "WFCondition": 4,
         "WFConditionalActionString": "FINALIZAR",
@@ -32674,7 +32719,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "34380107-598d-566e-81d5-b50272bd3ae7",
+        "UUID": "ebb47906-3a62-5b91-8671-2da1dee668c0",
         "WFTextActionText": "SIM"
       },
       "title": "Text"
@@ -32704,7 +32749,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "34380107-598d-566e-81d5-b50272bd3ae7",
+            "OutputUUID": "ebb47906-3a62-5b91-8671-2da1dee668c0",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -32737,8 +32782,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "fae01ef4-281b-5702-a1d5-b3b9fb468e35",
-        "UUID": "5f608e10-0419-5be1-bf06-92002b853de4",
+        "GroupingIdentifier": "f19fcbf7-9b2c-5f06-abcf-9cc486abd661",
+        "UUID": "254e21cf-f5d6-5659-871b-79fb98799227",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -32777,7 +32822,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "e2a1aea5-a9ab-550c-9b6a-bbfed7cb1e97",
+        "GroupingIdentifier": "6f28af9f-e7a2-5c8b-b126-15e7b03a0c8f",
         "UUID": "1ba5f0c9-fb39-5e60-92a1-5e64eebddd55",
         "WFCondition": 4,
         "WFConditionalActionString": "SIM",
@@ -32840,7 +32885,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "7d0395bc-d1e6-507e-bf05-be1f40d65fef",
+        "UUID": "1dccab80-0776-5c56-85fd-a040f2d8668f",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -32870,7 +32915,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "7d0395bc-d1e6-507e-bf05-be1f40d65fef",
+            "OutputUUID": "1dccab80-0776-5c56-85fd-a040f2d8668f",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -32891,7 +32936,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "300fd3b3-f7c2-535c-88bb-299b46a9c45e",
+        "UUID": "19ffaa09-9989-5339-997b-8847fe00de19",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -32921,7 +32966,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "300fd3b3-f7c2-535c-88bb-299b46a9c45e",
+            "OutputUUID": "19ffaa09-9989-5339-997b-8847fe00de19",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -32942,7 +32987,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "00101794-c27d-5d88-83db-dc93cf2f8995",
+        "UUID": "78892d75-776a-5548-97a0-42114b2424f0",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -32972,7 +33017,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "00101794-c27d-5d88-83db-dc93cf2f8995",
+            "OutputUUID": "78892d75-776a-5548-97a0-42114b2424f0",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -32993,7 +33038,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "14df9a4d-9c3a-5345-b4a8-56f84b7a27b7",
+        "UUID": "38688244-27c3-5afc-aac5-1cd1e82e5c51",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -33023,7 +33068,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "14df9a4d-9c3a-5345-b4a8-56f84b7a27b7",
+            "OutputUUID": "38688244-27c3-5afc-aac5-1cd1e82e5c51",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -33055,7 +33100,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "37332b06-a3b4-56b3-af4b-0105729240e0",
+        "GroupingIdentifier": "9393f933-b53b-59d7-bd78-74e7ef0ce3df",
         "UUID": "58772009-0bdd-549a-805c-e78f1edd440a",
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -33302,7 +33347,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "33d1746b-7446-5074-894e-b671608af995",
+        "UUID": "10730909-a039-518f-bfa5-b4628c905c8c",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -33332,7 +33377,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "33d1746b-7446-5074-894e-b671608af995",
+            "OutputUUID": "10730909-a039-518f-bfa5-b4628c905c8c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -33375,7 +33420,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "652d0b00-8bf7-5f42-a250-63add0c0c686",
+        "GroupingIdentifier": "7de24aa3-99ef-5f5f-bbae-980eb90596e1",
         "UUID": "5f77dd28-c508-55d9-95ab-ae7901f5c11e",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -33580,8 +33625,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "652d0b00-8bf7-5f42-a250-63add0c0c686",
-        "UUID": "a232b5f9-831f-5123-8275-b8cad5320f64",
+        "GroupingIdentifier": "7de24aa3-99ef-5f5f-bbae-980eb90596e1",
+        "UUID": "850d6cf7-0172-5524-b231-28a9c7b51376",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -34137,7 +34182,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "aee33865-9991-5979-ba99-f840f04fe3a8",
+        "UUID": "30940e43-74bf-5479-95b2-7f985609903c",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -34167,7 +34212,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "aee33865-9991-5979-ba99-f840f04fe3a8",
+            "OutputUUID": "30940e43-74bf-5479-95b2-7f985609903c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -34210,7 +34255,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "0b738366-dd1f-5b90-8a59-044cc60d9632",
+        "GroupingIdentifier": "acb6f89b-9ecb-5102-b604-2aff45f640b7",
         "UUID": "4a3da681-744b-5e0c-af77-c0cac8361026",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -34415,8 +34460,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "0b738366-dd1f-5b90-8a59-044cc60d9632",
-        "UUID": "70dcc7b8-dc1b-5aa4-a8ff-2957dfda53d7",
+        "GroupingIdentifier": "acb6f89b-9ecb-5102-b604-2aff45f640b7",
+        "UUID": "f66d3812-bc0d-5ef4-bc34-5fdf499f7dfb",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -34433,7 +34478,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "5fac3b84-9658-5560-8508-47b69b5834f8",
+        "UUID": "d8d3c25d-4440-5eb6-87ba-57c6838e4529",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -34463,7 +34508,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "5fac3b84-9658-5560-8508-47b69b5834f8",
+            "OutputUUID": "d8d3c25d-4440-5eb6-87ba-57c6838e4529",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -34484,7 +34529,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "b59846a4-f329-5c77-b3ac-6462ab157bf2",
+        "UUID": "a0369734-eb41-5145-a1ae-45f02f469cfe",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -34514,7 +34559,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "b59846a4-f329-5c77-b3ac-6462ab157bf2",
+            "OutputUUID": "a0369734-eb41-5145-a1ae-45f02f469cfe",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -34535,7 +34580,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "33f7f0e4-32b2-56c8-b254-039dc911ad9a",
+        "UUID": "ceee59d2-7a1a-51fc-83ce-ec874894d242",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -34565,7 +34610,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "33f7f0e4-32b2-56c8-b254-039dc911ad9a",
+            "OutputUUID": "ceee59d2-7a1a-51fc-83ce-ec874894d242",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -34586,7 +34631,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "511b0b50-51af-5912-a417-8d43eba3ea58",
+        "UUID": "f55704ad-d177-54fe-8f97-48f8f009e193",
         "WFTextActionText": "N"
       },
       "title": "Text"
@@ -34616,7 +34661,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "511b0b50-51af-5912-a417-8d43eba3ea58",
+            "OutputUUID": "f55704ad-d177-54fe-8f97-48f8f009e193",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -34644,7 +34689,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "2f6b4306-09bb-51b2-9a96-65f4afc13818",
+        "UUID": "7c15a77e-9fc2-537a-b876-bfdcdab7abe9",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -34683,7 +34728,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "b629d669-3a07-5423-b654-3f5bbfa4dfe9",
+        "GroupingIdentifier": "2b1b3345-96d2-5963-9e9a-7230c80a612b",
         "UUID": "27a850d3-1f8c-5ae0-b3f3-6f129dcdb559",
         "WFCondition": 5,
         "WFControlFlowMode": 0,
@@ -34692,7 +34737,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "2f6b4306-09bb-51b2-9a96-65f4afc13818",
+              "OutputUUID": "7c15a77e-9fc2-537a-b876-bfdcdab7abe9",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -34922,7 +34967,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "936ba3c7-f2a9-5fa6-ae7e-a4bcd2b16047",
+        "UUID": "25f2ecd7-a340-5c82-883b-08cbda746e1f",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -34952,7 +34997,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "936ba3c7-f2a9-5fa6-ae7e-a4bcd2b16047",
+            "OutputUUID": "25f2ecd7-a340-5c82-883b-08cbda746e1f",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -34995,7 +35040,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "2f6db2e5-4c2e-598c-b398-659e9bcd074a",
+        "GroupingIdentifier": "2a77e2a9-5b91-55af-bf5d-fdf1cd646540",
         "UUID": "995ff155-a6c5-5efb-8897-81270877e42f",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -35200,8 +35245,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "2f6db2e5-4c2e-598c-b398-659e9bcd074a",
-        "UUID": "031a6238-91aa-52cb-9942-78dd4bc39748",
+        "GroupingIdentifier": "2a77e2a9-5b91-55af-bf5d-fdf1cd646540",
+        "UUID": "8b022038-f854-5337-9fd0-00eb91006cc8",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -35287,7 +35332,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "09cd5a18-23a4-5ddb-b0f9-05fdf1a13223",
+        "UUID": "3033c4d2-4ad1-55af-9398-e1d4e2706db0",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -35317,7 +35362,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "09cd5a18-23a4-5ddb-b0f9-05fdf1a13223",
+            "OutputUUID": "3033c4d2-4ad1-55af-9398-e1d4e2706db0",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -35360,7 +35405,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "a91811f3-39c9-55d5-8cd7-469b92b470f7",
+        "GroupingIdentifier": "789487ba-001f-58e5-8f67-1e41dc31370a",
         "UUID": "46ddf8bc-d876-5da5-8346-e2d24ae7f6b2",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -35565,8 +35610,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "a91811f3-39c9-55d5-8cd7-469b92b470f7",
-        "UUID": "a436dc28-5891-53fc-b6d1-fd2c15947d49",
+        "GroupingIdentifier": "789487ba-001f-58e5-8f67-1e41dc31370a",
+        "UUID": "215397ad-815b-59e5-a88f-061e34d8e039",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -35652,7 +35697,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "2b6dd1b4-f0ed-566f-8b57-1bc7a215f386",
+        "UUID": "c65cfa5d-7852-57ce-aac0-4a10b040cf5c",
         "WFTextActionText": ""
       },
       "title": "Text"
@@ -35682,7 +35727,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "2b6dd1b4-f0ed-566f-8b57-1bc7a215f386",
+            "OutputUUID": "c65cfa5d-7852-57ce-aac0-4a10b040cf5c",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -35725,7 +35770,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "90d17001-bbee-5f30-a726-9d5be2bfc20e",
+        "GroupingIdentifier": "62302562-1e69-5547-bab1-0217ce33e311",
         "UUID": "8098c7c4-26a2-5501-95e2-490b55d3d4bf",
         "WFCondition": 100,
         "WFControlFlowMode": 0,
@@ -35930,8 +35975,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "90d17001-bbee-5f30-a726-9d5be2bfc20e",
-        "UUID": "aefe6294-185d-53be-a82f-667fb2d38d8a",
+        "GroupingIdentifier": "62302562-1e69-5547-bab1-0217ce33e311",
+        "UUID": "4aadf315-7b84-57c8-a413-f843c4d20704",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -35948,7 +35993,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "6b2187e6-e8f9-5788-932b-c7a4541b33d9",
+        "UUID": "8d8e6c3f-db86-5bb0-b22d-20203c926e2a",
         "WFTextActionText": "S"
       },
       "title": "Text"
@@ -35978,7 +36023,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "6b2187e6-e8f9-5788-932b-c7a4541b33d9",
+            "OutputUUID": "8d8e6c3f-db86-5bb0-b22d-20203c926e2a",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -36123,7 +36168,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "dc01e777-0bae-56d0-9299-769bfa133de7",
+        "GroupingIdentifier": "5af5c9e0-ced3-540e-8bd8-756674a87fdf",
         "UUID": "8c4486b9-fe6a-5132-a14f-293f9b695d2c",
         "WFCondition": 2,
         "WFControlFlowMode": 0,
@@ -36278,8 +36323,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "dc01e777-0bae-56d0-9299-769bfa133de7",
-        "UUID": "5381f1a7-814d-5ca8-b644-ac8a99151766",
+        "GroupingIdentifier": "5af5c9e0-ced3-540e-8bd8-756674a87fdf",
+        "UUID": "2283b613-51cb-50de-bcfc-6b32c71a6125",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -36318,7 +36363,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "3c9d790d-f19f-5626-84a1-1fb8bc3fb027",
+        "GroupingIdentifier": "ee5ffd27-b59c-5a2b-a149-43e9a30dca2c",
         "UUID": "02957b57-f05e-597a-865b-37e953a52fd3",
         "WFCondition": 2,
         "WFControlFlowMode": 0,
@@ -36473,8 +36518,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "3c9d790d-f19f-5626-84a1-1fb8bc3fb027",
-        "UUID": "0cc80ca4-2c41-5f7b-aa97-1a57dab9c771",
+        "GroupingIdentifier": "ee5ffd27-b59c-5a2b-a149-43e9a30dca2c",
+        "UUID": "5c5ce633-c4f8-56af-b8a8-360b859f5220",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -36503,8 +36548,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "b629d669-3a07-5423-b654-3f5bbfa4dfe9",
-        "UUID": "d6a187ec-5636-5421-b388-34566621666f",
+        "GroupingIdentifier": "2b1b3345-96d2-5963-9e9a-7230c80a612b",
+        "UUID": "31a83922-0b1c-5bd0-b492-98671045d33c",
         "WFControlFlowMode": 1
       },
       "title": "If"
@@ -36609,8 +36654,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "b629d669-3a07-5423-b654-3f5bbfa4dfe9",
-        "UUID": "047a4770-2b39-5822-ad44-1ff8ceaf6417",
+        "GroupingIdentifier": "2b1b3345-96d2-5963-9e9a-7230c80a612b",
+        "UUID": "ba3e401a-f03f-5708-9414-73de777c010c",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -36720,8 +36765,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "37332b06-a3b4-56b3-af4b-0105729240e0",
-        "UUID": "6e4103a6-2b4e-5fb5-9755-c15e9f28614a",
+        "GroupingIdentifier": "9393f933-b53b-59d7-bd78-74e7ef0ce3df",
+        "UUID": "79453bd3-5871-5abc-94da-f0343dfb60f2",
         "WFControlFlowMode": 2
       },
       "title": "Repeat with Each"
@@ -36745,7 +36790,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "04e24f29-29e0-52a3-994e-0a97bde167e5",
+        "UUID": "e01e02b4-54a0-5d44-82cb-21b26186c100",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -36784,7 +36829,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "5ba60ce5-4df5-57e1-be30-df903f654097",
+        "GroupingIdentifier": "fa5ebcb7-d910-52b5-b650-24cbeb4358bb",
         "UUID": "d6d8e185-3e93-5cf1-b6fc-a568fec45b19",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -36793,7 +36838,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "04e24f29-29e0-52a3-994e-0a97bde167e5",
+              "OutputUUID": "e01e02b4-54a0-5d44-82cb-21b26186c100",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -36837,7 +36882,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "fafa24df-1431-5f2a-ac72-067afb1edbe6",
+        "UUID": "23f14bac-97d9-50a7-bfe5-61ef4c3ceeba",
         "WFTextActionText": "<li>Nenhum.</li>"
       },
       "title": "Text"
@@ -36867,7 +36912,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "fafa24df-1431-5f2a-ac72-067afb1edbe6",
+            "OutputUUID": "23f14bac-97d9-50a7-bfe5-61ef4c3ceeba",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -36900,8 +36945,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "5ba60ce5-4df5-57e1-be30-df903f654097",
-        "UUID": "636f543d-07f0-5ae3-998e-d581b941ed7b",
+        "GroupingIdentifier": "fa5ebcb7-d910-52b5-b650-24cbeb4358bb",
+        "UUID": "4679a1ba-cbde-5920-9374-77530cdd7dae",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -36925,7 +36970,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "ad70b912-0fad-50b5-af4f-0be2ee6658b1",
+        "UUID": "39386e70-ee22-5551-ba9c-ed85885b5396",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -36964,7 +37009,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "167d0861-aec1-5e75-837e-bd111e825fe5",
+        "GroupingIdentifier": "0119806f-d55a-579e-8b26-38d58388ab85",
         "UUID": "cc267c2a-2a2f-5840-bbec-8e00e8f9aa1d",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -36973,7 +37018,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "ad70b912-0fad-50b5-af4f-0be2ee6658b1",
+              "OutputUUID": "39386e70-ee22-5551-ba9c-ed85885b5396",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -37017,7 +37062,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "7eb53f1d-b0d1-54c8-901c-3562eabf9973",
+        "UUID": "9d7f6d1f-38c2-5a43-86a4-0800c6758ebe",
         "WFTextActionText": "<li>Nenhum.</li>"
       },
       "title": "Text"
@@ -37047,7 +37092,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "7eb53f1d-b0d1-54c8-901c-3562eabf9973",
+            "OutputUUID": "9d7f6d1f-38c2-5a43-86a4-0800c6758ebe",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -37080,8 +37125,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "167d0861-aec1-5e75-837e-bd111e825fe5",
-        "UUID": "8b25795b-74a8-551e-9d80-325a2f022355",
+        "GroupingIdentifier": "0119806f-d55a-579e-8b26-38d58388ab85",
+        "UUID": "42a05fa4-6c2e-51d5-ba22-935adc850483",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -37105,7 +37150,7 @@
           },
           "WFSerializationType": "WFTextTokenAttachment"
         },
-        "UUID": "12fac25e-a359-5b26-ad61-20c9b7e5d055",
+        "UUID": "7692314f-1a3a-5352-8898-cd51f26903ad",
         "WFCountType": "Characters"
       },
       "title": "Count"
@@ -37144,7 +37189,7 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "6a5575e5-210c-5ec7-b10f-76b6025465dc",
+        "GroupingIdentifier": "f7b1d933-5d06-52e3-9e6b-539b4e1a7434",
         "UUID": "15d3be3d-e4a0-5c7f-86c0-664869e23ec1",
         "WFCondition": 4,
         "WFControlFlowMode": 0,
@@ -37153,7 +37198,7 @@
           "Variable": {
             "Value": {
               "OutputName": "Count",
-              "OutputUUID": "12fac25e-a359-5b26-ad61-20c9b7e5d055",
+              "OutputUUID": "7692314f-1a3a-5352-8898-cd51f26903ad",
               "Type": "ActionOutput"
             },
             "WFSerializationType": "WFTextTokenAttachment"
@@ -37197,7 +37242,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "80f7cd39-004b-5db8-9e28-361facd6aafd",
+        "UUID": "1faaec4e-d058-5286-ae21-90ffbcef26eb",
         "WFTextActionText": "<li>Nenhum.</li>"
       },
       "title": "Text"
@@ -37227,7 +37272,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "80f7cd39-004b-5db8-9e28-361facd6aafd",
+            "OutputUUID": "1faaec4e-d058-5286-ae21-90ffbcef26eb",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -37260,8 +37305,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "6a5575e5-210c-5ec7-b10f-76b6025465dc",
-        "UUID": "95f5fa56-1915-591f-9049-a38bc7a9b3f4",
+        "GroupingIdentifier": "f7b1d933-5d06-52e3-9e6b-539b4e1a7434",
+        "UUID": "5901f1d3-1e59-5c01-98f7-de969665f4e9",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -39109,7 +39154,7 @@
       },
       "location": {
         "end": {
-          "column": 28,
+          "column": 33,
           "line": 566
         },
         "file": "Main.shortcuty",
@@ -39119,15 +39164,20 @@
         }
       },
       "parameters": {
-        "GroupingIdentifier": "bfb4e510-c1cb-524e-b967-954da4330dd2",
-        "UUID": "e06b269e-acac-5373-9d6b-5c956cfea986",
+        "GroupingIdentifier": "d76c81aa-6053-52fb-8919-2dab4d38c764",
+        "UUID": "313e8270-b749-5766-bdbc-97f0e48becec",
         "WFCondition": 5,
         "WFConditionalActionString": {
           "Value": {
-            "Type": "Variable",
-            "VariableName": "html"
+            "attachmentsByRange": {
+              "{0, 1}": {
+                "Type": "Variable",
+                "VariableName": "html"
+              }
+            },
+            "string": "￼"
           },
-          "WFSerializationType": "WFTextTokenAttachment"
+          "WFSerializationType": "WFTextTokenString"
         },
         "WFControlFlowMode": 0,
         "WFInput": {
@@ -39252,8 +39302,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "bfb4e510-c1cb-524e-b967-954da4330dd2",
-        "UUID": "c0a39aa5-94ee-52b9-854b-a93476345db8",
+        "GroupingIdentifier": "d76c81aa-6053-52fb-8919-2dab4d38c764",
+        "UUID": "89274d7b-40a1-55fc-abf3-926f440930fa",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -39337,8 +39387,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "e2a1aea5-a9ab-550c-9b6a-bbfed7cb1e97",
-        "UUID": "17a6ab12-9843-5983-a133-f898961e50c9",
+        "GroupingIdentifier": "6f28af9f-e7a2-5c8b-b126-15e7b03a0c8f",
+        "UUID": "2041a11f-2bf8-5949-a7f5-35585c0b269b",
         "WFControlFlowMode": 2
       },
       "title": "If"
@@ -39355,7 +39405,7 @@
       },
       "location": null,
       "parameters": {
-        "UUID": "cdab5bec-beb9-507b-b344-508c865ad178",
+        "UUID": "a933c750-9848-55aa-a7f0-a3d0a9371954",
         "WFTextActionText": "MENU"
       },
       "title": "Text"
@@ -39385,7 +39435,7 @@
         "WFInput": {
           "Value": {
             "OutputName": "Value",
-            "OutputUUID": "cdab5bec-beb9-507b-b344-508c865ad178",
+            "OutputUUID": "a933c750-9848-55aa-a7f0-a3d0a9371954",
             "Type": "ActionOutput"
           },
           "WFSerializationType": "WFTextTokenAttachment"
@@ -39406,8 +39456,8 @@
       },
       "location": null,
       "parameters": {
-        "GroupingIdentifier": "da4f03db-f585-5bf4-80ca-516d7d298438",
-        "UUID": "b483e85f-88ed-50a5-8165-af721b4d6416",
+        "GroupingIdentifier": "8b8ed927-86ab-5401-9a17-19da33ea392f",
+        "UUID": "ceb1acb9-27cf-5bed-b048-051404cd6749",
         "WFControlFlowMode": 2
       },
       "title": "Repeat"
@@ -45674,7 +45724,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 40,
+          "column": 45,
           "line": 144
         },
         "file": "Main.shortcuty",
@@ -45759,7 +45809,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 32,
+          "column": 37,
           "line": 221
         },
         "file": "Main.shortcuty",
@@ -45776,7 +45826,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 29,
+          "column": 34,
           "line": 227
         },
         "file": "Main.shortcuty",
@@ -45861,7 +45911,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 41,
+          "column": 46,
           "line": 343
         },
         "file": "Main.shortcuty",
@@ -45963,7 +46013,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 35,
+          "column": 40,
           "line": 425
         },
         "file": "Main.shortcuty",
@@ -45980,7 +46030,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 40,
+          "column": 45,
           "line": 433
         },
         "file": "Main.shortcuty",
@@ -46014,41 +46064,41 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
+          "column": 41,
+          "line": 440
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 9,
+          "line": 440
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 40,
+          "line": 449
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 9,
+          "line": 449
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
           "column": 36,
-          "line": 440
-        },
-        "file": "Main.shortcuty",
-        "start": {
-          "column": 9,
-          "line": 440
-        }
-      },
-      "related": [],
-      "severity": "warning"
-    },
-    {
-      "code": "SS2101",
-      "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
-      "range": {
-        "end": {
-          "column": 35,
-          "line": 449
-        },
-        "file": "Main.shortcuty",
-        "start": {
-          "column": 9,
-          "line": 449
-        }
-      },
-      "related": [],
-      "severity": "warning"
-    },
-    {
-      "code": "SS2101",
-      "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
-      "range": {
-        "end": {
-          "column": 31,
           "line": 463
         },
         "file": "Main.shortcuty",
@@ -46082,7 +46132,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 28,
+          "column": 33,
           "line": 566
         },
         "file": "Main.shortcuty",
@@ -46128,7 +46178,7 @@
     ],
     "WFWorkflowMinimumClientVersion": 900,
     "WFWorkflowMinimumClientVersionString": "900",
-    "WFWorkflowName": "PAPA PIZZA V5.2",
+    "WFWorkflowName": "PAPA PIZZA V5.3",
     "WFWorkflowOutputContentItemClasses": [],
     "WFWorkflowTypes": [
       "Watch",
@@ -46136,7 +46186,7 @@
       "WFWorkflowTypeShowInSearch"
     ]
   },
-  "name": "PAPA PIZZA V5.2",
+  "name": "PAPA PIZZA V5.3",
   "ok": true,
   "rangeEncoding": "unicode-scalar",
   "review": null,

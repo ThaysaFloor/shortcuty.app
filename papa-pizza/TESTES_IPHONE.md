@@ -35,3 +35,10 @@ As verificações estáticas e o compilador oficial não substituem esses testes
 - Confirmar se a comparação dos 60 produtos avança até o menu Próximo item.
 - Se houver mensagem Diagnostico do cadastro, registrar os valores entre colchetes: ID lido, nome lido e nome esperado. A mensagem não declara que o arquivo está incorreto; esses valores são necessários para isolar a causa.
 - Não renomear produtos, apagar arquivos ou dispensar a validação para contornar o erro.
+
+## Reteste prioritário da V5.3
+
+- Instalar o projeto com o nome **PAPA PIZZA V5.3**, mantendo os arquivos anteriores.
+- Selecionar a mesma pasta Atalhos e o mesmo JSON original. A leitura de Massa deve passar pela validação, sem trocar ou renomear esse produto.
+- Confirmar se chega ao primeiro item alfabético e se consegue salvar, pausar e retomar um registro.
+- Se a mensagem de comparação reaparecer, registrar a mensagem completa. Ainda não há confirmação de execução da V5.3 no aparelho.

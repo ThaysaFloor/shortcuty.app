@@ -107,7 +107,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 40,
+          "column": 45,
           "line": 144
         },
         "file": "Main.shortcuty",
@@ -192,7 +192,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 32,
+          "column": 37,
           "line": 221
         },
         "file": "Main.shortcuty",
@@ -209,7 +209,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 29,
+          "column": 34,
           "line": 227
         },
         "file": "Main.shortcuty",
@@ -294,7 +294,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 41,
+          "column": 46,
           "line": 343
         },
         "file": "Main.shortcuty",
@@ -396,7 +396,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 35,
+          "column": 40,
           "line": 425
         },
         "file": "Main.shortcuty",
@@ -413,7 +413,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 40,
+          "column": 45,
           "line": 433
         },
         "file": "Main.shortcuty",
@@ -447,41 +447,41 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
+          "column": 41,
+          "line": 440
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 9,
+          "line": 440
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
+          "column": 40,
+          "line": 449
+        },
+        "file": "Main.shortcuty",
+        "start": {
+          "column": 9,
+          "line": 449
+        }
+      },
+      "related": [],
+      "severity": "warning"
+    },
+    {
+      "code": "SS2101",
+      "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
+      "range": {
+        "end": {
           "column": 36,
-          "line": 440
-        },
-        "file": "Main.shortcuty",
-        "start": {
-          "column": 9,
-          "line": 440
-        }
-      },
-      "related": [],
-      "severity": "warning"
-    },
-    {
-      "code": "SS2101",
-      "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
-      "range": {
-        "end": {
-          "column": 35,
-          "line": 449
-        },
-        "file": "Main.shortcuty",
-        "start": {
-          "column": 9,
-          "line": 449
-        }
-      },
-      "related": [],
-      "severity": "warning"
-    },
-    {
-      "code": "SS2101",
-      "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
-      "range": {
-        "end": {
-          "column": 31,
           "line": 463
         },
         "file": "Main.shortcuty",
@@ -515,7 +515,7 @@
       "message": "condition.WFConditionalActionString expects Value, got Text. Compatibility is unknown; add a declared type or explicit supported conversion and test the input.",
       "range": {
         "end": {
-          "column": 28,
+          "column": 33,
           "line": 566
         },
         "file": "Main.shortcuty",
@@ -531,7 +531,7 @@
   "ok": true,
   "rangeEncoding": "unicode-scalar",
   "sourceHashes": {
-    "Main.shortcuty": "32f3f7e02f315a595139a2db412f376f7d2ffac410f4e2c0d264bbbd97f30001"
+    "Main.shortcuty": "0aea6b961a118aabff06e2031a445ac2723908f28329a9e6801846a8bf444afa"
   },
   "version": 1
 }

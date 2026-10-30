@@ -1,4 +1,4 @@
-# PAPA PIZZA V5.2 — Shortcuty Studio
+# PAPA PIZZA V5.3 — Shortcuty Studio
 
 Projeto de conferência de estoque e produção para Apple Shortcuts, escrito em Shortcuty.
 

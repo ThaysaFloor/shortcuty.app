@@ -94,6 +94,27 @@ def validate():
     assert not any("WFConditions" in a["parameters"] for a in actions if a["call"] == "flow.condition")
     print("PASS: original ID/name table exported intact, direct field reads and simple If conditions")
 
+    text_comparisons = [
+        a["parameters"]["WFConditionalActionString"]
+        for a in actions
+        if a["call"] == "flow.condition"
+        and isinstance(a["parameters"].get("WFConditionalActionString"), dict)
+    ]
+    assert len(text_comparisons) == 10
+    comparison_variables = set()
+    for operand in text_comparisons:
+        assert operand["WFSerializationType"] == "WFTextTokenString"
+        value = operand["Value"]
+        assert isinstance(value["string"], str)
+        attachments = value["attachmentsByRange"]
+        assert attachments
+        comparison_variables.update(token["VariableName"] for token in attachments.values())
+    assert comparison_variables == {
+        "nomeEsperado", "esperado", "idProduto", "nomeAtual", "identificador",
+        "nomeSessao", "ultimoHash", "ultimoJson", "novoJson", "html"
+    }
+    print("PASS: all 10 dynamic text comparison operands use token strings, preserving their variables")
+
     groups = collections.defaultdict(collections.Counter)
     for action in actions:
         params = action["parameters"]
